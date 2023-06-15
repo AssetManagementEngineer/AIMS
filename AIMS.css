@@ -1,0 +1,145 @@
+#phase1 {
+    background-image: linear-gradient(to right, #87ceeb , lightgreen);
+    color: white;
+}
+
+#phase2 {
+    background-color: rgb(255, 114, 114);
+    color: white;
+}
+
+#phase4 {
+    background-color: gold;
+    color: white;
+}
+
+#kanbanBorderLightGrey {
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    vertical-align: top;
+}
+
+
+#kanbanBorderBlue {
+    border: 4px solid darkblue;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+#kanbanBorderRed {
+    border: 4px solid red;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+#kanbanBorderGold {
+    border: 4px solid gold;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.kanban {
+    vertical-align: top;
+    padding-left: 1.2em;
+    padding-right: 1em;
+}
+
+.sectionA {
+    width:100%;
+    padding: 30px;
+}
+
+.bluedot {
+    height: 20px;
+    width: 20px;
+    background-color: darkblue;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .vtimeline {
+    text-align: center;
+  }
+
+  ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+
+  ol ol {
+    margin: 0 0 0 2em; /* Add some left margin for inner lists */
+  }
+
+  .DateComplete {
+    color:green;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .DateInFuture {
+    color:orange;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .DateInProgress {
+    color:darkblue;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .rounded-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+  }
+
+  .rounded-list a:hover{
+    background: #eee;
+  }
+
+  .rounded-list a:hover:before{
+    transform: rotate(360deg);
+  }
+
+  .rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+  }
+
+  .tr {
+    display:table-row;
+  }
+  .td {
+    display:table-cell;
+  }
+  .fullH {
+    height:100%;
+  }
+
+  .showNotes a:hover{
+    color:red;
+  }

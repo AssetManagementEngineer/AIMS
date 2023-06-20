@@ -51,7 +51,7 @@
               'children': [
                 { 'name': 'IN-CCS-SIG-INT', 'title': 'Interlocking System', 'className': 'IN-CCS_B' },
                 { 'name': 'IN-CCS-SIG-LC', 'title': 'Level Crossing System', 'className': 'IN-CCS_B' },
-                { 'name': 'IN-CCS-SIG-POS', 'title': 'Point Operating System', 'className': 'IN-CCS_B' },
+                { 'name': 'IN-CCS-SIG-POS', 'title': 'Point Operating System', 'interfaces':'IN-GD-PW-SC', 'className': 'IN-CCS-SIG-POS-IN-GD-PW-SC' },
                 { 'name': 'IN-CCS-SIG-ROC', 'title': 'Rail Operating Centre System', 'className': 'IN-CCS_B' },
                 { 'name': 'IN-CCS-SIG-SPT', 'title': 'Signals Post Telephone System', 'className': 'IN-CCS_B' },
                 { 'name': 'IN-CCS-SIG-SS', 'title': 'Signals &amp; Signs System','interfaces':'IN-STR-AUX-GNT', 'className': 'IN-CCS-SIG-SS-IN-STR-AUX-GNT' },
@@ -59,7 +59,7 @@
                 { 'name': 'IN-CCS-SIG-TRTS', 'title': 'TRTS System', 'className': 'IN-CCS_B' },
                 { 'name': 'IN-CCS-SIG-WS', 'title': 'TPWS/AWS System', 'className': 'IN-CCS_B' }
               ]},
-              { 'name': 'IN-CCS-TCS', 'title': 'ETCS System', 'className': 'IN-CCS_A',
+              { 'name': 'IN-CCS-TCS', 'title': 'ETCS System','interfaces':'IN-TEL-XXXX-W', 'className': 'IN-CCS-TCS-IN-TEL-XXXX-W',
                 'children': [
                   { 'name': 'IN-CCS-TCS-OB', 'title': 'ETCS Onboard System', 'className': 'IN-CCS_B' },
                   { 'name': 'IN-CCS-TCS-TR', 'title': 'ETCS Trackside System', 'className': 'IN-CCS_B' }
@@ -108,7 +108,7 @@
         {'name':'IN-DR-RL-EW','title':'Earthworks Drainage System','className':'IN-DR_B'},
         {'name':'IN-DR-RL-PS','title':'Pumping Station System','className':'IN-DR_B'},
         {'name':'IN-DR-RL-STR','title':'Civils &amp; Structures Drainage System','className':'IN-DR_B'},
-        {'name':'IN-DR-RL-TRA','title':'Track Drainage System','className':'IN-DR-RL-TRA-IN-GD-PW'}
+        {'name':'IN-DR-RL-TRA','title':'Track Drainage System','interfaces':'IN-GD-PW', 'className':'IN-DR-RL-TRA-IN-GD-PW'}
         ]}
           ]
           },
@@ -118,7 +118,7 @@
         'children':[
             {'name':'IN-EN-DNO-ACDC','title':'AC/DC Conversion System','className':'IN-EN_B'},
             {'name':'IN-EN-DNO-BND','title':'Earthing &amp; Bonding System','className':'IN-EN_B'},
-            {'name':'IN-EN-DNO-CBL','title':'HV/LV Cable System','className':'IN-EN_B'},
+            {'name':'IN-EN-DNO-CBL','title':'HV/LV Cable System','interfaces':'IN-STR-AUX-WMS', 'className':'IN-EN-XXX-CBL-IN-STR-AUX-WMS'},
             {'name':'IN-EN-DNO-ISO','title':'Protection/Isolation System','className':'IN-EN_B'},
             {'name':'IN-EN-DNO-NT','title':'Non-Traction Power System','className':'IN-EN_B'},
             {'name':'IN-EN-DNO-SW','title':'Changeover/Switching System','className':'IN-EN_B'},
@@ -128,7 +128,7 @@
             'children':[
                 {'name':'IN-EN-EWR-ACDC','title':'AC/DC Conversion System','className':'IN-EN_B'},
                 {'name':'IN-EN-EWR-BND','title':'Earthing &amp; Bonding System','className':'IN-EN_B'},
-                {'name':'IN-EN-EWR-CBL','title':'HV/LV Cable System','className':'IN-EN_B'},
+                {'name':'IN-EN-EWR-CBL','title':'HV/LV Cable System','interfaces':'IN-STR-AUX-WMS','className':'IN-EN-XXX-CBL-IN-STR-AUX-WMS'},
                 {'name':'IN-EN-EWR-ISO','title':'Protection/Isolation System','className':'IN-EN_B'},
                 {'name':'IN-EN-EWR-PWR','title':'Power Storage System','className':'IN-EN_B'},
                 {'name':'IN-EN-EWR-SW','title':'Changeover/Switching System','className':'IN-EN_B'},
@@ -138,9 +138,12 @@
             'children':[
                 {'name':'IN-EN-TNO-ACDC','title':'AC/DC Conversion System','className':'IN-EN_B'},
                 {'name':'IN-EN-TNO-BND','title':'Earthing &amp; Bonding System','className':'IN-EN_B'},
-                {'name':'IN-EN-TNO-CBL','title':'HV/LV Cable System','className':'IN-EN_B'},
+                {'name':'IN-EN-TNO-CBL','title':'HV/LV Cable System','interfaces':'IN-STR-AUX-WMS','className':'IN-EN-XXX-CBL-IN-STR-AUX-WMS'},
                 {'name':'IN-EN-TNO-ISO','title':'Protection/Isolation System','className':'IN-EN_B'},
-                {'name':'IN-EN-TNO-FDR','title':'Feeder Sub-Station System','className':'IN-EN_B'},
+                {'name':'IN-EN-TNO-FDR','title':'Feeder Sub-Station System','className':'IN-EN_B',
+            'children':[
+                {'name':'IN-EN-TNO-FDR-OLE','title':'OLE System','interfaces':'IN-STR-AUX-CANT', 'className':'IN-EN-TNO-FDR-OLE-IN-STR-AUX-CANT'}
+            ]},
                 {'name':'IN-EN-TNO-SW','title':'Changeover/Switching System','className':'IN-EN_B'},
                 {'name':'IN-EN-TNO-TRX','title':'Transformer System','className':'IN-EN_B'}
             ]}
@@ -174,7 +177,7 @@
         {'name':'IN-GD-PW','title':'Permanent Way System','interfaces':'IN-DR-RL-TRA', 'className':'IN-GD-PW-IN-DR-RL-TRA',
     'children':[
         {'name':'IN-GD-PW-PL','title':'Track (Plain Line) System','className':'IN-GD_B'},
-        {'name':'IN-GD-PW-SC','title':'S&amp;C System','className':'IN-GD_B'}
+        {'name':'IN-GD-PW-SC','title':'S&amp;C System','interfaces':'IN-CCS-SIG-POS', 'className':'IN-GD-PW-SC-IN-CCS-SIG-POS'}
     ]}
     ]
     },
@@ -215,12 +218,12 @@
 'children':[
     {'name':'IN-STR-AUX','title':'Auxiliary Structures System','className':'IN-STR_A',
 'children':[
-    {'name':'IN-STR-AUX-CANT','title':'Cantilever Structure System','className':'IN-STR_B'},
+    {'name':'IN-STR-AUX-CANT','title':'Cantilever Structure System','interfaces':'IN-EN-TNO-FDR-OLE', 'className':'IN-STR-AUX-CANT-IN-EN-TNO-FDR-OLE'},
     {'name':'IN-STR-AUX-FDT','title':'Structrural Base/Foundation System','className':'IN-STR_B'},
     {'name':'IN-STR-AUX-GNT','title':'Gantry System','interfaces':'IN-CCS-SIG-SS', 'className':'IN-STR-AUX-GNT-IN-CCS-SIG-SS'},
-    {'name':'IN-STR-AUX-MAST','title':'Tower/Mast Structure System','className':'IN-STR_B'},
+    {'name':'IN-STR-AUX-MAST','title':'Tower/Mast Structure System','interfaces':'IN-TEL-XXXX-W' ,'className':'IN-STR-AUX-MAST-IN-TEL-XXXX-W'},
     {'name':'IN-STR-AUX-POST','title':'Column/Post System','className':'IN-STR_B'},
-    {'name':'IN-STR-AUX-WMS','title':'Wall Mounted Support System','className':'IN-STR_B'}
+    {'name':'IN-STR-AUX-WMS','title':'Wall Mounted Support System','interfaces':'IN-EN-XXX-CBL', 'className':'IN-STR-AUX-WMS-IN-EN-XXX-CBL'}
 ]},
     {'name':'IN-STR-IN','title':'Intersection System','className':'IN-STR_A',
 'children':[
@@ -236,7 +239,7 @@
     {'name':'IN-TEL-CORP','title':'Corporate Telecomms Network System','className':'IN-TEL_A',
 'children':[
     {'name':'IN-TEL-CORP-F','title':'Fixed Communications Network System','className':'IN-TEL_B'},
-    {'name':'IN-TEL-CORP-W','title':'Wireless Communications Network System','className':'IN-TEL_B',
+    {'name':'IN-TEL-CORP-W','title':'Wireless Communications Network System','interfaces':'IN-STR-AUX-MAST &amp; IN-CCS-TCS', 'className':'IN-TEL-XXXX-W-IN-CCS-TCS-IN-STR-AUX-MAST',
 'children':[
     {'name':'IN-TEL-CORP-W-5G','title':'5G FRMCS Radio System','className':'IN-TEL_C'},
     {'name':'IN-TEL-CORP-W-GSMR','title':'GSM-R System','className':'IN-TEL_C'}
@@ -245,7 +248,7 @@
     {'name':'IN-TEL-CUST','title':'Customer Telecomms Network System','className':'IN-TEL_A',
     'children':[
         {'name':'IN-TEL-CUST-F','title':'Fixed Communications Network System','className':'IN-TEL_B'},
-        {'name':'IN-TEL-CUST-W','title':'Wireless Communications Network System','className':'IN-TEL_B',
+        {'name':'IN-TEL-CUST-W','title':'Wireless Communications Network System','interfaces':'IN-STR-AUX-MAST &amp; IN-CCS-TCS','className':'IN-TEL-XXXX-W-IN-CCS-TCS-IN-STR-AUX-MAST',
     'children':[
         {'name':'IN-TEL-CUST-W-5G','title':'5G FRMCS Radio System','className':'IN-TEL_C'},
         {'name':'IN-TEL-CUST-W-GSMR','title':'GSM-R System','className':'IN-TEL_C'}
@@ -254,7 +257,7 @@
     {'name':'IN-TEL-STN','title':'Station Telecomms Network System','className':'IN-TEL_A',
     'children':[
         {'name':'IN-TEL-STN-F','title':'Fixed Communications Network System','className':'IN-TEL_B'},
-        {'name':'IN-TEL-STN-W','title':'Wireless Communications Network System','className':'IN-TEL_B',
+        {'name':'IN-TEL-STN-W','title':'Wireless Communications Network System','interfaces':'IN-STR-AUX-MAST &amp; IN-CCS-TCS','className':'IN-TEL-XXXX-W-IN-CCS-TCS-IN-STR-AUX-MAST',
     'children':[
         {'name':'IN-TEL-STN-W-5G','title':'5G FRMCS Radio System','className':'IN-TEL_C'},
         {'name':'IN-TEL-STN-W-GSMR','title':'GSM-R System','className':'IN-TEL_C'}

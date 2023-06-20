@@ -79,6 +79,14 @@
   .orgchart .IN-CCS-SIG-SS-IN-STR-AUX-GNT .title {
     background-image: linear-gradient(to right, #65e95c , #c5ff07);
   }
+  .orgchart .IN-CCS-SIG-POS-IN-GD-PW-SC .title {
+    background-image: linear-gradient(to right, #65e95c , #c4cd21);
+  }
+  .orgchart .IN-CCS-TCS-IN-TEL-XXXX-W .title {
+    background-image: linear-gradient(to right, #65e95c , #5d52ff);
+  }
+
+
 
   .orgchart .IN-CU .title {
     background-color: #830074;
@@ -145,7 +153,12 @@
   .orgchart .IN-EN_B .content {
     border-color: #ff5050;
   }
-
+  .orgchart .IN-EN-XXX-CBL-IN-STR-AUX-WMS .title {
+    background-image: linear-gradient(to right, #ff5050 , #c5ff07);
+  }
+  .orgchart .IN-EN-TNO-FDR-OLE-IN-STR-AUX-CANT .title {
+    background-image: linear-gradient(to right, #dc7f7f , #c5ff07);
+  }
 
   .orgchart .IN-GD .title {
     background-color: #7f8600;
@@ -170,7 +183,9 @@
   .orgchart .IN-GD-PW-IN-DR-RL-TRA .title {
     background-image: linear-gradient(to right, #c4cd21 , #5cf1d8);
   }
-
+  .orgchart .IN-GD-PW-SC-IN-CCS-SIG-POS .title {
+    background-image: linear-gradient(to right, #c4cd21 , #65e95c);
+  }
 
   .orgchart .IN-GT .title {
     background-color: #866b00;
@@ -269,6 +284,15 @@
   .orgchart .IN-STR-AUX-GNT-IN-CCS-SIG-SS .title {
     background-image: linear-gradient(to right, #c5ff07 , #65e95c);
   }
+  .orgchart .IN-STR-AUX-MAST-IN-TEL-XXXX-W .title {
+    background-image: linear-gradient(to right, #c5ff07 , #5d52ff);
+  }
+  .orgchart .IN-STR-AUX-WMS-IN-EN-XXX-CBL .title {
+    background-image: linear-gradient(to right, #c5ff07 , #ff5050);
+  }
+  .orgchart .IN-STR-AUX-CANT-IN-EN-TNO-FDR-OLE .title {
+    background-image: linear-gradient(to right, #c5ff07 , #dc7f7f);
+  }
 
   .orgchart .IN-TEL .title {
     background-color: #090086;
@@ -293,4 +317,10 @@
   }
   .orgchart .IN-TEL_C .content {
     border-color: #948dfc;
+  }
+  .orgchart .IN-TEL-XXXX-W-IN-STR-AUX-MAST .title {
+    background-image: linear-gradient(to right, #5d52ff , #c5ff07);
+  }
+  .orgchart .IN-TEL-XXXX-W-IN-CCS-TCS-IN-STR-AUX-MAST .title {
+    background-image: linear-gradient(to right, #65e95c, #5d52ff , #c5ff07);
   }

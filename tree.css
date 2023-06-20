@@ -1,0 +1,296 @@
+#chart-container {
+    font-family: Arial;
+    height: 600px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    overflow: auto;
+    text-align: center;
+  }
+  
+  .orgchart {
+    background: #fff; 
+  }
+  .orgchart td.left, .orgchart td.right, .orgchart td.top {
+    border-color: #aaa;
+  }
+  .orgchart td>.down {
+    background-color: #aaa;
+  }
+  .orgchart .INFRA .title {
+    background-color: #cc0066;
+  }
+  .orgchart .INFRA .content {
+    border-color: #cc0066;
+  }
+  .orgchart .IN-BLD .title {
+    background-color: #006699;
+  }
+  .orgchart .IN-BLD .content {
+    border-color: #006699;
+  }
+  .orgchart .IN-BLD_A .title {
+    background-color: #3e9cca;
+  }
+  .orgchart .IN-BLD_A .content {
+    border-color: #3e9cca;
+  }
+  .orgchart .IN-BLD_A-IN-CCS_A .title {
+    background-image: linear-gradient(to right, #3e9cca , #1eae13);
+  }
+  .orgchart .IN-BLD_A-IN-CCS_A .content {
+    border-color: #3e9cca;
+  }
+  .orgchart .IN-BLD_B .title {
+    background-color: #63b1f5;
+  }
+  .orgchart .IN-BLD_B .content {
+    border-color: #63b1f5;
+  }
+  .orgchart .IN-BLD_ST-IN-CU-FT-IN-CU-IN-STN .title {
+    background-image: linear-gradient(to right, #3e9cca , #ff69ee, #b73fa9);
+  }
+  .orgchart .IN-CCS .title {
+    background-color: #098300;
+  }
+  .orgchart .IN-CCS .content {
+    border-color: #098300;
+  }
+  .orgchart .IN-CCS_A .title {
+    background-color: #1eae13;
+  }
+  .orgchart .IN-CCS_A .content {
+    border-color: #1eae13;
+  }
+  .orgchart .IN-CCS_A-IN-BLD_A .title {
+    background-image: linear-gradient(to right, #1eae13 , #3e9cca);
+  }
+  .orgchart .IN-CCS_A-IN-BLD_A .content {
+    border-color: #1eae13;
+  }
+  .orgchart .IN-CCS_B .title {
+    background-color: #65e95c;
+  }
+  .orgchart .IN-CCS_B .content {
+    border-color: #65e95c;
+  }
+  .orgchart .IN-CCS-SIG-IN-STR-IN-LVL .title {
+    background-image: linear-gradient(to right, #1eae13 , #c5ff07);
+  }
+  .orgchart .IN-CCS-SIG-SS-IN-STR-AUX-GNT .title {
+    background-image: linear-gradient(to right, #65e95c , #c5ff07);
+  }
+
+  .orgchart .IN-CU .title {
+    background-color: #830074;
+  }
+  .orgchart .IN-CU .content {
+    border-color: #830074;
+  }
+  .orgchart .IN-CU_A .title {
+    background-color: #b73fa9;
+  }
+  .orgchart .IN-CU_A .content {
+    border-color: #b73fa9;
+  }
+  .orgchart .IN-CU_B .title {
+    background-color: #ff69ee;
+  }
+  .orgchart .IN-CU_B .content {
+    border-color: #ff69ee;
+  }
+  .orgchart .IN-CU-FT-IN-BLD_ST .title {
+    background-image: linear-gradient(to right, #b73fa9 , #3e9cca);
+  }
+  .orgchart .IN-CU-IN-STN-IN-BLD_ST .title {
+    background-image: linear-gradient(to right, #ff69ee , #3e9cca);
+  }
+
+  .orgchart .IN-DR .title {
+    background-color: #00836d;
+  }
+  .orgchart .IN-DR .content {
+    border-color: #00836d;
+  }
+  .orgchart .IN-DR-RL-TRA-IN-GD-PW .title {
+    background-image: linear-gradient(to right, #5cf1d8 , #c4cd21);
+  }
+  .orgchart .IN-DR_A .title {
+    background-color: #3dac9a;
+  }
+  .orgchart .IN-DR_A .content {
+    border-color: #3dac9a;
+  }
+  .orgchart .IN-DR_B .title {
+    background-color: #5cf1d8;
+  }
+  .orgchart .IN-DR_B .content {
+    border-color: #5cf1d8;
+  }
+
+  .orgchart .IN-EN .title {
+    background-color: #860000;
+  }
+  .orgchart .IN-EN .content {
+    border-color: #860000;
+  }
+  .orgchart .IN-EN_A .title {
+    background-color: #be3737;
+  }
+  .orgchart .IN-EN_A .content {
+    border-color: #be3737;
+  }
+  .orgchart .IN-EN_B .title {
+    background-color: #ff5050;
+  }
+  .orgchart .IN-EN_B .content {
+    border-color: #ff5050;
+  }
+
+
+  .orgchart .IN-GD .title {
+    background-color: #7f8600;
+  }
+  .orgchart .IN-GD .content {
+    border-color: #7f8600;
+  }
+  .orgchart .IN-GD_A .title {
+    background-color: #c4cd21;
+  }
+  .orgchart .IN-GD_A .content {
+    border-color: #c4cd21;
+  }
+  .orgchart .IN-GD_B .title {
+    background-color: #f3ff12;
+    color:black;
+  }
+  .orgchart .IN-GD_B .content {
+    border-color: #f3ff12;
+    color:black;
+  }
+  .orgchart .IN-GD-PW-IN-DR-RL-TRA .title {
+    background-image: linear-gradient(to right, #c4cd21 , #5cf1d8);
+  }
+
+
+  .orgchart .IN-GT .title {
+    background-color: #866b00;
+  }
+  .orgchart .IN-GT .content {
+    border-color: #866b00;
+  }
+  .orgchart .IN-GT_A .title {
+    background-color: #c8a826;
+  }
+  .orgchart .IN-GT_A .content {
+    border-color: #c8a826;
+  }
+  .orgchart .IN-GT_B .title {
+    background-color: #ffba19;
+    color:black;
+  }
+  .orgchart .IN-GT_B .content {
+    border-color: #ffba19;
+    color:black;
+  }
+
+
+  .orgchart .IN-ICT .title {
+    background-color: #008607;
+  }
+  .orgchart .IN-ICT .content {
+    border-color: #008607;
+  }
+  .orgchart .IN-ICT_A .title {
+    background-color: #13c31c;
+  }
+  .orgchart .IN-ICT_A .content {
+    border-color: #13c31c;
+  }
+  .orgchart .IN-ICT_B .title {
+    background-color: #03fe0f;
+  }
+  .orgchart .IN-ICT_B .content {
+    border-color: #03fe0f;
+  }
+
+
+  .orgchart .IN-MNTR .title {
+    background-color: #008186;
+  }
+  .orgchart .IN-MNTR .content {
+    border-color: #008186;
+  }
+  .orgchart .IN-MNTR_A .title {
+    background-color: #2dd4da;
+  }
+  .orgchart .IN-MNTR_A .content {
+    border-color: #2dd4da;
+  }
+
+
+  
+  .orgchart .IN-RS .title {
+    background-color: #6d0086;
+  }
+  .orgchart .IN-RS .content {
+    border-color: #6d0086;
+  }
+  .orgchart .IN-RS_A .title {
+    background-color: #ae18cf;
+  }
+  .orgchart .IN-RS_A .content {
+    border-color: #ae18cf;
+  }
+
+
+  .orgchart .IN-STR .title {
+    background-color: #678600;
+  }
+  .orgchart .IN-STR .content {
+    border-color: #678600;
+  }
+  .orgchart .IN-STR_A .title {
+    background-color: #a2cb19;
+  }
+  .orgchart .IN-STR_A .content {
+    border-color: #a2cb19;
+  }
+  .orgchart .IN-STR_B .title {
+    background-color: #c5ff07;
+    color:black;
+  }
+  .orgchart .IN-STR_B .content {
+    border-color: #c5ff07;
+    color:black;
+  }
+  .orgchart .IN-STR-IN-LVL-IN-CCS-SIG .title {
+    background-image: linear-gradient(to right, #c5ff07 , #1eae13);
+  }
+  .orgchart .IN-STR-AUX-GNT-IN-CCS-SIG-SS .title {
+    background-image: linear-gradient(to right, #c5ff07 , #65e95c);
+  }
+
+  .orgchart .IN-TEL .title {
+    background-color: #090086;
+  }
+  .orgchart .IN-TEL .content {
+    border-color: #090086;
+  }
+  .orgchart .IN-TEL_A .title {
+    background-color: #3126ca;
+  }
+  .orgchart .IN-TEL_A .content {
+    border-color: #3126ca;
+  }
+  .orgchart .IN-TEL_B .title {
+    background-color: #5d52ff;
+  }
+  .orgchart .IN-TEL_B .content {
+    border-color: #5d52ff;
+  }
+  .orgchart .IN-TEL_C .title {
+    background-color: #948dfc;
+  }
+  .orgchart .IN-TEL_C .content {
+    border-color: #948dfc;
+  }

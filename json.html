@@ -6,10 +6,7 @@
 
 <script>
 
-$(function(){
-  
-  var people = [];
-  
+$(function(){  
   $.getJSON('data.json', function(data) {
     $("#thesource").html(JSON.stringify(data));
     $.each(data.person, function(i,f) {

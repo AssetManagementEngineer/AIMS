@@ -6,19 +6,18 @@
 
 <script>
 
-	$(function(){
-	  
-	  var people = [];
-	  
-	  $.getJSON('data.json', function(data) {
-	    $("#thesource").html(JSON.stringify(data));
-		
-		$.each(data.person, function(i,f) {
-		   var tblRow = "<tr><td>" + f.firstname + "</td><td>" + f.lastname + "</td></tr>"
-		   $(tblRow).appendTo("#userdata tbody");
-		   });
-		});
-	});
+$(function(){
+  
+  var people = [];
+  
+  $.getJSON('data.json', function(data) {
+    $("#thesource").html(JSON.stringify(data));
+    $.each(data.person, function(i,f) {
+	   var tblRow = "<tr><td>" + f.firstname + "</td><td>" + f.lastname + "</td></tr>"
+	   $(tblRow).appendTo("#userdata tbody");
+    });
+   });
+ });
 	
 </script>
 </head>
@@ -27,7 +26,7 @@
 <table id="userdata">
   <thead>
     <th>First Name</th>
-	<th>Last Name</th>
+    <th>Last Name</th>
   </thead>
   <tbody>
   </tbody>

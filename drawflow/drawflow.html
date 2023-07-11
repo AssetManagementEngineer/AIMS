@@ -72,7 +72,7 @@
         html: '<pre><code>'+JSON.stringify(editor.export(), null,4)+'</code></pre>'
         })">Export</div>
         <div id="btn_clear" class="btn-clear" onclick="editor.clearModuleSelected()">Clear</div>
-        <div id="btn_pdf" class="btn-pdf" onclick="saveDiv('drawflow','json')">PDF</div>
+        <!--<div id="btn_pdf" class="btn-pdf" onclick="saveDiv('drawflow','json')">PDF</div>//-->
         <div class="btn-lock">
           <i id="lock" class="fas fa-lock" onclick="editor.editor_mode='fixed'; changeMode('lock');"></i>
           <i id="unlock" class="fas fa-lock-open" onclick="editor.editor_mode='edit'; changeMode('unlock');" style="display:none;"></i>
@@ -294,8 +294,8 @@
     var pdfdoc = new jsPDF();
     function saveDiv(divId, title) {
       //alert(divId);
-      //pdfdoc.fromHTML(`<html><head><title>${title}</title></head><body>` + document.getElementById(divId).innerHTML + `</body></html>`);
-      pdfdoc.fromHTML(`<html><head><title>${title}</title></head><body>` + document.body + `</body></html>`);
+      pdfdoc.fromHTML(`<html><head><title>${title}</title></head><body>` + document.getElementById(divId).innerHTML + `</body></html>`);
+      //pdfdoc.fromHTML(`<html><head><title>${title}</title></head><body>` + document.body + `</body></html>`);
       //alert(`<html><head><title>${title}</title></head><body>` + document.getElementById(divId).innerHTML + `</body></html>`);
       pdfdoc.save('div.pdf');
     }

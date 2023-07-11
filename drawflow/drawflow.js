@@ -997,7 +997,8 @@
                 }
             }
             export () {
-                const e = JSON.parse(JSON.stringify(this.drawflow));
+                //const e = JSON.parse(JSON.stringify(this.drawflow));
+                const e = JSON.parse(JSON.stringify(this.drawflow.drawflow[this.module].data));
                 return this.dispatch("export", e), e
             }
             import(e, t = !0) {

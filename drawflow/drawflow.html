@@ -17,11 +17,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>//-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
   <script src="home.js" ></script>
+  <script src="buildings.js" ></script>
   <script src="ccs.js" ></script>
   <script src="energy.js" ></script>
   <script src="customer.js" ></script>
+  <script src="drainage.js" ></script>
   <script src="environment.js" ></script>
+  <script src="geo.js" ></script>
+  <script src="guidance.js" ></script>
+  <script src="rollingStock.js" ></script>
+  <script src="structures.js" ></script>
+  <script src="telecoms.js" ></script>
 
   <header>
     <h2>System Classification Hierarchy</h2>
@@ -43,11 +52,18 @@
     <div class="col-right">
       <div class="menu">
         <ul>
-          <li onclick="editor.changeModule('Home'); changeModule(event);" class="selected">Home</li>
+          <li onclick="editor.changeModule('Home'); changeModule(event);" class="selected">All</li>
+          <li onclick="editor.changeModule('Buildings'); changeModule(event);">Buildings &amp; Stations</li>
           <li onclick="editor.changeModule('CCS'); changeModule(event);">CCS</li>
-          <li onclick="editor.changeModule('ENERGY'); changeModule(event);">Energy</li>
           <li onclick="editor.changeModule('Customer'); changeModule(event);">Customer</li>
+          <li onclick="editor.changeModule('Drainage'); changeModule(event);">Drainage</li>
+          <li onclick="editor.changeModule('Energy'); changeModule(event);">Energy</li>
           <li onclick="editor.changeModule('Environment'); changeModule(event);">Environment</li>
+          <li onclick="editor.changeModule('GeoTechnical'); changeModule(event);">Geo-Technical</li>
+          <li onclick="editor.changeModule('Guidance'); changeModule(event);">Guidance</li>
+          <li onclick="editor.changeModule('rollingStock'); changeModule(event);">Rolling Stock</li>
+          <li onclick="editor.changeModule('Structures'); changeModule(event);">Structures</li>
+          <li onclick="editor.changeModule('Telecoms'); changeModule(event);">Telecoms</li>
         </ul>
       </div>
       <div id="drawflow" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -56,6 +72,7 @@
         html: '<pre><code>'+JSON.stringify(editor.export(), null,4)+'</code></pre>'
         })">Export</div>
         <div id="btn_clear" class="btn-clear" onclick="editor.clearModuleSelected()">Clear</div>
+        <div id="btn_pdf" class="btn-pdf" onclick="saveDiv('drawflow','json')">PDF</div>
         <div class="btn-lock">
           <i id="lock" class="fas fa-lock" onclick="editor.editor_mode='fixed'; changeMode('lock');"></i>
           <i id="unlock" class="fas fa-lock-open" onclick="editor.editor_mode='edit'; changeMode('unlock');" style="display:none;"></i>
@@ -70,16 +87,17 @@
   </div>
 
   <script>
+
     var id = document.getElementById("drawflow");
     const editor = new Drawflow(id);
     editor.reroute = true;
-    
-    function getSection(a,b,c,d,e){
-      return {"drawflow":{"Home":a,"CCS":b, "ENERGY":c,"Customer":d,"Environment":e}};
+
+    function getSection(a,b,c,d,e,f,g,h,i,j,k,l){
+      return {"drawflow":{"Home":a,"Buildings":b,"CCS":c, "Customer":d,"Drainage":e,"Energy":f,"Environment":g,"GeoTechnical":h,"Guidance":i,"rollingStock":j,"Structures":k,"Telecoms":l}};
     }
 
     editor.start();
-    editor.import(getSection(home,ccs,energy,cust,environ));
+    editor.import(getSection(home,buildings,ccs,cust,drainage,energy,environ,geo,guidance,rollingStock,structures,telecoms));
 
     // Events!
     editor.on('nodeCreated', function(id) {
@@ -271,6 +289,15 @@
         unlock.style.display = 'none';
       }
 
+    }
+
+    var pdfdoc = new jsPDF();
+    function saveDiv(divId, title) {
+      //alert(divId);
+      //pdfdoc.fromHTML(`<html><head><title>${title}</title></head><body>` + document.getElementById(divId).innerHTML + `</body></html>`);
+      pdfdoc.fromHTML(`<html><head><title>${title}</title></head><body>` + document.body + `</body></html>`);
+      //alert(`<html><head><title>${title}</title></head><body>` + document.getElementById(divId).innerHTML + `</body></html>`);
+      pdfdoc.save('div.pdf');
     }
 
   </script>

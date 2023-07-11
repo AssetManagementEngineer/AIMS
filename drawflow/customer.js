@@ -5,7 +5,7 @@ var cust = {
         "name": "IN-CU",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CU (1)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   Customer System \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> IN-CU (1)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   Customer System \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {},          
         "outputs": {
@@ -29,15 +29,15 @@ var cust = {
             "connections": []
           }
         },
-        "pos_x": 207,
-        "pos_y": 284
+        "pos_x": 200,
+        "pos_y": 300
       },
       "2": {
         "id": 2,
         "name": "IN-CU-FT",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CU-FT (2)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Fare Transaction System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-CU-FT (2)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Fare Transaction System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -74,15 +74,15 @@ var cust = {
             "connections": []
           }
         },
-        "pos_x": 616,
-        "pos_y": 472
+        "pos_x": 600,
+        "pos_y": 700
       },
       "3": {
         "id": 3,
         "name": "IN-CU-IN",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CU-IN (3)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Customer Information System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-CU-IN (3)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Customer Information System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -114,7 +114,7 @@ var cust = {
             "connections": []
           }
         },
-        "pos_x": 608,
+        "pos_x": 600,
         "pos_y": 312
       },
       "4": {
@@ -122,7 +122,7 @@ var cust = {
         "name": "IN-CU-JRN",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CU-JRN (4)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Customer Journey Planning System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-CU-JRN (4)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Customer Journey Planning System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -145,7 +145,7 @@ var cust = {
             "connections": []
           }
         },
-        "pos_x": 596,
+        "pos_x": 600,
         "pos_y": 155
       },
       "5": {
@@ -153,7 +153,7 @@ var cust = {
         "name": "IN-CU-FT-POS",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CU-FT-POS (5)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Retail Point Of Sale System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-CU-FT-POS (5)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Retail Point Of Sale System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -175,7 +175,7 @@ var cust = {
           "output_2": {
             "connections": []
           }},
-        "pos_x": 975,
+        "pos_x": 1000,
         "pos_y": 756
       },
       "6": {
@@ -183,7 +183,7 @@ var cust = {
         "name": "IN-CU-FT-REV",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CU-FT-REV (6)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Revenue Protection System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-CU-FT-REV (6)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Revenue Protection System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -204,7 +204,7 @@ var cust = {
           "output_2": {
             "connections": []
           }},
-        "pos_x": 942,
+        "pos_x": 1000,
         "pos_y": 597
       },
       "7": {
@@ -212,7 +212,7 @@ var cust = {
         "name": "IN-CU-IN-ONB",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CU-IN-ONB (7)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Onboard Customer Information System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-CU-IN-ONB (7)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Onboard Customer Information System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -233,7 +233,7 @@ var cust = {
           "output_2": {
             "connections": []
           }},
-        "pos_x": 932,
+        "pos_x": 1000,
         "pos_y": 212
       },
       "8": {
@@ -241,7 +241,7 @@ var cust = {
         "name": "IN-CU-IN-STN",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CU-IN-STN (8)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Station Customer Information System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-CU-IN-STN (8)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Station Customer Information System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -267,7 +267,7 @@ var cust = {
           "output_2": {
             "connections": []
           }},
-        "pos_x": 933,
+        "pos_x": 1000,
         "pos_y": 408
       },
       "9": {
@@ -295,8 +295,8 @@ var cust = {
           ]
           }
         },
-        "pos_x": 225,
-        "pos_y": 731
+        "pos_x": 200,
+        "pos_y": 500
       }
     }
   }

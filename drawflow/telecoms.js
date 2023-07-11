@@ -169,7 +169,12 @@ var telecoms = {
               ]
             },
             "input_2":{
-              "connections":[]
+              "connections":[
+                {
+                  "node":"3",
+                  "input":"output_2"
+                }
+              ]
             }
           },          
           "outputs": {
@@ -186,7 +191,7 @@ var telecoms = {
               ]
             },
             "output_2":{
-              "connections":[]
+              "connections":[ ]
             }
           },
           "pos_x": 1080,
@@ -209,7 +214,12 @@ var telecoms = {
               ]
             },
             "input_2":{
-              "connections":[]
+              "connections":[
+                {
+                  "node":"3",
+                  "input":"output_2"
+                }
+              ]
             }
           },          
           "outputs": {            
@@ -240,7 +250,12 @@ var telecoms = {
               ]
             },
             "input_2":{
-              "connections":[]
+              "connections":[
+                {
+                  "node":"3",
+                  "input":"output_2"
+                }
+              ]
             }
           },          
           "outputs": {
@@ -280,7 +295,12 @@ var telecoms = {
               ]
             },
             "input_2":{
-              "connections":[]
+              "connections":[
+                {
+                  "node":"3",
+                  "input":"output_2"
+                }
+              ]
             }
           },          
           "outputs": {            
@@ -311,7 +331,12 @@ var telecoms = {
               ]
             },
             "input_2":{
-              "connections":[]
+              "connections":[
+                {
+                  "node":"3",
+                  "input":"output_2"
+                }
+              ]
             }
           },          
           "outputs": {
@@ -351,7 +376,12 @@ var telecoms = {
               ]
             },
             "input_2":{
-              "connections":[]
+              "connections":[
+                {
+                  "node":"3",
+                  "input":"output_2"
+                }
+              ]
             }
           },          
           "outputs": {            
@@ -548,6 +578,49 @@ var telecoms = {
           },
           "pos_x": 1661,
           "pos_y": 254
+        },
+        "3": {
+          "id": 3,
+          "name": "IN-CCS-TCS",
+          "data": {},
+          "class": "SCH",
+          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CCS-TCS (3)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  ETCS System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n",
+          "typenode": false,
+          "inputs": {},          
+          "outputs": {
+            "output_1": {
+              "connections": []
+            },
+            "output_2":{"connections":
+            [
+              {
+                "node":"123",
+                "output":"input_2"
+              },
+              {
+                "node":"124",
+                "output":"input_2"
+              },
+              {
+                "node":"125",
+                "output":"input_2"
+              },
+              {
+                "node":"126",
+                "output":"input_2"
+              },
+              {
+                "node":"127",
+                "output":"input_2"
+              },
+              {
+                "node":"128",
+                "output":"input_2"
+              }
+            ]}
+          },
+          "pos_x": 560,
+          "pos_y": 830
         }
     }
 }

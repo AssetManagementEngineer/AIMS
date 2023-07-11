@@ -229,7 +229,12 @@ var buildings = {
           ]
         },
         "input_2":{
-            "connections":[]
+            "connections":[
+              {
+                "node":"4",
+                "input":"output_2"
+              }
+            ]
         }
       },          
       "outputs": {
@@ -626,6 +631,28 @@ var buildings = {
 }},
       "pos_x": 1553,
       "pos_y": 676
+    },
+    "4": {
+      "id": 4,
+      "name": "IN-CCS-TMS",
+      "data": {},
+      "class": "SCH",
+      "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CCS-TMS (4)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Traffic Management System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "typenode": false,
+      "inputs": {},          
+      "outputs": {
+        "output_1": {
+          "connections": [{}]
+        },
+        "output_2":{"connections":[
+          {
+            "node":"8",
+            "output":"input_2"
+          }
+        ]}
+      },
+      "pos_x": 210,
+      "pos_y": 450
     }
 }
 }

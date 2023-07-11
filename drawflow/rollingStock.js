@@ -40,7 +40,19 @@ var rollingStock = {
                 "node":"1",
                 "input":"output_1"
               }]
-          }},          
+          },
+        "input_2" :{
+          "connections":[
+            {
+              "node":"4",
+              "input":"output_2"
+            },
+            {
+              "node":"5",
+              "input":"output_2"
+            }
+          ]
+        }},          
         "outputs": {
           "output_1": {
             "connections": []
@@ -73,6 +85,42 @@ var rollingStock = {
         },
         "pos_x": 550,
         "pos_y": 380
+      },
+      "4": {
+        "id": 4,
+        "name": "IN-CCS-TMS-ATS",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CCS-TMS-ATS (4)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Automatic Train Service (ATS) System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {"output_1":{"connections":[]},
+                    "output_2":{"connections":[
+                      {
+                        "node":"2",
+                        "output":"input_2"
+                      }
+                    ]}},
+        "pos_x": 140,
+        "pos_y": 0
+      },
+      "5": {
+        "id": 5,
+        "name": "IN-CCS-TCS-OB",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CCS-TCS-OB (5)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n ETCS Onboard System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {"output_1":{"connections":[]},
+                    "output_2":{"connections":[
+                      {
+                        "node":"2",
+                        "output":"input_2"
+                      }
+                    ]}},
+        "pos_x": 140,
+        "pos_y": 140
       }
     }
 }

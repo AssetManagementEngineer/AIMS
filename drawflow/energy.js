@@ -38,7 +38,24 @@ var energy = {
           ]
         },
         "input_2":{
-          "connections":[]
+          "connections":[
+            {
+              "node":"14",
+              "input":"output_2"
+            },
+            {
+              "node":"15",
+              "input":"output_2"
+            },
+            {
+              "node":"16",
+              "input":"output_2"
+            },
+            {
+              "node":"17",
+              "input":"output_2"
+            }
+          ]
         }
       },          
       "outputs": {
@@ -393,6 +410,95 @@ var energy = {
       },
       "pos_x": 228,
       "pos_y": 977
+    },
+    "14": {
+      "id": 14,
+      "name": "IN-DR-BLD-PS",
+      "data": {},
+      "class": "SCH",
+      "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-BLD-PS (14)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "typenode": false,
+      "inputs": {},          
+      "outputs": {
+        "output_1": {
+          "connections": []
+        },
+        "output_2":{
+          "connections":[
+            {
+              "node":"2",
+              "output":"input_2"
+            }
+          ]
+        }
+      },
+      "pos_x": -30,
+      "pos_y": -270
+    },
+    "15": {
+      "id": 15,
+      "name": "IN-DR-HW-PS",
+      "data": {},
+      "class": "SCH",
+      "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-HW-PS (15)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "typenode": false,
+      "inputs": {},          
+      "outputs": {
+        "output_1": {
+          "connections": []
+        },
+        "output_2":{
+          "connections":[
+            {
+              "node":"2",
+              "output":"input_2"
+            }
+          ]
+        }
+      },
+      "pos_x": -30,
+      "pos_y": -160
+    },
+    "16": {
+      "id": 16,
+      "name": "IN-DR-LND-PS",
+      "data": {},
+      "class": "SCH",
+      "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-LND-PS (16)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "typenode": false,
+      "inputs": {},          
+      "outputs": {
+        "output_1": {"connections": [] },
+        "output_2": {"connections": [
+            {
+              "node":"2",
+              "output":"input_2"
+            }
+          ]
+        }
+      },
+      "pos_x": -30,
+      "pos_y": -50
+    },
+    "17": {
+      "id": 17,
+      "name": "IN-DR-RL-PS",
+      "data": {},
+      "class": "SCH",
+      "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-RL-PS (17)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "typenode": false,
+      "inputs": {},          
+      "outputs": {
+        "output_1": {"connections": []},
+        "output_2": {"connections": [
+          {
+            "node":"2",
+            "output":"input_2"
+          }
+        ]}
+      },
+      "pos_x": -30,
+      "pos_y": 50
     }
   }
 }

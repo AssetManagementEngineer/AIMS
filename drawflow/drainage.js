@@ -240,7 +240,12 @@ var drainage= {
                 ]
               },
               "input_2":{
-                "connections":[]
+                "connections":[
+                  {
+                    "node":"20",
+                    "input":"output_2"
+                  }
+                ]
               }
             },          
             "outputs": {
@@ -271,7 +276,12 @@ var drainage= {
                 ]
               },
               "input_2":{
-                "connections":[]
+                "connections":[
+                  {
+                    "node":"20",
+                    "input":"output_2"
+                  }
+                ]
               }
             },          
             "outputs": {
@@ -302,7 +312,12 @@ var drainage= {
                 ]
               },
               "input_2":{
-                "connections":[]
+                "connections":[
+                  {
+                    "node":"20",
+                    "input":"output_2"
+                  }
+                ]
               }
             },          
             "outputs": {
@@ -333,7 +348,12 @@ var drainage= {
                 ]
               },
               "input_2":{
-                "connections":[]
+                "connections":[
+                  {
+                    "node":"20",
+                    "input":"output_2"
+                  }
+                ]
               }
             },          
             "outputs": {
@@ -397,10 +417,12 @@ var drainage= {
                 ]
               },
               "input_2":{
-                "connections":[{
+                "connections":[
+                  {
                   "node":"16",
                   "input":"output_2"
-                }]
+                  }
+              ]
               }
             },          
             "outputs": {
@@ -609,6 +631,42 @@ var drainage= {
             },
             "pos_x": -320,
             "pos_y": 330
+          },
+          "20": {
+            "id": 20,
+            "name": "IN-EN-NT",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-EN-NT (20)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Non-Traction Power System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {},          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                "connections":[
+                  {
+                    "node":"6",
+                    "output":"input_2"
+                  },
+                  {
+                    "node":"7",
+                    "output":"input_2"
+                  },
+                  {
+                    "node":"8",
+                    "output":"input_2"
+                  },
+                  {
+                    "node":"9",
+                    "output":"input_2"
+                  }
+                ]
+              }
+            },
+            "pos_x": 100,
+            "pos_y": -320
           }
     }
 }

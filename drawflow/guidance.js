@@ -89,7 +89,12 @@ var guidance= {
                 ]
               },
               "input_2":{
-                "connections":[]
+                "connections":[
+                  {
+                    "node":"3",
+                    "input":"output_2"
+                  }
+                ]
               }
             },          
             "outputs": {
@@ -177,7 +182,12 @@ var guidance= {
                 ]
               },
               "input_2":{
-                "connections":[]
+                "connections":[
+                  {
+                    "node":"104",
+                    "input":"output_2"
+                  }
+                ]
               }
             },          
             "outputs": {
@@ -346,7 +356,10 @@ var guidance= {
                 ]
               },
               "input_2":{
-                "connections":[]
+                "connections":[{
+                  "node":"10",
+                  "input":"output_2"
+                }]
               }
             },          
             "outputs": {
@@ -483,6 +496,72 @@ var guidance= {
             },
             "pos_x": 1580,
             "pos_y": 508
+          },
+          "10": {
+            "id": 10,
+            "name": "IN-CCS-SIG-POS",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG-POS (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Point Operating System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {},          
+            "outputs": {"output_1":{"connections":[{}]},
+                        "output_2":{"connections":[
+                          {
+                            "node":"100",
+                            "output":"input_2"
+                          }
+                        ]}},
+            "pos_x": 200,
+            "pos_y": 780
+          },
+          "3": {
+            "id": 3,
+            "name": "IN-DR-HW",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-HW (3)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Highway Drainage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {},          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                "connections":[
+                  {
+                    "node":"31",
+                    "output":"input_2"
+                  }
+                ]
+              }
+            },
+            "pos_x": 200,
+            "pos_y": 120
+          },
+          "104": {
+            "id": 104,
+            "name": "IN-GT-EW-EMB",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-GT-EW-EMB (104)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Embankment System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {},          
+            "outputs": {
+              "output_1": {
+                "connections": [{}]
+              },
+              "output_2": {
+                  "connections":[
+                    {
+                      "node":"33",
+                      "output":"input_2"
+                    }
+                  ]
+                }
+            },
+            "pos_x": 200,
+            "pos_y": 670
           }
     }
 }

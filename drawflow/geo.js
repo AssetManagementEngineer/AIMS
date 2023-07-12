@@ -54,6 +54,10 @@ var geo= {
                     {
                       "node":"117",
                       "input":"output_1"
+                    },
+                    {
+                      "node":"11",
+                      "input":"output_2"
                     }
                 ]
               }
@@ -234,7 +238,7 @@ var geo= {
               }
             },
             "pos_x": 100,
-            "pos_y": 800
+            "pos_y": 920
           },
           "28": {
             "id": 28,
@@ -287,6 +291,30 @@ var geo= {
             },
             "pos_x": 100,
             "pos_y": 680
+          },
+          "11": {
+            "id": 11,
+            "name": "IN-DR-RL-EW",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-RL-EW (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Earthworks Drainage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {},          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                "connections":[
+                  {
+                    "node":"101",
+                    "output":"input_2"
+                  }
+                ]
+              }
+            },
+            "pos_x": 100,
+            "pos_y": 780
           }
     }
 }

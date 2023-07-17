@@ -120,12 +120,7 @@ var drainage= {
             },          
             "outputs": {
               "output_1": {
-                "connections": [
-                  {
-                    "node":"7",
-                    "output":"input_1"
-                  }
-                ]
+                "connections": []
               },
               "output_2":{
                 "connections":[]
@@ -156,12 +151,7 @@ var drainage= {
             },          
             "outputs": {
               "output_1": {
-                "connections": [
-                  {
-                    "node":"8",
-                    "output":"input_1"
-                  }
-                ]
+                "connections": []
               },
               "output_2":{
                 "connections":[]
@@ -199,10 +189,6 @@ var drainage= {
               "output_1": {
                 "connections": [
                   {
-                    "node":"9",
-                    "output":"input_1"
-                  },
-                  {
                     "node":"10",
                     "output":"input_1"
                   },
@@ -228,13 +214,13 @@ var drainage= {
             "name": "IN-DR-BLD-PS",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-DR-BLD-PS (6)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-DR-BLD-PS (6)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1": {
                 "connections": [
                    {
-                    "node": "2",
+                    "node": "1",
                     "input": "output_1"
                    }
                 ]
@@ -256,113 +242,8 @@ var drainage= {
                 "connections":[]
               }
             },
-            "pos_x": 900,
-            "pos_y": -104
-          },
-          "7": {
-            "id": 7,
-            "name": "IN-DR-HW-PS",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-DR-HW-PS (7)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1": {
-                "connections": [
-                   {
-                    "node": "3",
-                    "input": "output_1"
-                   }
-                ]
-              },
-              "input_2":{
-                "connections":[
-                  {
-                    "node":"20",
-                    "input":"output_2"
-                  }
-                ]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                "connections":[]
-              }
-            },
-            "pos_x": 900,
-            "pos_y": 49
-          },
-          "8": {
-            "id": 8,
-            "name": "IN-DR-LND-PS",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-DR-LND-PS (8)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1": {
-                "connections": [
-                   {
-                    "node": "4",
-                    "input": "output_1"
-                   }
-                ]
-              },
-              "input_2":{
-                "connections":[
-                  {
-                    "node":"20",
-                    "input":"output_2"
-                  }
-                ]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                "connections":[]
-              }
-            },
-            "pos_x": 900,
-            "pos_y": 236
-          },
-          "9": {
-            "id": 9,
-            "name": "IN-DR-RL-PS",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-DR-RL-PS (9)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1": {
-                "connections": [
-                   {
-                    "node": "5",
-                    "input": "output_1"
-                   }
-                ]
-              },
-              "input_2":{
-                "connections":[
-                  {
-                    "node":"20",
-                    "input":"output_2"
-                  }
-                ]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              }
-            },
-            "pos_x": 900,
-            "pos_y": 404
+            "pos_x": 520,
+            "pos_y": -200
           },
           "10": {
             "id": 10,
@@ -648,18 +529,6 @@ var drainage= {
                 "connections":[
                   {
                     "node":"6",
-                    "output":"input_2"
-                  },
-                  {
-                    "node":"7",
-                    "output":"input_2"
-                  },
-                  {
-                    "node":"8",
-                    "output":"input_2"
-                  },
-                  {
-                    "node":"9",
                     "output":"input_2"
                   }
                 ]

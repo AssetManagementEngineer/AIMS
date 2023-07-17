@@ -28,7 +28,9 @@
   <script src="environment.js" ></script>
   <script src="geo.js" ></script>
   <script src="guidance.js" ></script>
+  <script src="interface.js" ></script>
   <script src="it.js" ></script>
+  <script src="monitoring.js" ></script>
   <script src="rollingStock.js" ></script>
   <script src="structures.js" ></script>
   <script src="telecoms.js" ></script>
@@ -54,16 +56,18 @@
       <div class="menu">
         <ul>
           <li onclick="editor.changeModule('Home'); changeModule(event);" class="selected">All</li>
-          <li onclick="editor.changeModule('Buildings'); changeModule(event);">Buildings &amp; Stations</li>
+          <li onclick="editor.changeModule('Buildings'); changeModule(event);" title="Buildings &amp; Stations">Buildings...</li>
           <li onclick="editor.changeModule('CCS'); changeModule(event);">CCS</li>
-          <li onclick="editor.changeModule('Customer'); changeModule(event);">Customer</li>
+          <!--<li onclick="editor.changeModule('Customer'); changeModule(event);">Customer</li>//-->
           <li onclick="editor.changeModule('Drainage'); changeModule(event);">Drainage</li>
           <li onclick="editor.changeModule('Energy'); changeModule(event);">Energy</li>
-          <li onclick="editor.changeModule('Environment'); changeModule(event);">Environment</li>
-          <li onclick="editor.changeModule('GeoTechnical'); changeModule(event);">Geo-Technical</li>
+          <li onclick="editor.changeModule('Environment'); changeModule(event);" title="Envionmental">Environ...</li>
+          <li onclick="editor.changeModule('GeoTechnical'); changeModule(event);" title="Geo-Technical">Geo-Tech...</li>
           <li onclick="editor.changeModule('Guidance'); changeModule(event);">Guidance</li>
+          <li onclick="editor.changeModule('Interface'); changeModule(event);" Title="External (EWR Interfacing)">Int (EXT)...</li>
           <li onclick="editor.changeModule('IT'); changeModule(event);">I.T.</li>
-          <li onclick="editor.changeModule('rollingStock'); changeModule(event);">Rolling Stock</li>
+          <li onclick="editor.changeModule('Monitoring'); changeModule(event);" title="Control &amp; Monitoring">CTRL &amp; Mon...</li>
+          <li onclick="editor.changeModule('rollingStock'); changeModule(event);" Title="Rolling Stock">Rolling...</li>
           <li onclick="editor.changeModule('Structures'); changeModule(event);">Structures</li>
           <li onclick="editor.changeModule('Telecoms'); changeModule(event);">Telecoms</li>
         </ul>
@@ -94,12 +98,12 @@
     const editor = new Drawflow(id);
     editor.reroute = true;
 
-    function getSection(a,b,c,d,e,f,g,h,i,j,k,l,m){
-      return {"drawflow":{"Home":a,"Buildings":b,"CCS":c,"Customer":d,"Drainage":e,"Energy":f,"Environment":g,"GeoTechnical":h,"Guidance":i,"IT":j,"rollingStock":k,"Structures":l,"Telecoms":m}};
+    function getSection(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o){
+      return {"drawflow":{"Home":a,"Buildings":b,"CCS":c,"Customer":d,"Drainage":e,"Energy":f,"Environment":g,"GeoTechnical":h,"Guidance":i,"Interface":j, "IT":k,"Monitoring":l,"rollingStock":m,"Structures":n,"Telecoms":o}};
     }
 
     editor.start();
-    editor.import(getSection(home,buildings,ccs,cust,drainage,energy,environ,geo,guidance,it,rollingStock,structures,telecoms));
+    editor.import(getSection(home,buildings,ccs,cust,drainage,energy,environ,geo,guidance,interface,it,monitoring,rollingStock,structures,telecoms));
 
     // Events!
     editor.on('nodeCreated', function(id) {

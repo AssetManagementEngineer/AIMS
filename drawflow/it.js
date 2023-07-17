@@ -41,7 +41,7 @@ var it= {
                 "input_2": {"connections":[]}
             },          
             "outputs": {
-                "output_1": {"connections":[]},
+                "output_1": {"connections":[{"node":"11","output":"input_1"}]},
                 "output_2": {"connections":[]}
             },
             "pos_x": 550,
@@ -70,7 +70,8 @@ var it= {
                                             {"node":"7","output":"input_1"},
                                             {"node":"8","output":"input_1"},
                                             {"node":"9","output":"input_1"},
-                                            {"node":"10","output":"input_1"}]},
+                                            {"node":"10","output":"input_1"},
+                                            {"node":"12","output":"input_1"}]},
                 "output_2": {"connections":[]}
             },
             "pos_x": 550,
@@ -96,7 +97,7 @@ var it= {
                 "output_1": {"connections":[]},
                 "output_2": {"connections":[]}
             },
-            "pos_x": 900,
+            "pos_x": 1100,
             "pos_y": 0
         },
         "5": {
@@ -119,7 +120,7 @@ var it= {
                 "output_1": {"connections":[]},
                 "output_2": {"connections":[]}
             },
-            "pos_x": 900,
+            "pos_x": 1100,
             "pos_y": 120
         },
         "6": {
@@ -142,7 +143,7 @@ var it= {
                 "output_1": {"connections":[]},
                 "output_2": {"connections":[]}
             },
-            "pos_x": 900,
+            "pos_x": 1100,
             "pos_y": 240
         },
         "7": {
@@ -165,7 +166,7 @@ var it= {
                 "output_1": {"connections":[]},
                 "output_2": {"connections":[]}
             },
-            "pos_x": 900,
+            "pos_x": 1100,
             "pos_y": 360
         },
         "8": {
@@ -188,7 +189,7 @@ var it= {
                 "output_1": {"connections":[]},
                 "output_2": {"connections":[]}
             },
-            "pos_x": 900,
+            "pos_x": 1100,
             "pos_y": 480
         },
         "9": {
@@ -211,7 +212,7 @@ var it= {
                 "output_1": {"connections":[]},
                 "output_2": {"connections":[]}
             },
-            "pos_x": 900,
+            "pos_x": 1100,
             "pos_y": 600
         },
         "10": {
@@ -234,8 +235,54 @@ var it= {
                 "output_1": {"connections":[]},
                 "output_2": {"connections":[]}
             },
-            "pos_x": 900,
+            "pos_x": 1100,
             "pos_y": 720
+        },
+        "11": {
+            "id": 11,
+            "name": "IN-IT-CORP-OB",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-IT-CORP-OB (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Operational &amp; Business System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+                "input_1": {"connections":[
+                    {
+                        "node":"2",
+                        "input":"output_1"
+                    }
+                ]},
+                "input_2": {"connections":[]}
+            },          
+            "outputs": {
+                "output_1": {"connections":[]},
+                "output_2": {"connections":[]}
+            },
+            "pos_x": 900,
+            "pos_y": -140
+        },
+        "12": {
+            "id": 12,
+            "name": "IN-IT-CORP-DC",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-IT-CORP-DC (12)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Digital Clock System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+                "input_1": {"connections":[
+                    {
+                        "node":"3",
+                        "input":"output_1"
+                    }
+                ]},
+                "input_2": {"connections":[]}
+            },          
+            "outputs": {
+                "output_1": {"connections":[]},
+                "output_2": {"connections":[]}
+            },
+            "pos_x": 1100,
+            "pos_y": 840
         }
     }
 }

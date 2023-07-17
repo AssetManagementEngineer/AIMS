@@ -10,8 +10,15 @@ var energy = {
       "inputs": {},          
       "outputs": {
         "output_1": {
-          "connections": [
-
+          "connections": [{"node":"2","output":"input_1"},
+                          {"node":"3","output":"input_1"},
+                          {"node":"4","output":"input_1"},
+                          {"node":"5","output":"input_1"},
+                          {"node":"6","output":"input_1"},
+                          {"node":"7","output":"input_1"},
+                          {"node":"8","output":"input_1"},
+                          {"node":"9","output":"input_1"},
+                          {"node":"10","output":"input_1"}
           ]
         },
         "output_2":{
@@ -42,18 +49,6 @@ var energy = {
             {
               "node":"14",
               "input":"output_2"
-            },
-            {
-              "node":"15",
-              "input":"output_2"
-            },
-            {
-              "node":"16",
-              "input":"output_2"
-            },
-            {
-              "node":"17",
-              "input":"output_2"
             }
           ]
         }
@@ -66,8 +61,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 602,
-      "pos_y": -151
+      "pos_x": 530,
+      "pos_y": -250
     },
     "3": {
       "id": 3,
@@ -97,7 +92,7 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 719,
+      "pos_x": 720,
       "pos_y": 0
     },
     "4": {
@@ -128,7 +123,7 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 845,
+      "pos_x": 850,
       "pos_y": 130
     },
     "5": {
@@ -164,8 +159,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 561,
-      "pos_y": 774
+      "pos_x": 560,
+      "pos_y": 780
     },
     "6": {
       "id": 6,
@@ -195,15 +190,15 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 1070,
+      "pos_x": 1130,
       "pos_y": 220
     },
     "7": {
       "id": 7,
-      "name": "IN-EN-PWR",
+      "name": "IN-EN-STO",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-PWR (7)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Power Storage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-STO (7)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Power Storage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {
@@ -226,15 +221,15 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 907,
-      "pos_y": 339
+      "pos_x": 630,
+      "pos_y": -120
     },
     "8": {
       "id": 8,
-      "name": "IN-EN-SW",
+      "name": "IN-EN-LV",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-SW (8)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Changeover/Switching System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-LV (8)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  LV Distribution Power System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {
@@ -251,21 +246,21 @@ var energy = {
       },          
       "outputs": {
         "output_1": {
-          "connections": []
+          "connections": [{"node":"18","output":"input_1"}]
         },
         "output_2":{
           "connections":[]
         }
       },
-      "pos_x": 845,
-      "pos_y": 451
+      "pos_x": 840,
+      "pos_y": 330
     },
     "9": {
       "id": 9,
-      "name": "IN-EN-TRX",
+      "name": "IN-EN-NTP",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-TRX (9)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Transformer System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-NTP (9)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  HV Non Traction Power System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {
@@ -282,21 +277,21 @@ var energy = {
       },          
       "outputs": {
         "output_1": {
-          "connections": []
+          "connections": [{"node":"19","output":"input_1"}]
         },
         "output_2":{
           "connections":[]
         }
       },
-      "pos_x": 950,
-      "pos_y": 586
+      "pos_x": 870,
+      "pos_y": 480
     },
     "10": {
       "id": 10,
-      "name": "IN-EN-FDR",
+      "name": "IN-EN-TRP",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-FDR (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Feeder Sub-Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-TRP (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  HV Traction Power System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {
@@ -324,15 +319,15 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 689,
-      "pos_y": 638
+      "pos_x": 690,
+      "pos_y": 640
     },
     "11": {
       "id": 11,
-      "name": "IN-EN-FDR-OLE",
+      "name": "IN-EN-TRP-OLE",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-FDR-OLE (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  OLE System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-TRP-OLE (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  OLE System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {
@@ -360,15 +355,15 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 1044,
-      "pos_y": 816
+      "pos_x": 1050,
+      "pos_y": 820
     },
     "12": {
       "id": 12,
-      "name": "IN-STR-AUX-WMS",
+      "name": "IN-STR-SUP-CMS",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-STR-AUX-WMS (12)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Wall Mounted Support System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-STR-SUP-CMS (12)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Cable Management System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {},          
       "outputs": {
@@ -384,8 +379,8 @@ var energy = {
           ]
         }
       },
-      "pos_x": 232,
-      "pos_y": 832
+      "pos_x": -20,
+      "pos_y": 830
     },
     "13": {
       "id": 13,
@@ -408,8 +403,8 @@ var energy = {
           ]
         }
       },
-      "pos_x": 228,
-      "pos_y": 977
+      "pos_x": -20,
+      "pos_y": 970
     },
     "14": {
       "id": 14,
@@ -435,70 +430,67 @@ var energy = {
       "pos_x": -30,
       "pos_y": -270
     },
-    "15": {
-      "id": 15,
-      "name": "IN-DR-HW-PS",
+    "18": {
+      "id": 18,
+      "name": "IN-EN-LV-RP",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-HW-PS (15)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-LV-RP (18)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Renewable Power System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
-      "inputs": {},          
+      "inputs": {
+        "input_1": {
+          "connections": [
+              {
+              "node": "8",
+              "input": "output_1"
+              }
+          ]
+        },
+        "input_2":{
+          "connections":[]
+        }
+      },          
       "outputs": {
         "output_1": {
           "connections": []
         },
         "output_2":{
-          "connections":[
-            {
-              "node":"2",
-              "output":"input_2"
-            }
-          ]
+          "connections":[]
         }
       },
-      "pos_x": -30,
-      "pos_y": -160
+      "pos_x": 1200,
+      "pos_y": 400
     },
-    "16": {
-      "id": 16,
-      "name": "IN-DR-LND-PS",
+    "19": {
+      "id": 19,
+      "name": "IN-EN-NTP-VC",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-LND-PS (16)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-NTP-VC (19)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Vehicle Charging System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
-      "inputs": {},          
-      "outputs": {
-        "output_1": {"connections": [] },
-        "output_2": {"connections": [
-            {
-              "node":"2",
-              "output":"input_2"
-            }
+      "inputs": {
+        "input_1": {
+          "connections": [
+              {
+              "node": "9",
+              "input": "output_1"
+              }
           ]
+        },
+        "input_2":{
+          "connections":[]
+        }
+      },          
+      "outputs": {
+        "output_1": {
+          "connections": []
+        },
+        "output_2":{
+          "connections":[]
         }
       },
-      "pos_x": -30,
-      "pos_y": -50
-    },
-    "17": {
-      "id": 17,
-      "name": "IN-DR-RL-PS",
-      "data": {},
-      "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-RL-PS (17)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Pumping Station System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-      "typenode": false,
-      "inputs": {},          
-      "outputs": {
-        "output_1": {"connections": []},
-        "output_2": {"connections": [
-          {
-            "node":"2",
-            "output":"input_2"
-          }
-        ]}
-      },
-      "pos_x": -30,
-      "pos_y": 50
+      "pos_x": 1200,
+      "pos_y": 570
     }
   }
 }

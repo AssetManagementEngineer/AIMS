@@ -41,7 +41,7 @@ var telecoms = {
               ]
             },
             "input_2":{
-              "connections":[]
+              "connections":[{"node":"12","input":"output_2"}]
             }
           },          
           "outputs": {
@@ -348,6 +348,25 @@ var telecoms = {
           },
           "pos_x": 560,
           "pos_y": 550
+        },
+        "12": {
+          "id": 12,
+          "name": "IN-EXT-3RD-TEL",
+          "data": {},
+          "class": "SCH",
+          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-EXT-3RD-TEL (12)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Telecoms Infrastructure Network \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+          "typenode": false,
+          "inputs": {},          
+          "outputs": {
+            "output_1": {
+              "connections": []
+            },
+            "output_2":{
+                "connections":[{"node":"2","output":"input_2"}]
+            }
+          },
+          "pos_x": -200,
+          "pos_y": 530
         }
     }
 }

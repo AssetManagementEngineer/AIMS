@@ -7,7 +7,10 @@ var rollingStock = {
         "class": "SCH",
         "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> IN-RS (1)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Rolling Stock System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
-        "inputs": {},          
+        "inputs": {
+          "input_1":{"connections":[]},
+          "input_2":{"connections":[{"node":"6","input":"output_2"}]}
+        },          
         "outputs": {
           "output_1": {
             "connections": [
@@ -101,7 +104,7 @@ var rollingStock = {
                         "output":"input_2"
                       }
                     ]}},
-        "pos_x": 140,
+        "pos_x": -200,
         "pos_y": 0
       },
       "5": {
@@ -119,8 +122,24 @@ var rollingStock = {
                         "output":"input_2"
                       }
                     ]}},
-        "pos_x": 140,
+        "pos_x": -200,
         "pos_y": 140
+      },
+      "6": {
+        "id": 6,
+        "name": "IN-EXT-US-PC",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-PC (6)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Petrochemical Infrastructure Network \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {"connections": []},
+          "output_2": {"connections": [{"node":"1","output":"input_2"}]
+          }
+        },
+        "pos_x": -200,
+        "pos_y": 280
       }
     }
 }

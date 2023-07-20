@@ -165,7 +165,8 @@ var monitoring = {
             "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-MO-CU (8)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Customer Monitoring System\n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
-                "input_1":{"connections":[{"node":"2","input":"output_1"}]}
+                "input_1":{"connections":[{"node":"2","input":"output_1"}]},
+                "input_2":{"connections":[{"node":"18","input":"output_2"}]}
             },          
             "outputs": {
               "output_1": {
@@ -366,6 +367,25 @@ var monitoring = {
             },
             "pos_x": 1400,
             "pos_y": 1060
+          },
+          "18": {
+            "id": 18,
+            "name": "IN-EXT-3RD-WF",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-EXT-3RD-WF (22)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Weather Forecasting Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {},          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[{"node":"11","output":"input_2"}]
+              }
+            },
+            "pos_x": -200,
+            "pos_y": 800
           }
 
     }

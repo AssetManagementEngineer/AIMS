@@ -271,7 +271,7 @@ var structures = {
               ]
             },
             "input_2":{
-              "connections":[]
+              "connections":[{"node":"102","input":"output_2"}]
             }
           },          
           "outputs": {
@@ -802,6 +802,25 @@ var structures = {
           },
           "pos_x": 200,
           "pos_y": 1250
+        },
+        "102": {
+          "id": 102,
+          "name": "IN-BLD-ANC-REB",
+          "data": {},
+          "class": "SCH",
+          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-BLD-ANC-REB (102)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Relocatable Equipment Building (REB) System \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+          "typenode": false,
+          "inputs": {},          
+          "outputs": {
+            "output_1": {
+              "connections": []
+            },
+            "output_2":{
+                "connections":[{"node":"111","output":"input_2"}]
+            }
+          },
+          "pos_x": -200,
+          "pos_y": 260
         }
     }
 }

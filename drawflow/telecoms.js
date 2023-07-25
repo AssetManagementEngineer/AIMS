@@ -7,7 +7,8 @@ var telecoms = {
           "class": "SCH",
           "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> IN-TEL (1)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Telecommunications System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
           "typenode": false,
-          "inputs": {},          
+          "inputs": {"input_1":{"connections":[]},
+        "input_2":{"connections":[{"node":"13","input":"output_2"}]}},          
           "outputs": {
             "output_1": {
               "connections": [
@@ -367,6 +368,25 @@ var telecoms = {
           },
           "pos_x": -200,
           "pos_y": 530
+        },
+        "13": {
+          "id": 13,
+          "name": "IN-BLD-ANC-LOC",
+          "data": {},
+          "class": "SCH",
+          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-BLD-ANC-LOC (13)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  LOC / Cabinet System \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+          "typenode": false,
+          "inputs": {},          
+          "outputs": {
+            "output_1": {
+              "connections": []
+            },
+            "output_2":{
+                "connections":[{"node":"1","output":"input_2"}]
+            }
+          },
+          "pos_x": -200,
+          "pos_y": 150
         }
     }
 }

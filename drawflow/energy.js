@@ -12,7 +12,8 @@ var energy = {
         "input_2":{"connections":[{"node":"20","input":"output_2"},
                                   {"node":"21","input":"output_2"},
                                   {"node":"22","input":"output_2"},
-                                  {"node":"23","input":"output_2"}]}
+                                  {"node":"23","input":"output_2"},
+                                  {"node":"24","input":"output_2"}]}
       },          
       "outputs": {
         "output_1": {
@@ -573,6 +574,25 @@ var energy = {
       },
       "pos_x": -200,
       "pos_y": 420
+    },
+    "24": {
+      "id": 24,
+      "name": "IN-CM-CT-SC",
+      "data": {},
+      "class": "SCH",
+      "html": "\n<div>\n<div class=\"title-box\"><i class=\"fas fa-code-branch\"></i>IN-CM-CT-SC (24)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Supervisory Control And Data Acquisition (SCADA) \n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
+      "typenode": false,
+      "inputs": {},          
+      "outputs": {
+        "output_1": {
+          "connections": []
+        },
+        "output_2": {
+          "connections": [{"node":"1","output":"input_2"}]
+        }
+      },
+      "pos_x": -200,
+      "pos_y": 540
     }
   }
 }

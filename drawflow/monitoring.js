@@ -271,7 +271,8 @@ var monitoring = {
             "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-CT-SC (13)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Supervisory Control And Data Acquisition (SCADA) \n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
-                "input_1":{"connections":[{"node":"4","input":"output_1"}]}
+                "input_1":{"connections":[{"node":"4","input":"output_1"}]},
+                "input_2":{"connections":[{"node":"19","input":"output_2"}]}
             },          
             "outputs": {
               "output_1": {
@@ -292,7 +293,8 @@ var monitoring = {
             "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-CT-BM (14)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Building Management System (BMS) \n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
-                "input_1":{"connections":[{"node":"4","input":"output_1"}]}
+                "input_1":{"connections":[{"node":"4","input":"output_1"}]},
+                "input_2":{"connections":[{"node":"20","input":"output_2"}]}
             },          
             "outputs": {
               "output_1": {
@@ -313,7 +315,8 @@ var monitoring = {
             "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-CT-EM (15)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Engineering Management System (EMS) \n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
-                "input_1":{"connections":[{"node":"4","input":"output_1"}]}
+                "input_1":{"connections":[{"node":"4","input":"output_1"}]},
+                "input_2":{"connections":[{"node":"20","input":"output_2"}]}
             },          
             "outputs": {
               "output_1": {
@@ -334,7 +337,8 @@ var monitoring = {
             "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-CT-SI (16)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Station Information Management System (SIMS) \n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
-                "input_1":{"connections":[{"node":"4","input":"output_1"}]}
+                "input_1":{"connections":[{"node":"4","input":"output_1"}]},
+                "input_2":{"connections":[{"node":"21","input":"output_2"}]}
             },          
             "outputs": {
               "output_1": {
@@ -345,7 +349,7 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 900
+            "pos_y": 990
           },
           "17": {
             "id": 17,
@@ -355,7 +359,8 @@ var monitoring = {
             "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-CT-ME (17)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Metering System (MS) \n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
-                "input_1":{"connections":[{"node":"4","input":"output_1"}]}
+                "input_1":{"connections":[{"node":"4","input":"output_1"}]},
+                "input_2":{"connections":[{"node":"20","input":"output_2"}]}
             },          
             "outputs": {
               "output_1": {
@@ -366,14 +371,14 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 1060
+            "pos_y": 890
           },
           "18": {
             "id": 18,
             "name": "IN-EXT-3RD-WF",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-EXT-3RD-WF (22)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Weather Forecasting Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-EXT-3RD-WF (18)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Weather Forecasting Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {},          
             "outputs": {
@@ -386,6 +391,60 @@ var monitoring = {
             },
             "pos_x": -200,
             "pos_y": 800
+          },
+          "19": {
+            "id": 19,
+            "name": "IN-EN",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-EN (19)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Power / Energy System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {},          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                "connections":[{"node":"13","output":"input_2"}]
+              }
+            },
+            "pos_x": -200,
+            "pos_y": 940
+          },
+          "20": {
+            "id": 20,
+            "name": "IN-BLD-BS",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-BLD-BS (20)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Building Services System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {},          
+            "outputs": {
+                  "output_1":{ "connections":[]},
+                  "output_2":{ "connections":[{"node":"14","output":"input_2"},
+                                              {"node":"17","output":"input_2"},
+                                              {"node":"15","output":"input_2"}] }},
+            "pos_x": -200,
+            "pos_y": 1060
+          },
+          "21": {
+            "id": 21,
+            "name": "IN-BLD-ST",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-BLD-ST (21)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   Station System \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {},          
+            "outputs": {
+              "output_1": {
+                "connections":[]
+              },
+              "output_2": {
+                "connections":[{"node":"16","output":"input_2"}]
+              }
+            },
+            "pos_x": -200,
+            "pos_y": 1160
           }
 
     }

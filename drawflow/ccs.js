@@ -7,7 +7,8 @@ var ccs = {
         "class": "SCH",
         "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> IN-CCS (1)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Command, Control &amp; Signalling System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
-        "inputs": {},          
+        "inputs": {"input_1":{"connections":[]},
+      "input_2":{"connections":[{"node":"113","input":"output_2"}]}},          
         "outputs": {
           "output_1": {
             "connections": [
@@ -119,22 +120,6 @@ var ccs = {
             },
             {
               "node":"124",
-              "input":"output_2"
-            },
-            {
-              "node":"125",
-              "input":"output_2"
-            },
-            {
-              "node":"126",
-              "input":"output_2"
-            },
-            {
-              "node":"127",
-              "input":"output_2"
-            },
-            {
-              "node":"128",
               "input":"output_2"
             }
           ]}
@@ -601,7 +586,7 @@ var ccs = {
       },
       "123": {
         "id": 123,
-        "name": "IN-TEL-CORP-W",
+        "name": "IN-TEL-NET-W",
         "data": {},
         "class": "SCH",
         "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-TEL-CORP-W (123)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Wireless Communications Network System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
@@ -629,7 +614,7 @@ var ccs = {
       },
       "124": {
         "id": 124,
-        "name": "IN-TEL-CORP-F",
+        "name": "IN-TEL-NET-F",
         "data": {},
         "class": "SCH",
         "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-TEL-CORP-F (124)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Fixed Communications Network System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
@@ -653,110 +638,6 @@ var ccs = {
         "pos_x": 0,
         "pos_y": 800
       },
-      "125": {
-        "id": 125,
-        "name": "IN-TEL-CUST-W",
-        "data": {},
-        "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-TEL-CUST-W (125)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Wireless Communications Network System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-        "typenode": false,
-        "inputs": {
-          "input_1": {
-            "connections": []
-          },
-          "input_2":{
-            "connections":[]
-          }
-        },          
-        "outputs": {
-          "output_1": {
-            "connections": []
-          },
-          "output_2":{
-            "connections":[{"node":"3","output":"input_2"}]
-          }
-        },
-        "pos_x": 240,
-        "pos_y": 1320
-      },
-      "126": {
-        "id": 126,
-        "name": "IN-TEL-CUST-F",
-        "data": {},
-        "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-TEL-CUST-F (126)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Fixed Communications Network System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-        "typenode": false,
-        "inputs": {
-          "input_1": {
-            "connections": []
-          },
-          "input_2":{
-            "connections":[]
-          }
-        },          
-        "outputs": {            
-          "output_1":{
-          "connections":[]
-        },
-          "output_2":{
-          "connections":[{"node":"3","output":"input_2"}]
-        }
-      },
-        "pos_x": 0,
-        "pos_y": 920
-      },
-      "127": {
-        "id": 127,
-        "name": "IN-TEL-STN-W",
-        "data": {},
-        "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-TEL-STN-W (127)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Wireless Communications Network System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-        "typenode": false,
-        "inputs": {
-          "input_1": {
-            "connections": [ ]
-          },
-          "input_2":{
-            "connections":[]
-          }
-        },          
-        "outputs": {
-          "output_1": {
-            "connections": []
-          },
-          "output_2":{
-            "connections":[{"node":"3","output":"input_2"}]
-          }
-        },
-        "pos_x": 240,
-        "pos_y": 1500
-      },
-      "128": {
-        "id": 128,
-        "name": "IN-TEL-STN-F",
-        "data": {},
-        "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-TEL-STN-F (128)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Fixed Communications Network System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-        "typenode": false,
-        "inputs": {
-          "input_1": {
-            "connections": []
-          },
-          "input_2":{
-            "connections":[]
-          }
-        },          
-        "outputs": {            
-          "output_1":{
-          "connections":[]
-        },
-          "output_2":{
-            "connections":[{"node":"3","output":"input_2"}]
-        }
-      },
-        "pos_x": 0,
-        "pos_y": 1050
-      },
       "129": {
         "id": 129,
         "name": "IN-BLD-ANC-REB",
@@ -775,6 +656,30 @@ var ccs = {
         },
         "pos_x": -200,
         "pos_y": 260
+      },
+      "113": {
+        "id": 113,
+        "name": "IN-STR-SUP-CMS",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-STR-SUP-CMS (113)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Cable Management System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {
+            "connections": [{}]
+          },
+          "output_2": {
+            "connections": [
+              {
+                "node":"1",
+                "output":"input_2"
+              }
+            ]
+          }
+        },
+        "pos_x": -200,
+        "pos_y": 400
       }
     }
   }

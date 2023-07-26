@@ -17,7 +17,8 @@ var buildings = {
                   "node":"20",
                   "input":"output_2"
                 },
-                {"node":"101","input":"output_2"}
+                {"node":"101","input":"output_2"},
+                {"node":"102","input":"output_2"}
               ]
             }
           },          
@@ -946,7 +947,7 @@ var buildings = {
           "connections": []
         },
         "output_2":{
-            "connections":[{"node":"2","input":"output_2"}]
+            "connections":[{"node":"2","output":"input_2"}]
         }
       },
       "pos_x": -200,

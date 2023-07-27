@@ -4,13 +4,16 @@
     --background-color: #ffffff;
     --background-box-title: #f7f7f7;
   }
-  
+  ::-webkit-Scrollbar
+{
+  width:0;
+}
   html, body {
     margin: 0px;
     padding: 0px;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: visible;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -393,7 +396,7 @@
   }
   
   .drawflow .drawflow-node .output_3 {
-    background: rgb(255, 0, 60);
+    background: rgb(35, 125, 221);
   }
 
   .drawflow-node.personalized.selected {

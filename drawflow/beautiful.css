@@ -14,6 +14,9 @@
     font-family: 'Roboto', sans-serif;
   }
   
+  h1 {
+    color:darkblue;
+  }
   header {
     height: 66px;
     border-bottom: 1px solid var(--border-color);

@@ -109,14 +109,7 @@ var drainage= {
                    }
                 ]
               },
-              "input_2":{
-                "connections":[
-                  {
-                    "node":"14",
-                    "input":"output_2"
-                  }
-                ]
-              }
+              "input_2":{"connections":[]}
             },          
             "outputs": {
               "output_1": {
@@ -368,30 +361,6 @@ var drainage= {
             },
             "pos_x": 100,
             "pos_y": -180
-          },
-          "14": {
-            "id": 14,
-            "name": "IN-GD-HI",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-GD-HI (14)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  HighWay System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {},          
-            "outputs": {
-              "output_1": {
-                "connections": [{}]
-              },
-              "output_2":{
-                "connections":[
-                  {
-                    "node":"3",
-                    "output":"input_2"
-                  }
-                ]
-              }
-            },
-            "pos_x": 100,
-            "pos_y": 0
           },
           "15": {
             "id": 15,

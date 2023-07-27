@@ -165,8 +165,7 @@ var monitoring = {
             "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-MO-CU (8)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Customer Monitoring System\n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
-                "input_1":{"connections":[{"node":"2","input":"output_1"}]},
-                "input_2":{"connections":[{"node":"18","input":"output_2"}]}
+                "input_1":{"connections":[{"node":"2","input":"output_1"}]}
             },          
             "outputs": {
               "output_1": {
@@ -229,7 +228,8 @@ var monitoring = {
             "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-MO-WT (11)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Weather/Temperature Monitoring System\n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
-                "input_1":{"connections":[{"node":"2","input":"output_1"}]}
+                "input_1":{"connections":[{"node":"2","input":"output_1"}]},
+                "input_2":{"connections":[{"node":"18","input":"output_2"}]}
             },          
             "outputs": {
               "output_1": {

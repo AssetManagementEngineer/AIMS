@@ -9,11 +9,16 @@
   <meta name="description" content="SCH flow diagram.">
 </head>
 <body>
-  <link rel="stylesheet" href="./drawflow.css">
-  <link rel="stylesheet" type="text/css" href="./beautiful.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="./drawflow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./drawflow.css">
+    <link rel="stylesheet" type="text/css" href="./beautiful.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>//-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
 
   <header>
     <h2>System Classification Hierarchy</h2>
@@ -47,8 +52,8 @@
        <p>The Systems Classification Hierarchy (SCH) provides a logical decomposition of the systems, sub-systems and elements that will deliver 
         an operational railway. The SCH has been structured to identify the core EWR functions (Level 1) from this level the decomposition is 
         made by identifying the set of systems, sub-systems and elements that would be 'constituents' of the parent function or 'types' of the 
-        parent function. The level of detail a function has been developed to depends on a) the level of maturity at the point the SCH is baselined
-        or b) the specification approach associated with the system.<br><br>
+        parent function. The level of detail a function has been developed to depends on <b>a)</b> the level of maturity at the point the SCH is baselined
+        or <b>b)</b> the specification approach associated with the system.<br><br>
         
         The SCH provides the central repository for the system terminologies used across EWR which are further defined in the Functional Information
         Requirements (FIRs). It does not mandate the hierarchy or parent-child relationships and simply provides the 'building blocks' for other 
@@ -58,8 +63,89 @@
         external environment. The purpose of the EWR SCH is not to fully define the complete breakdowns of these external systems, but only aims to
         identify the key systems EWR will be interfacing with.
        </p>
+
+       <div id="drawflow" ondrop="drop(event)" ondragover="allowDrop(event)">
+       </div>
+
     </div>
   </div>
 
+  <script>
+    //var flowContent='<div class=\"btn-export\" onclick=\"Swal.fire({ title: \'Export\', html: \'<pre><code>\'+JSON.stringify(editor.export(), null,4)+\'</code></pre>\'})\">Export</div><div id=\"btn_clear\" class=\"btn-clear\" onclick=\"editor.clearModuleSelected()\">Clear</div><div class=\"btn-lock\">            <i id=\"lock\" class=\"fas fa-lock\" onclick=\"editor.editor_mode=\'fixed\'; changeMode(\'lock\');\"></i><i id=\"unlock\" class=\"fas fa-lock-open\" onclick=\"editor.editor_mode=\'edit\'; changeMode(\'unlock\');\" style=\"display:none;\"></i></div><div class=\"bar-zoom\"><i class=\"fas fa-search-minus\" onclick=\"editor.zoom_out()\"></i><i class=\"fas fa-search\" onclick=\"editor.zoom_reset()\"></i><i class=\"fas fa-search-plus\" onclick=\"editor.zoom_in()\"></i></div>';
+    var id = document.getElementById("drawflow");
+    const editor = new Drawflow(id);
+    editor.reroute = true;
+
+    const dataToImport = {
+  "drawflow": {
+    "Home": {
+      "data": {
+        "1": {
+        "id": 1,
+        "name": "FUNC",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> Functions</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  To meet the desired EWR outcomes, a set of high-level functions will be needed  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {"input_1":{"connections":[]}},          
+        "outputs": {
+          "output_1":{"connections":[{"node":"2","output":"input_1"}]}
+        },
+        "pos_x": 20,
+        "pos_y": 0
+      },
+      "2": {
+        "id": 2,
+        "name": "SYS",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> Systems</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  High level systems to support the required function  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {"input_1":{"connections":[{"node":"1","input":"output_1"}]}},          
+        "outputs": {
+          "output_1":{"connections":[{"node":"3","output":"input_1"}]}
+        },
+        "pos_x": 350,
+        "pos_y": 0
+      },
+      "3": {
+        "id": 3,
+        "name": "PFU",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> Primary Functioning Units</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  High-level functional systems which may contain different functional units  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {
+            "input_1":{"connections":[{"node":"2","input":"output_1"}]},
+            "input_2":{"connections":[{"node":"4","input":"output_2"}]}},
+        "outputs": {
+          "output_1":{"connections":[]}
+        },
+        "pos_x": 700,
+        "pos_y": 0
+      },
+      "4": {
+        "id": 4,
+        "name": "INT",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> Interface</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  The system that interfaces with another  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1":{"connections":[]},
+          "output_2":{"connections":[{"node":"3","output":"input_2"}]}
+        },
+        "pos_x": 20,
+        "pos_y": 250
+      }
+    }
+}
+}
+}
+
+    editor.start();
+    editor.import(dataToImport);
+    </script>
 </body>
 </html>

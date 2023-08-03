@@ -413,6 +413,22 @@
     fill: #4ea9ff;
   }
   
+  .container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr
+  }
+
+  .attrData{
+    height:25px;
+  }
+
+  .attrHeader{
+    height:20px;
+    background-color: #c4c4c4;
+    padding:5px 0;
+    font-weight: bold;
+  }
   /* Modal */
   .modal {
     display: none;

@@ -107,7 +107,7 @@ var energy = {
       "name": "IN-EN-BND",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-BND (4)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Earthing &amp; Bonding System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-BND (4)</div>\n <div class=\"box dbclickbox\" ondblclick=\"window.open('IN-EN-BND.pdf');\"> \n  Earthing &amp; Bonding System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {
@@ -205,7 +205,7 @@ var energy = {
       "name": "IN-EN-STO",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-STO (7)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Power Storage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-STO (7)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Power Storage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> <div class=container><div class=attrHeader>Attribute</div><div class=attrHeader>Value</div><div class=attrData>Model</div><div class=attrData>Smart-UPS</div><div class=attrData>Power Rating</div><div class=attrData>600W</div><div class=attrData>VA Rating</div><div class=attrData>1000VA</div><div class=attrData>Output Voltage</div><div class=attrData>230V</div><div class=attrData>Input Voltage</div><div class=attrData>230V</div><div class=attrData>Mounting Type</div><div class=attrData>Stand Alone</div><div class=attrData>No Of Outlets</div><div class=attrData>8</div><div class=attrData>Type</div><div class=attrData>Line Interactive</div><div class=attrData>Current Rating</div><div class=attrData>4.3A</div><div class=attrData>Length</div><div class=attrData>171mm</div><div class=attrData>Width</div><div class=attrData>439mm</div><div class=attrData>Depth</div><div class=attrData>219mm</div></div><img width=100% src=\"R2010843-01.jpg\" />\n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {

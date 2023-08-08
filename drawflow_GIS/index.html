@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Systems Classification Hierarchy with Interfaces</title>
+  <meta name="description" content="SCH flow diagram.">
+</head>
+<body>
+    <script src="./drawflow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./drawflow.css">
+    <link rel="stylesheet" type="text/css" href="./beautiful.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
+
+  <header>
+    <h2>Current GIS Applications</h2>
+  </header>
+
+  <div class="wrapper">
+    <div class="col" style="width:800px">
+      <div class="menu">
+        <ul>
+          <li class="selected">Home</li>
+          <li onclick="window.location.href='drawflow.html?Domain=Environment'" title="Environment">Environment</li>
+          <li onclick="window.location.href='drawflow.html?Domain=Engineering'" title="Engineering">Engineering</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="col-right" style="margin:20px">
+       <h1>Current GIS Applications</h1>
+       <p>
+       </p>
+
+       <div id="drawflow" ondrop="drop(event)" ondragover="allowDrop(event)">
+       </div>
+
+    </div>
+  </div>
+
+  <script>
+    var id = document.getElementById("drawflow");
+    const editor = new Drawflow(id);
+    editor.reroute = true;
+
+    const dataToImport = {
+  "drawflow": {
+    "Home": {
+      "data": {
+        "1": {
+        "id": 1,
+        "name": "FUNC",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box-red\"><i class=\"fas fa-code-branch\"></i> Domain</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  The subject matter domain the application is associated with \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n",
+        "typenode": false,
+        "inputs": {"input_1":{"connections":[]}},          
+        "outputs": {
+          "output_1":{"connections":[{"node":"2","output":"input_1"}]}
+        },
+        "pos_x": 20,
+        "pos_y": 0
+      },
+      "2": {
+        "id": 2,
+        "name": "SYS",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> Parent Application</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Hosting application section  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n",
+        "typenode": false,
+        "inputs": {"input_1":{"connections":[{"node":"1","input":"output_1"}]}},          
+        "outputs": {
+          "output_1":{"connections":[{"node":"3","output":"input_1"}]}
+        },
+        "pos_x": 350,
+        "pos_y": 0
+      },
+      "3": {
+        "id": 3,
+        "name": "PFU",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>Main Application Name</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  The application titles in the section  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {
+            "input_1":{"connections":[{"node":"2","input":"output_1"}]}},
+        "outputs": {
+          "output_1":{"connections":[{"node":"4","output":"input_1"}]}
+        },
+        "pos_x": 700,
+        "pos_y": 0
+      },
+      "4": {
+        "id": 4,
+        "name": "INT",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> Subsidiary Application</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  A nested application  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {"input_1":{"connections":[{"node":"3","input":"output_1"}]}},          
+        "outputs": {
+          "output_1":{"connections":[]}
+        },
+        "pos_x": 400,
+        "pos_y": 250
+      }
+    }
+}
+}
+}
+
+    editor.start();
+    editor.import(dataToImport);
+    </script>
+</body>
+</html>

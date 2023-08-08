@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Current GIS Applications</title>
+  <meta name="description" content="SCH flow diagram.">
+</head>
+<body>
+  <script src="./drawflow.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./drawflow.css">
+  <link rel="stylesheet" type="text/css" href="./beautiful.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
+  <script src="home.js" ></script>
+  <script src="engineering.js" ></script>
+  <script src="environment.js" ></script>
+  <header>
+    <h2>CUrrent GIS Applications</h2>
+  </header>
+  <div id="json" ></div>
+  <div class="wrapper">
+    <div class="col">
+      <div class="menu">
+        <ul>
+          <li onclick="window.location.href='index.html'" class="selected">Home</li>
+          <li id="Environment" onclick="changeModule(event);editor.changeModule('Environment');zoom(5);" title="Environment">Environment</li>
+          <li id="Engineering" onclick="editor.changeModule('Engineering'); changeModule(event);zoom(5);">Engineering</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="col-right">
+      <div style="margin-top:10px;margin-left:10px">You can drag the canvas and elements with left button and zoom using the mouse wheel whilst holding down the control button (CTRL)</div>
+      <div id="drawflow" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <div class="btn-lock">
+            <i id="lock" class="fas fa-lock" onclick="editor.editor_mode='fixed'; changeMode('lock');"></i>
+            <i id="unlock" class="fas fa-lock-open" onclick="editor.editor_mode='edit'; changeMode('unlock');" style="display:none;"></i>
+          </div>
+          <div class="bar-zoom">
+            <i class="fas fa-search-minus" onclick="editor.zoom_out()"></i>
+            <i class="fas fa-search" onclick="editor.zoom_reset()"></i>
+            <i class="fas fa-search-plus" onclick="editor.zoom_in()"></i>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var id = document.getElementById("drawflow");
+    const editor = new Drawflow(id);
+    editor.reroute = true;
+
+    function getSection(a,b,c){
+      return {"drawflow":{"Home":a,"Engineering":b,"Environment":c}};
+    }
+
+    editor.start();
+    editor.import(getSection(home,engineering,environ));
+
+    /* DRAG EVENT */
+
+    /* Mouse and Touch Actions */
+
+    var elements = document.getElementsByClassName('drag-drawflow');
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].addEventListener('touchend', drop, false);
+      elements[i].addEventListener('touchmove', positionMobile, false);
+      elements[i].addEventListener('touchstart', drag, false );
+    }
+
+    var mobile_item_selec = '';
+    var mobile_last_move = null;
+   function positionMobile(ev) {
+     mobile_last_move = ev;
+   }
+
+   function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      if (ev.type === "touchstart") {
+        mobile_item_selec = ev.target.closest(".drag-drawflow").getAttribute('data-node');
+      } else {
+      ev.dataTransfer.setData("node", ev.target.getAttribute('data-node'));
+      }
+    }
+
+    function drop(ev) {
+      if (ev.type === "touchend") {
+        var parentdrawflow = document.elementFromPoint( mobile_last_move.touches[0].clientX, mobile_last_move.touches[0].clientY).closest("#drawflow");
+        if(parentdrawflow != null) {
+          addNodeToDrawFlow(mobile_item_selec, mobile_last_move.touches[0].clientX, mobile_last_move.touches[0].clientY);
+        }
+        mobile_item_selec = '';
+      } else {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("node");
+        addNodeToDrawFlow(data, ev.clientX, ev.clientY);
+      }
+
+    }
+
+    function addNodeToDrawFlow(name, pos_x, pos_y) {
+      if(editor.editor_mode === 'fixed') {
+        return false;
+      }
+      pos_x = pos_x * ( editor.precanvas.clientWidth / (editor.precanvas.clientWidth * editor.zoom)) - (editor.precanvas.getBoundingClientRect().x * ( editor.precanvas.clientWidth / (editor.precanvas.clientWidth * editor.zoom)));
+      pos_y = pos_y * ( editor.precanvas.clientHeight / (editor.precanvas.clientHeight * editor.zoom)) - (editor.precanvas.getBoundingClientRect().y * ( editor.precanvas.clientHeight / (editor.precanvas.clientHeight * editor.zoom)));
+
+
+      switch (name) {
+          case 'SCH':
+            var sch = `
+            <div class="title-box"><i class="fas fa-code-branch"></i> <input style="border:0;background:#f7f7f7;" type="text" value="CODE-CODE"/></div>
+              <div class="box dbclickbox" ondblclick="showpopup(event)">
+                <span contenteditable="true">description</span>
+                <div class="modal" style="display:none">
+                  <div class="modal-content">
+                    <span class="close" onclick="closemodal(event)">&times;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            `;
+            editor.addNode('dbclick', 2, 2, pos_x, pos_y, 'dbclick', { name: ''}, sch );
+            break;
+        case 'SCH_Parent':
+            var sch = `
+            <div class="title-box"><i class="fas fa-code-branch"></i> <input style="border:0;background:#f7f7f7;" type="text" value="CODE-CODE"/></div>
+              <div class="box dbclickbox" ondblclick="showpopup(event)" style="max-height:80px;">
+                <span contenteditable="true">description</span>
+                <div class="modal" style="display:none">
+                  <div class="modal-content">
+                    <span class="close" onclick="closemodal(event)">&times;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            `;
+            editor.addNode('dbclick', 0, 2, pos_x, pos_y, 'dbclick', { name: ''}, sch );
+            break;
+        default:
+      }
+    }
+
+  var transform = '';
+  function showpopup(e) {
+    e.target.closest(".drawflow-node").style.zIndex = "9999";
+    e.target.children[0].style.display = "block";
+
+    transform = editor.precanvas.style.transform;
+    editor.precanvas.style.transform = '';
+    editor.precanvas.style.left = editor.canvas_x +'px';
+    editor.precanvas.style.top = editor.canvas_y +'px';
+    console.log(transform);
+    editor.editor_mode = "fixed";
+
+  }
+
+   function closemodal(e) {
+     e.target.closest(".drawflow-node").style.zIndex = "2";
+     e.target.parentElement.parentElement.style.display  ="none";
+     editor.precanvas.style.transform = transform;
+       editor.precanvas.style.left = '0px';
+       editor.precanvas.style.top = '0px';
+      editor.editor_mode = "edit";
+   }
+
+    function changeModule(event) {
+      var all = document.querySelectorAll(".menu ul li");
+        for (var i = 0; i < all.length; i++) {
+          all[i].classList.remove('selected');
+        }
+      event.target.classList.add('selected');
+    }
+
+    function changeMode(option) {
+      if(option == 'lock') {
+        lock.style.display = 'none';
+        unlock.style.display = 'block';
+      } else {
+        lock.style.display = 'block';
+        unlock.style.display = 'none';
+      }
+
+    }
+
+    var pdfdoc = new jsPDF();
+    function saveDiv(divId, title) {
+      pdfdoc.fromHTML(`<html><head><title>${title}</title></head><body>` + document.getElementById(divId).innerHTML + `</body></html>`);
+      pdfdoc.save('div.pdf');
+    }
+
+    function zoom(n){
+      for(var a=0;a<n;a++){
+        editor.zoom_out();
+      }
+    }
+
+    getParameter = (key)=>{
+      address = window.location.search
+      parameterList = new URLSearchParams(address)
+      return parameterList.get(key)
+    }
+
+    var get = getParameter("Domain");
+    if(get!=null){
+      var all = document.querySelectorAll(".menu ul li");
+        for (var i = 0; i < all.length; i++) {
+          all[i].classList.remove('selected');
+        }
+      editor.changeModule(get);zoom(5);
+      document.getElementById(get).classList.add('selected');
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Physical Interfaces</title>
+</head>
+
+<style>
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:5px;
+}
+.colName{
+  font-weight:bold;
+  width:300px;
+  vertical-align:top;
+}
+
+.colNotes{
+  background:lightgray;
+}
+
+p{
+color:Red;
+}
+</style>
+
+<body>
+<table >
+<tr><td class='colName'>IN165 Access Way</td><td class='colNotes'><b>Interface = </b>Vehicular Access to/from Access Way
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers, Local Authority, Communities and Business Users
+<br><b>Owner =</b> Highways Agency Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul>
+<p><b>AM Notes:</b> <a nohref title='Buildings &amp; Stations System \ Urban Realm System \ Vehicular Interface System'>IN-BLD-URS-VH</a> - Link not present</p>
+</td></tr>
+<tr><td class='colName'>IN166 Access Way</td><td class='colNotes'><b>Interface = </b>Access Way interface for wayshowing signage.
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers, Local Authority, Communities and Business Users
+<br><b>Owner =</b> Local Authority
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Customer Information Service</li>
+</ul>
+<p><b>AM Notes:</b> <a nohref title='Buildings &amp; Stations System \ Building Services System \ Way Finding &amp; Signage System'>IN-BLD-BS-WF</a> - Link not present</p>
+</td></tr>
+<tr><td class='colName'>IN167 Access Way</td><td class='colNotes'><b>Interface = </b>Access Way Interface for Street Furniture
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers, Local Authority, Communities and Business Users
+<br><b>Owner =</b> Local Authority
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul>
+
+<p><b>AM Notes:</b> <a nohref title='Buildings &amp; Stations System \ Urban Realm System \ Street Furniture System'>IN-BLD-URS-SF</a> - Link not present</p>
+</td></tr>
+<tr><td class='colName'>IN224 Access Way</td><td class='colNotes'><b>Interface</b> =Access Way Interface to Green Spaces
+<br><b>Type </b>= Physical
+<br><b>User =</b> Land Owner
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Environmental Sustainability Service</li>
+</ul>
+<p><b>AM Notes:</b> <a nohref title='Environmental System \ Landscape System \ Green Infrastructure'>IN-ENV-LAN-GI</a> - Link not present</p>
+</td></tr>
+<tr><td class='colName'>IN200 Ancillary Buildings</td><td class='colNotes'><b>Interface = </b>Ancillary Buildings Interface for Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Any
+<br><b>Owner = </b>Any
+
+Ownership and Users of Ancillary Buildings will depend upon the ancillary building and what it is used for.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+	<li>Network Control</li>
+</ul>
+<p><b>AM Notes:</b> No generic system for built environment exists in the current hierarchy</p>
+</td></tr>
+<tr><td class='colName'>IN201 Ancillary Buildings</td><td class='colNotes'><b>Interface =</b>Ancillary Building Interface for Facilities Management
+<br><b>Type </b>= Physical
+<br><b>User =</b> Any
+<br><b>Owner = </b>Any
+
+Ownership and Users of Ancillary Buildings will depend upon the ancillary building and what it is used for.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+	<li>Network Control</li>
+</ul>
+<p><b>AM Notes:</b> <a nohref title='Buildings &amp; Stations System \ Station System \ Facilities \ Amenities System'>IN-BLD-ST-FAC</a> - Link not present</p>
+</td></tr>
+<tr><td class='colName'>IN202 Ancillary Buildings</td><td class='colNotes'><b>Interface =</b>Ancillary Building Interface for Service Maintenance Colleagues
+<br><b>Type </b>= Physical
+<br><b>User =</b> Any
+<br><b>Owner = </b>Any
+
+Ownership and Users of Ancillary Buildings will depend upon the ancillary building and what it is used for.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+	<li>Network Control</li>
+</ul>
+<p><b>AM Notes:</b> No generic system for Service Maintenance Colleagues exists in the current hierarchy</p>
+</td></tr>
+<tr><td class='colName'>IN207 Ancillary Buildings</td><td class='colNotes'><b>Interface =</b>Ancillary Building Interface for Logistics (Storage and Deliveries)
+<br><b>Type </b>= Physical
+<br><b>User =</b> Any
+<br><b>Owner = </b>Any
+
+Ownership and Users of Ancillary Buildings will depend upon the ancillary building and what it is used for.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Logistics Service</li>
+</ul>
+
+<p><b>AM Notes:</b> No generic system for Logistics (Storage and Deliveries) exists in the current hierarchy</p>
+</td></tr>
+<tr><td class='colName'>IN220 Buildings</td><td class='colNotes'><b>Interface</b> = Buildings Interface to Green Spaces
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers and Communities
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management</li>
+	<li>Environmental Sustainability Service</li>
+</ul>
+
+<p><b>AM Notes:</b> <a nohref title='Environmental System \ Landscape System \ Green Infrastructure'>IN-ENV-LAN-GI</a> - Link not present</p>
+</td></tr>
+<tr><td class='colName'>IN183 Built Environs</td><td class='colNotes'><b>Interface = </b>Built Environs interface for wayshowing and signage.
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers, Local Authority, Communities and Business Users
+<br><b>Owner =</b> Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Customer Information Service</li>
+	<li>Facilities Management Service</li>
+</ul>
+
+<p><b>AM Notes:</b> <a nohref title='Buildings &amp; Stations System \ Building Services System \ Way Finding &amp; Signage System'>IN-BLD-BS-WF</a> - Link and Built Environs system not present</p>
+</td></tr>
+<tr><td class='colName'>IN184 Built Environs</td><td class='colNotes'><b>Interface =</b>Built Environs Interface for Active Travel
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+	<li>Facilities Management Service</li>
+</ul>
+
+<p><b>AM Notes:</b> No generic system for Active Travel exists in the current hierarchy</p>
+</td></tr>
+<tr><td class='colName'>IN185 Built Environs</td><td class='colNotes'><b>Interface = </b>Vehicular Access to/from Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers, Local Authority, Communities and Business Users
+<br><b>Owner =</b> Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN186 Built Environs</td><td class='colNotes'><b>Interface =</b>Built Environs Interface for the Transport Interchange Hub
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers/ Multi-Modal Transport Service Providers
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+	<li>Facilities Management Service</li>
+	<li>Integration and Interface Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN187 Built Environs</td><td class='colNotes'><b>Interface =</b>Built Environs Interface for Communities and Local Business
+<br><b>Type </b>= Physical
+<br><b>User =</b> Communities and Local Business
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+</ul></td></tr>
+<tr><td class='colName'>IN188 Built Environs</td><td class='colNotes'><b>Interface = </b>Built Environs Interface for Street Furniture
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers, Local Authority, Communities and Business Users
+<br><b>Owner =</b> Local Authority
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN189 Built Environs</td><td class='colNotes'><b>Interface =</b>Built Environs Interface for Facilities Management
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN190 Built Environs</td><td class='colNotes'><b>Interface =</b>Built Environs Interface for Logistics (Storage and Deliveries)
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Stations)
+<br><b>Owner = </b>Infrastructure Manager (Stations)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Logistics Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN192 Built Environs</td><td class='colNotes'><b>Interface =</b>Built Environs Interface for Colleagues
+<br><b>Type </b>= Physical
+<br><b>User =</b> Colleagues
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+</ul>
+
+<font color=#dc143c>Specifically at Winslow in CS1</font>
+</td></tr>
+<tr><td class='colName'>IN193 Built Environs</td><td class='colNotes'><b>Interface =</b>Built Environs Interface for Customers
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+</ul></td></tr>
+<tr><td class='colName'>IN219 Built Environs</td><td class='colNotes'><b>Interface</b> = Built Environs Interface to Green Spaces
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers and Communities
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management</li>
+	<li>Environmental Sustainability Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN310 Built Environs</td><td class='colNotes'><b>Interface =</b>Built Environs Interface for Accessibility
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+	<li>Facilities Management Service</li>
+	<li>Inclusion Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN018 Built Environs </td><td class='colNotes'><b>Interface =</b>Built Environs interface for Access Ways 
+<br><b>Type </b>= Physical
+<br><b>User =</b> External Multi-Modal Transportation Providers/Owners
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management Service</li>
+	<li>Logistics Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN016 Civils</td><td class='colNotes'><b>Interface = </b>Civils for Management Centre
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner =</b>Infrastructure Manager (Route)
+
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN021 Civils</td><td class='colNotes'><b>Interface = </b>Civils Interface for Overhead Traction Power Lines.
+<br><b>Type </b>= Physical
+<br><b>User =</b> EWR
+<br><b>Owner</b> = EWR
+Interface Not applicable for CS1
+
+Related Target State Service(s):
+<ul>
+	<li>Network Control Service</li>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN022 Civils</td><td class='colNotes'><b>Interface = </b>Civils infrastructure for Infrastructure Depot
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN023 Civils</td><td class='colNotes'><b>Interface = </b>Civils Interface for Permanent Way
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN027 Civils</td><td class='colNotes'><b>Interface = </b>Civils for Ancillary Buildings
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Network Control Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN029 Civils</td><td class='colNotes'><b>Interface = </b>Civils Interface for Rolling Stock Depot, Stabling
+<br><b>Type </b>= Physical
+<br><b>User =</b> ECM
+<br><b>Owner = </b>ECM
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN030 Civils</td><td class='colNotes'><b>Interface = </b>Civils Interface for Stations
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Station)
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN072 Civils</td><td class='colNotes'><b>Interface = </b>Civils Interface for Communications Infrastructure
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Data Communications Service</li>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN073 Civils</td><td class='colNotes'><b>Interface = </b>Civils Interface for Drainage
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN182 Civils</td><td class='colNotes'><b>Interface = </b>Civils Interface for Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+Transportation Service</td></tr>
+<tr><td class='colName'>IN204 Civils</td><td class='colNotes'><b>Interface = </b>Civils Interface for Access Ways
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN214 Civils</td><td class='colNotes'><b>Interface = </b>Civils Interface for Intersections
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN247 Clean Water Interface for Buildings</td><td class='colNotes'><b>Interface = </b>Clean Water Systems interface for Buildings
+<br><b>Type </b>= Physical
+<br><b>User =</b> Facility Owner/Manager
+<br><b>Owner = </b>Utilities Provider
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN253 Clean Water Management Interface</td><td class='colNotes'><b>Interface = </b>Clean Water Management interface for Facility Clean Water Systems
+<br><b>Type </b>= Physical
+<br><b>User =</b> Facility Clean Water Systems
+<br><b>Owner = </b>Facilities Owner
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN010 Command Control and Signalling</td><td class='colNotes'><b>Interface = </b>Command Control &amp; Signalling for Rolling Stock Depot and Stabling
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>CS1 Owner = </b>Entity in Charge of Maintenance/Rolling Stock Leasing Company (ROSCO)? (But there is an interface with Main Line Signaling which is owned by Network Rail.
+<br><b>TS Owner</b> = EWR
+
+Related Target State Service(s):
+<ul>
+	<li>Network Control Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN015 Command Control and Signalling</td><td class='colNotes'><b>Interface = </b>Command Control &amp; Signalling for Infrastructure Depots
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+
+Related Target State Service(s):
+<ul>
+	<li>Network Control Service</li>
+</ul>
+
+<font color=#dc143c>Need to confirm whether this interface exists where the Infrastructure Depot is not connected to the railway.</font></td></tr>
+<tr><td class='colName'>IN041 Command Control and Signalling</td><td class='colNotes'><b>Interface =</b>Command Control Interface with TOC Command &amp; Control
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner =</b> Infrastructure Manager (Route)
+
+
+Related Target State Service(s):
+<ul>
+	<li>Network Control</li>
+</ul>
+
+<font color=#dc143c>Need to understand the role of the TOC in Command Control?</font></td></tr>
+<tr><td class='colName'>IN203 Command, Control and Signalling</td><td class='colNotes'><b>Interface = </b>Command Control &amp; Signalling for Ancillary Buildings
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+This interface is only required if the ancillary building is used for signaling purposes. E.g REB
+
+This may be connected via the Fixed Telecoms Network or the Wireless Telecoms Network (GSM-R).
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul>
+<ul>
+	<li>Network Control Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN038 Customer Communications (WIFI, 5G)</td><td class='colNotes'><b>Interface =</b>Customer Communications interface in Buildings
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customer
+<br><b>Owner = </b>Telecommunications Provider
+
+The Customer Communications Interface can also be used for colleague personal use and business guest usage.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Data Communications Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN039 Customer Communications (WIFI, 5G)</td><td class='colNotes'><b>Interface =</b>Customer Communications interface on Rolling Stock
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner =</b> Transport Undertaking Organisation 
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Customer communications equipment</li>
+	<li>Passenger Wi-Fi access</li>
+	<li>Rail-5G System</li>
+</ul>
+	
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Transportation Service</li>
+	<li>Data Communications Service</li>
+</ul>
+<ul>
+	<li>Service Maintenance</li>
+</ul></td></tr>
+<tr><td class='colName'>IN191 Customer Communications (Wifi/5G)</td><td class='colNotes'><b>Interface =</b>Customer Communications interface for Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customer
+<br><b>Owner = </b>Telecommunications Provider
+
+The Customer Communications Interface can be used for colleague personal use and business guest usage.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Data Communications Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN080 Customer Information</td><td class='colNotes'><b>Interface = </b>Customer Information for Stations
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Transport Undertaking Organisation
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Customer Information Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN085 Customer Information</td><td class='colNotes'><b>Interface = </b>Customer Information for Rolling Stock
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Transport Undertaking Organisation
+
+Applicable systems, facilities and equipment:
+&nbsp;
+<ul>
+	<li>Passenger Information (PIS), including Accurate real-time intermodal/interchange running information; Estimated times of arrival at stopping points en-route; Informing passengers of upcoming engineering works; Interfaces and integration with other remote information systems, etc.</li>
+	<li>Public Address (PA)</li>
+	<li>Seat Reservation System</li>
+</ul>
+
+Related Target State Service(s):
+&nbsp;
+<ul>
+	<li>Transportation Service</li>
+	<li>Customer Information Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN199 Customer Information</td><td class='colNotes'><b>Interface = </b>Customer Information for Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Transport Undertaking Organisation
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Customer Information Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN121 Customer Wayshowing System Interface</td><td class='colNotes'><b>Interface =</b>Customer Wayshowing System Interface
+
+The Customer Wayshowing System Interface is the user interface for physical and digital signage in and around stations to help customers navigate the station environment to get to the services they want to use as quickly and comfortably as possible. 
+
+<br><b>Type </b>= Physical/Data
+<br><b>User =</b> Customers and Colleagues
+<br><b>Owner = </b>Transport Undertaking Organisation
+
+Related Target State Service(s):
+<ul>
+	<li>Customer Information Service</li>
+	<li>Facilities Management Service</li>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN222 Drainage</td><td class='colNotes'><b>Interface</b> =Drainage Interface to Green Spaces
+<br><b>Type </b>= Physical
+<br><b>User =</b> Land Owner
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Environmental Sustainability Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN133 Fuelling</td><td class='colNotes'><b>Interface = </b>Fuelling interface for Rolling Stock
+<br><b>Type </b>= Physical
+<br><b>User =</b> Entity in Charge of Maintenance (ECM)
+<br><b>Owner = </b>Rolling Stock Leasing Company (ROSCO)/ Transport Undertaking Organisation
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN123 Geotechnical</td><td class='colNotes'><b>Interface = </b>Geo-technical Interface with the train
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Geo-technical infrastructures (e.g embankments, cuttings and tunnels)</li>
+	<li>Structure gauge</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+</ul></td></tr>
+<tr><td class='colName'>IN223 Geotechnical</td><td class='colNotes'><b>Interface</b> =Geotechnical Interface to Green Spaces
+<br><b>Type </b>= Physical
+<br><b>User =</b> Land Owner
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Environmental Sustainability Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN275 High Voltage Power Provider Interface</td><td class='colNotes'><b>Interface = </b>High Voltage Power Provider Interface 
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>High Voltage Power Provider
+
+Related Target State Service(s):
+<ul>
+	<li>Network Control</li>
+</ul></td></tr>
+<tr><td class='colName'>IN168 Highway Interface</td><td class='colNotes'><b>Interface = </b>Highway Interface for Access Roads
+<br><b>Type </b>= Physical
+<br><b>User =</b>Infrastructure Manager (Route)
+<br><b>Owner =</b> Local Authority/Highways Agency
+
+Related Target State Service(s):
+Transportation Service
+Service Maintenance
+Network Control</td></tr>
+<tr><td class='colName'>IN034 Infrastructure Depot</td><td class='colNotes'><b>Interface =</b>Infrastructure Depot Infrastructure Interface for Facilities Management
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management</li>
+</ul></td></tr>
+<tr><td class='colName'>IN036 Infrastructure Depot</td><td class='colNotes'><b>Interface =</b>Infrastructure Depot Infrastructure Interface for Logistics (Storage and Deliveries)
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Logistics Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN065 Infrastructure Depot</td><td class='colNotes'><b>Interface =</b>Infrastructure Depot Interface for Service Maintenance Colleagues
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+</ul></td></tr>
+<tr><td class='colName'>IN169 Infrastructure Depot</td><td class='colNotes'><b>Interface = </b>Depot Interface for Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Logistics Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN124 Intersection</td><td class='colNotes'><b>Interface =</b>Intersections interface for rolling stock
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Structural and architectural infrastructures</li>
+	<li>Bridges</li>
+	<li>Boundary protections</li>
+	<li>Structure gauge</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+</ul></td></tr>
+<tr><td class='colName'>IN210 Intersection</td><td class='colNotes'><b>Interface =</b>Intersections interface for Access Ways
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Structural and architectural infrastructures</li>
+	<li>Bridges</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN215 Intersection</td><td class='colNotes'><b>Interface =</b>Intersections interface for Permanent Way
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Bridges</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN221 Intersection</td><td class='colNotes'><b>Interface</b> =Intersection Interface to Green Spaces
+<br><b>Type </b>= Physical
+<br><b>User =</b> Land Owner
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Environmental Sustainability Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN172 Management Centre</td><td class='colNotes'><b>Interface = </b>Management Centre Interface to Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Network Control</li>
+	<li>Facilities Management</li>
+</ul></td></tr>
+<tr><td class='colName'>IN032 Management Centre Infrastructure</td><td class='colNotes'><b>Interface = </b>Management Centre Infrastructure Interface for Facilities Management
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management</li>
+</ul></td></tr>
+<tr><td class='colName'>IN064 Management Centre Infrastructure</td><td class='colNotes'><b>Interface =</b>Management Centre Infrastructure Interface for Network Control Colleagues
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Network Control</li>
+</ul>
+
+</td></tr>
+<tr><td class='colName'>IN074 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for the Permanent Way
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN075 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for the Management Centre
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>CS1 Owner = </b>Infrastructure Manager (Route)
+<br><b>TS Owner</b> = EWR
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN076 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for the Infrastructure Depot
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN077 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for the Rolling Stock Depot
+<br><b>Type </b>= Physical
+<br><b>User =</b> TOC
+<br><b>CS1 Owner = </b>TOC
+<br><b>TS Owner</b> = EWR
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN078 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for Stabling
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner =</b>Transport Undertaking Organisation
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN079 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for Stations
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN081 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for Geotechnical Systems
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>CS1 Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN082 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for Drainage Systems
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN083 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for Intersections
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN084 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for Rolling Stock
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner =</b>Transport Undertaking Organisation
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Unattended overhead line equipment (OHLE) monitoring system</li>
+	<li>Unattended Train-borne Infrastructure Measurement Systems</li>
+	<li>Passenger Counting System</li>
+	<li>Forward facing CCTV and In-cab CCTV</li>
+	<li>Closed Circuit Television System</li>
+	<li>Fire detection system</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN194 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for the Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN208 Monitoring</td><td class='colNotes'><b>Interface = </b>Monitoring for the Ancillary Buildings
+<br><b>Type </b>= Physical
+<br><b>User =</b> Any
+<br><b>Owner = </b>Any
+
+Ownership and Users of Ancillary Buildings will depend upon the ancillary building and what it is used for.
+
+The monitoring needs will depend upon the security needs of the Ancillary Building, the equipment stored inside it and its monitoring needs.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Monitoring Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN273 Overhead line, Mast and gantry</td><td class='colNotes'><b>Interface = </b>Overhead line, Mast and Gantry Interface
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route) 
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Overhead line infrastructure</li>
+	<li>Overhead line equipment (OHLE)</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Network Control Service</li>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+</ul></td></tr>
+<tr><td class='colName'>IN047 Passenger Rolling Stock</td><td class='colNotes'><b>Interface =</b>Passenger Rolling Stock Interface for Customers
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers
+<br><b>Owner </b>= Transport Undertaking Organisation 
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Doors and Gangways</li>
+	<li>Amenities: Seats and tables; Wheelchair areas; Storage areas; At seat power; Toilet; Catering facilities; etc.</li>
+	<li>Passenger Systems: Passenger Information (PIS); Public Address (PA); Seat Reservation System</li>
+	<li>On-board host function, to deliver a high-quality customer environment and to provide customer information</li>
+	<li>Heating, Ventilation and Air Conditioning</li>
+	<li>Safety and Security systems, amenities and equipmentâ€™s</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+</ul>
+
+</td></tr>
+<tr><td class='colName'>IN048 Passenger Rolling Stock</td><td class='colNotes'><b>Interface =</b>Passenger Rolling Stock Interface for Drivers
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner = </b>Transport Undertaking Organisation 
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Train Control &amp; Management System (TCMS); Human Machine Interface</li>
+	<li>Driver's Safety Device (DSD)</li>
+	<li>Driver Controlled Operation (DCO)</li>
+	<li>Automatic Selective Door Operation or Operating system (ASDO)</li>
+	<li>Cab desk screens and controls</li>
+	<li>Resettable controls and isolation equipment&#183;	</li>
+	<li>Public Address</li>
+	<li>Telecom Systems</li>
+	<li>Amenities: Seats, Cab desk, Cab Doors, storage</li>
+	<li>Train Safety and Security systems, amenities and equipmentâ€™s</li>
+	<li>Systems, equipment and tools cabinets</li>
+	<li>Simulator</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+
+Transportation Service
+Service Planning and Management
+</td></tr>
+<tr><td class='colName'>IN049 Passenger Rolling Stock</td><td class='colNotes'><b>Interface =</b>Passenger Rolling Stock Interface for Service Maintenance
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner</b> = ECM
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Train Control &amp; Management System</li>
+	<li>Train systems with intelligent diagnostics</li>
+	<li>Remote Condition Monitoring Systems</li>
+	<li>On-board axle bearing monitoring system</li>
+	<li>Systems, equipment, tools cabinets and boxes</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+</ul></td></tr>
+<tr><td class='colName'>IN050 Passenger Rolling Stock</td><td class='colNotes'><b>Interface =</b>Passenger Rolling Stock Interface for Customer Experience Colleagues
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner </b>= Transport Undertaking Organisation 
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Public Address</li>
+	<li>Intermediate passenger doors controls</li>
+	<li>Resettable controls and isolation equipment</li>
+	<li>Train Safety and Security systems, amenities and equipmentâ€™s</li>
+	<li>Systems, equipment and tools cabinets</li>
+	<li>On-board tools</li>
+	<li>Catering facilities and equipment</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+</ul></td></tr>
+<tr><td class='colName'>IN007 Permanent Way</td><td class='colNotes'><b>Interface = </b>Permanent Way interface for Rolling Stock
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Permanent Way infrastructure</li>
+	<li>Wheel/rail interface</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+</ul></td></tr>
+<tr><td class='colName'>IN011 Permanent Way</td><td class='colNotes'><b>Interface = </b>Permanent Way interface for Rolling Stock Depots and Stabling
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner =</b> Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN017 Permanent Way</td><td class='colNotes'><b>Interface = </b>Permanent Way interface for Station Infrastructure
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route), Transport Undertaking Organisation
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN024 Permanent Way</td><td class='colNotes'><b>Interface = </b>Permanent Way Interface for Infrastructure Depot
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul>
+
+<font color=#dc143c>Need to confirm whether this interface exists where the Infrastructure Depot is not connected to the railway</font>.</td></tr>
+<tr><td class='colName'>IN054 Permanent Way</td><td class='colNotes'><b>Interface = </b>Permanent Way interface for Maintenance Access
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner =</b> Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+	<li>Logistics Service</li>
+	<li>Service Maintenance</li>
+</ul>
+
+This interface relates to Service Maintenance access points to the railway.</td></tr>
+<tr><td class='colName'>IN132 Permanent Way (Automatic Power Control)</td><td class='colNotes'><b>Interface = </b>Permanent Way interface for Automatic Power Control System
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Network Control</li>
+</ul>
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN131 Permanent Way (Automatic Warning System)</td><td class='colNotes'><b>Interface = </b>Permanent Way interface for Automatic Warning System
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Network Control</li>
+</ul>
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN129 Permanent Way (Balise)</td><td class='colNotes'><b>Interface = </b>Permanent Way interface for Balise
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Network Control</li>
+</ul>
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN130 Permanent Way (Train Protection Warning System)</td><td class='colNotes'><b>Interface = </b>Permanent Way interface for Train Protection Warning System
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Network Control</li>
+</ul>
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN020 Power</td><td class='colNotes'><b>Interface = </b>Power Systems interface for Management Centre Building
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner =</b> Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Network Control Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN046 Power</td><td class='colNotes'><b>Interface = </b>Power Systems interface for Rolling Stock (Traction)
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner = </b>Infrastructure Manager (Route) 
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Overhead line infrastructure</li>
+	<li>Overhead line equipment (OHLE)</li>
+	<li>Shore supply</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Network Control Service</li>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+</ul></td></tr>
+<tr><td class='colName'>IN060 Power</td><td class='colNotes'><b>Interface = </b>Power Systems interface for the Permanent Way (Interlocking and Points)
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul>
+<ul>
+	<li>Network Control Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN061 Power</td><td class='colNotes'><b>Interface = </b>Power Systems interface for Infrastructure Depot Building
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN062 Power</td><td class='colNotes'><b>Interface = </b>Power Systems interface for Rolling Stock Depot Building and Stabling
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Infrastructure Manager (Route)/Transport Undertaking Organisation
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Network Control Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN063 Power</td><td class='colNotes'><b>Interface = </b>Power Systems interface for Stations
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN195 Power</td><td class='colNotes'><b>Interface = </b>Power Systems interface for Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner =</b> Infrastructure Manager (Route)
+
+The built environs will need power systems for lighting, wayshowing and signage, barriers, machines and EV charging.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Network Control Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN213 Power</td><td class='colNotes'><b>Interface = </b>Power Systems interface for Ancillary Buildings
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner =</b> Infrastructure Manager (Route)
+
+Ancillary Buildings will need low voltage power to power track side systems. 
+
+If the Ancillary Building is a Transformer Station or Sub-station then it will have high voltage and low voltage interfaces.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Network Control Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN217 Power</td><td class='colNotes'><b>Interface = </b>Power Systems interface for Access Ways
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Required for Street Lighting and Barrier Control Systems if required
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Network Control</li>
+</ul></td></tr>
+<tr><td class='colName'>IN246 Power Interface for Buildings and Utilities</td><td class='colNotes'><b>Interface = </b>Power Systems interface for Buildings
+<br><b>Type </b>= Physical
+<br><b>User =</b> Facility Owner/Manager
+<br><b>Owner = </b>Infrastructure Manager
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management Service</li>
+	<li>Network Control</li>
+</ul></td></tr>
+<tr><td class='colName'>IN257 Recycling Waste Removal Interface</td><td class='colNotes'><b>Interface = </b>Waste and Recycling Interface for Waste and Recycling Service Providers
+<br><b>Type </b>= Physical
+<br><b>User = </b>External Waste and Recycling Service Providers
+<br><b>Owner =</b> Facilities Owner
+
+Related Target State Service(s):
+<ul>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN160 Revenue Protection Staff Interface</td><td class='colNotes'><b>Interface =</b>Revenue Protection Staff Interface
+
+The Revenue Protection Interface allows the customer service staff to enable or disable revenue protection checks. It also allows the staff to intervene in case the revenue protection system fails to work correctly.  
+
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner = </b>Transport Undertaking Organisation 
+This interface is only applicable to CS1 (Gatelines)
+Related Target State Service(s):
+<ul>
+	<li>Fare Transaction Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN161 Revenue Protection User Interface</td><td class='colNotes'><b>Interface =</b>Revenue Protection User Interface
+
+The Revenue Protection Interface checks the ATT. If ATT is valid it allows to customers to pass through and board the train, if invalid customers are not allowed to pass through. 
+
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers
+<br><b>Owner = </b>Transport Undertaking Organisation 
+This interface is only applicable to CS1 (Gatelines)
+
+
+Related Target State Service(s):
+<ul>
+	<li>Fare Transaction Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN025 Rolling Stock Depot</td><td class='colNotes'><b>Interface = </b>Rolling Stock Depot and Stabling Interface for Rolling Stock
+<br><b>Type </b>= Physical
+<br><b>User =</b> Entity in Charge of Maintenance
+<br><b>Owner </b>= Transport Undertaking Organisation (CS1)
+Note: This only applicable for CS1. Normally the Owner could be the ROSCO or the TOC.  
+
+<br><b>Applicable systems, facilities and equipment:</b>
+<ul>
+	<li>Depot infrastructure</li>
+	<li>Depot equipment</li>
+	<li>Shore supply</li>
+	<li>Service vehicle</li>
+	<li>Toilet discharge facility</li>
+	<li>Train Washing Machine</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+<ul>
+	<li>Service Planning and Management.</li>
+	<li>Service Maintenance</li>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN033 Rolling Stock Depot</td><td class='colNotes'><b>Interface =</b>Rolling Stock Depot and Stabling Infrastructure Interface for Facilities Management
+<br><b>Type </b>= Physical
+<br><b>User =</b> ECM
+<br><b>Owner = </b>ECM
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management</li>
+</ul></td></tr>
+<tr><td class='colName'>IN037 Rolling Stock Depot</td><td class='colNotes'><b>Interface =</b>Rolling Stock Depot and Stabling Infrastructure Interface for Logistics (Storage and Deliveries)
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Transport Undertaking Organisation
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Logistics Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN069 Rolling Stock Depot</td><td class='colNotes'><b>Interface =</b>Rolling Stock Depot Interface for Service Maintenance Colleagues
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Transport Undertaking Organisation/ECM
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+</ul></td></tr>
+<tr><td class='colName'>IN070 Rolling Stock Depot</td><td class='colNotes'><b>Interface =</b>Rolling Stock Depot and Stabling Interface for Rolling Stock Customer Service Delivery
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation<b> </b>
+<br><b>Owner = </b>Transport Undertaking Organisation<b> </b>
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+</ul></td></tr>
+<tr><td class='colName'>IN175 Rolling Stock Depot</td><td class='colNotes'><b>Interface = </b>Rolling Stock Depot Interface for Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation/ECM
+<br><b>Owner = </b>Transport Undertaking Organisation/ECM
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN308 SCADA Interface</td><td class='colNotes'><b>Interface = </b>SCADA Interface for points/switch rails.
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+<br><b>Related Target State Service(s):</b>
+<ul>
+	<li>Network Control</li>
+	<li>Transportation Service</li>
+	<li>Data Communications Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN055 Security Infrastructure</td><td class='colNotes'><b>Interface = </b>Security Infrastructure for Permanent Way
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN056 Security Infrastructure</td><td class='colNotes'><b>Interface = </b>Security Infrastructure for Stations
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Stations)
+<br><b>Owner = </b>Infrastructure Manager (Stations)
+
+Related Target State Service(s):
+Transportation Service</td></tr>
+<tr><td class='colName'>IN057 Security Infrastructure</td><td class='colNotes'><b>Interface = </b>Security Infrastructure for Infrastructure Depots
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+Transportation Service</td></tr>
+<tr><td class='colName'>IN058 Security Infrastructure</td><td class='colNotes'><b>Interface = </b>Security Infrastructure for Rolling Stock Depots and Stabling
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation
+<br><b>Owner = </b>Transport Undertaking Organisation
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN059 Security Infrastructure</td><td class='colNotes'><b>Interface = </b>Security Infrastructure for Management Centre
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Operator
+<br><b>Owner = </b>Transport Operator
+
+Related Target State Service(s):
+Transportation Service</td></tr>
+<tr><td class='colName'>IN196 Security Infrastructure</td><td class='colNotes'><b>Interface = </b>Security Infrastructure for Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Stations)
+<br><b>Owner = </b>Infrastructure Manager (Stations)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN209 Security Infrastructure</td><td class='colNotes'><b>Interface = </b>Security Infrastructure for Ancillary Buildings
+<br><b>Type </b>= Physical
+<br><b>User =</b> Any
+<br><b>Owner = </b>Any
+
+The nature of the Security Infrastructure provided for the Ancillary Buildings will depend upon the security and safety needs of the building and the equipment and activities inside it.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN216 Security Infrastructure</td><td class='colNotes'><b>Interface = </b>Security Infrastructure for Access Roads
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN067 Station Infrastructure</td><td class='colNotes'><b>Interface =</b>Stations Infrastructure Interface for Customers
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+</ul></td></tr>
+<tr><td class='colName'>IN068 Station Infrastructure</td><td class='colNotes'><b>Interface =</b>Stations Infrastructure Interface Communities and Local Business
+<br><b>Type </b>= Physical
+<br><b>User =</b> Communities and Local Business
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+</ul></td></tr>
+<tr><td class='colName'>IN178 Station Infrastructure</td><td class='colNotes'><b>Interface =</b>Stations Infrastructure for Active Travel
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN179 Station Infrastructure</td><td class='colNotes'><b>Interface =</b>Stations Infrastructure for the Transport Interchange Hub
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers/ Multi-Modal Transport Service Providers
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+	<li>Facilities Management Service</li>
+	<li>Integration and Interface Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN180 Station Infrastructure</td><td class='colNotes'><b>Interface =</b>Stations Infrastructure for Wayshowing
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+	<li>Facilities Management Service</li>
+	<li>Customer Information Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN181 Station Infrastructure</td><td class='colNotes'><b>Interface = </b>Station Interface for Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customer
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN218 Station Infrastructure</td><td class='colNotes'><b>Interface = </b>Station Infrastructure Interface for Street Furniture
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers, Local Authority, Communities and Business Users
+<br><b>Owner =</b> Facilities Operator
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN309 Station Infrastructure</td><td class='colNotes'><b>Interface =</b>Stations Infrastructure for Accessibility
+<br><b>Type </b>= Physical
+<br><b>User =</b> Customers
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+	<li>Facilities Management Service</li>
+	<li>Inclusion Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN272 Station Management</td><td class='colNotes'><b>Interface = </b>Station Management Interface
+<br><b>Type </b>= Physical
+<br><b>User =</b> Station Manager
+<br><b>Owner = </b>Facilities Owner
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN005 Stations Infrastructure</td><td class='colNotes'><b>Interface = </b>Station Infrastructure for Journey Purchase
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Fare Transaction Service</li>
+	<li>Transportation Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN006 Stations Infrastructure</td><td class='colNotes'><b>Interface = </b>Station Infrastructure interface for Rolling Stock
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner</b> = Infrastructure Manager (Station)
+
+<br><b>Applicable systems, facilities and equipment:</b>
+&nbsp;
+<ul>
+	<li>Station infrastructure</li>
+</ul>
+<ul>
+	<li>Platform Train Interface (PTI)</li>
+	<li>Accessibility equipment</li>
+	<li>Catering Equipment</li>
+</ul>
+
+<br><b>Related Target State Service(s):</b>
+&nbsp;
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+</ul></td></tr>
+<tr><td class='colName'>IN031 Stations Infrastructure</td><td class='colNotes'><b>Interface =</b>Stations Infrastructure Interface for Facilities Management
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management</li>
+</ul></td></tr>
+<tr><td class='colName'>IN035 Stations Infrastructure</td><td class='colNotes'><b>Interface =</b>Stations Infrastructure Interface for Logistics (Storage and Deliveries)
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Stations)
+<br><b>Owner = </b>Infrastructure Manager (Stations)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Logistics Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN040 Stations Infrastructure</td><td class='colNotes'><b>Interface =</b>Stations Infrastructure Interface for Customer Experience Colleagues
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation 
+<br><b>Owner = </b>Infrastructure Manager (Station)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Planning and Management</li>
+</ul>
+
+<font color=#dc143c>Specifically at Winslow in CS1</font></td></tr>
+<tr><td class='colName'>IN239 Utilities Clean Water Interface</td><td class='colNotes'><b>Interface = </b>Utilities Clean Water Interface for Appliances
+<br><b>Type </b>= Physical
+<br><b>User = </b>Appliance
+<br><b>Owner =</b> Facilities Owner
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation</li>
+	<li>Facilities Management Service</li>
+</ul>
+
+</td></tr>
+<tr><td class='colName'>IN252 Utilities Power Interface</td><td class='colNotes'><b>Interface = </b>Power Management interface for Facility Power Systems
+<br><b>Type </b>= Physical
+<br><b>User =</b> Facility Power Systems
+<br><b>Owner = </b>Facilities Owner
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN244 Utilities Waste Water Interface</td><td class='colNotes'><b>Interface = </b>Utilities Waste Water Interface
+<br><b>Type </b>= Physical
+<br><b>User = </b>Appliance
+<br><b>Owner =</b> Facilities Owner
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN174 Waste Water</td><td class='colNotes'><b>Interface = </b>Waste Water Outlet for Management Centre
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Water Company
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN177 Waste Water</td><td class='colNotes'><b>Interface = </b>Waste Water Outlet for Rolling Stock Depot and Stabling
+<br><b>Type </b>= Physical
+<br><b>User =</b>  Transport Undertaking Organisation/ECM
+<br><b>Owner = </b>Water Company
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+</ul>
+
+</td></tr>
+<tr><td class='colName'>IN198 Waste Water</td><td class='colNotes'><b>Interface = </b>Waste Water Outlet for Built Environs
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Water Company
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN211 Waste Water</td><td class='colNotes'><b>Interface = </b>Waste Water Outlet for Ancillary Buildings
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Water Company
+
+Some Ancillary Buildings may need a waste water outlet if required.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN171 Waste Water </td><td class='colNotes'><b>Interface = </b>Waste Water Outlet for Infrastructure Depot
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Water Company
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN248 Waste Water Interface for Buildings</td><td class='colNotes'><b>Interface = </b>Waste Water Systems interface for Buildings
+<br><b>Type </b>= Physical
+<br><b>User =</b> Facility Owner/Manager
+<br><b>Owner = </b>Utilities Provider
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN254 Waste Water Management Interface</td><td class='colNotes'><b>Interface = </b>Waste Water Management interface for Facility Waste Water Systems
+<br><b>Type </b>= Physical
+<br><b>User =</b> Facility Waste Water Systems
+<br><b>Owner = </b>Facilities Owner
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN243 Waste/Recycling Interface</td><td class='colNotes'><b>Interface = </b>Cleaning System Waste/Recycling Output Interface
+<br><b>Type </b>= Physical
+<br><b>User = </b>Cleaning System/Cleaners
+<br><b>Owner =</b> Recycling and Waste Management System
+
+Related Target State Service(s):
+<ul>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN170 Water Supply</td><td class='colNotes'><b>Interface =</b> Clean Water Supply for Infrastructure Depot
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Water Supply Company
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN173 Water Supply</td><td class='colNotes'><b>Interface =</b> Clean Water Supply for Management Centre
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner = </b>Water Supply Company
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN176 Water Supply</td><td class='colNotes'><b>Interface =</b> Clean Water Supply for Infrastructure Depot
+<br><b>Type </b>= Physical
+<br><b>User =</b> Transport Undertaking Organisation/ECM
+<br><b>Owner = </b>Water Supply Company
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+</ul>
+
+</td></tr>
+<tr><td class='colName'>IN206 Water Supply</td><td class='colNotes'><b>Interface =</b> Clean Water Supply for Ancillary Buildings
+<br><b>Type </b>= Physical
+<br><b>User =</b> Any
+<br><b>Owner = </b>Any
+
+Some Ancillary Buildings may need a clean water supply if required.
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+	<li>Service Maintenance</li>
+	<li>Facilities Management Service</li>
+</ul></td></tr>
+<tr><td class='colName'>IN164 Wider Railway Interface</td><td class='colNotes'><b>Interface = </b>Permanent Way interface for Wider Railway
+<br><b>Type </b>= Physical
+<br><b>User =</b> Infrastructure Manager (Route)
+<br><b>Owner =</b> Other Infrastructure Manager (Route)
+
+Related Target State Service(s):
+<ul>
+	<li>Transportation Service</li>
+</ul></td></tr>
+
+
+</table>
+</body>
+</html>

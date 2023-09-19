@@ -419,6 +419,14 @@
     grid-template-rows:1fr 1fr
   }
 
+  .ifc{
+    color:red;
+  }
+
+  .uniclass{
+    color:blue;
+  }
+  
   .attrData{
     height:25px;
   }

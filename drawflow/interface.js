@@ -64,7 +64,7 @@ var interface = {
             "name": "IN-EXT-HS-RD",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-RD (8)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   Road Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-RD (8)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   Road Systems <p class=uniclass><a nohref title=\"Road spaces\">SL_80_35</a></p> <p class=uniclass><a nohref title=\"Roads\">En_80_35_74</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1":{
@@ -116,7 +116,7 @@ var interface = {
             "name": "IN-EXT-HS-AW",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-AW (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Accessway Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-AW (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Accessway Systems <p class=uniclass><a nohref title=\"Access roads\">En_80_35_01</a></p>  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1":{
@@ -568,7 +568,7 @@ var interface = {
             "name": "IN-EXT-3RD-WF",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-3RD-WF (22)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Weather Forecasting Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-3RD-WF (22)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Weather Forecasting Systems <p class=uniclass><a nohref title=\"Weather forecasting information\">PM_30_30_98</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1":{

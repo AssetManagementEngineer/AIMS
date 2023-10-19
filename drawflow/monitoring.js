@@ -26,7 +26,7 @@ var monitoring = {
             "name": "IN-CM-MO",
             "data": {},
             "class": "SCH",
-            "html": "\n<div>\n<div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-MO (2)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\nMonitoring System\n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
+            "html": "\n<div>\n<div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-MO (2)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\nMonitoring System <p class=uniclass><a nohref title=\"Monitoring systems\">Ss_75_40_53</a></p> \n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
                 "input_1":{"connections":[{"node":"1","input":"output_1"}]}
@@ -99,7 +99,7 @@ var monitoring = {
             "name": "IN-CM-CA-TV",
             "data": {},
             "class": "SCH",
-            "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-CA-TV (5)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\nCCTV System\n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
+            "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-CA-TV (5)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\nCCTV System  <p class=uniclass><a nohref title=\"Surveillance CCTV systems\">Ss_75_40_53_86</a></p> \n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
                 "input_1":{"connections":[{"node":"3","input":"output_1"}]}
@@ -120,7 +120,7 @@ var monitoring = {
             "name": "IN-CM-CA-VI",
             "data": {},
             "class": "SCH",
-            "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-CA-VI (6)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Automatic Vehicle Inspection System\n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
+            "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-CA-VI (6)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Automatic Vehicle Inspection System <p class=uniclass><a nohref title=\"Vehicle inspecting\">Ac_80_45_95</a></p> \n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
                 "input_1":{"connections":[{"node":"3","input":"output_1"}]}
@@ -141,7 +141,7 @@ var monitoring = {
             "name": "IN-CM-CA-NP",
             "data": {},
             "class": "SCH",
-            "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-CA-NP (7)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Automatic Number Plate Recognition (ANPR) System\n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
+            "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-CA-NP (7)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Automatic Number Plate Recognition (ANPR) System <p class=uniclass><a nohref title=\"Automatic number plate recognition (ANPR) systems\">Ss_75_70_90_05</a></p>\n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
                 "input_1":{"connections":[{"node":"3","input":"output_1"}]}
@@ -225,7 +225,7 @@ var monitoring = {
             "name": "IN-CM-MO-WT",
             "data": {},
             "class": "SCH",
-            "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-MO-WT (11)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Weather/Temperature Monitoring System\n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
+            "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-MO-WT (11)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Weather/Temperature Monitoring System <p class=uniclass><a nohref title=\"Weather observation systems\">Ss_75_60_50_95</a></p>  \n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
                 "input_1":{"connections":[{"node":"2","input":"output_1"}]},
@@ -247,7 +247,7 @@ var monitoring = {
             "name": "IN-CM-MO-OC",
             "data": {},
             "class": "SCH",
-            "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-MO-OC (12)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Occupancy Monitoring System\n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
+            "html": "\n<div>\n<div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i>IN-CM-MO-OC (12)</div>\n<div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n Occupancy Monitoring System  <p class=uniclass><a nohref title=\"Occupancy detectors\">Pr_75_50_76_58</a></p> \n<div class=\"modal\" style=\"display:none\">\n<div class=\"modal-content\">\n<span class=\"close\" onclick=\"closemodal(event)\">&times;</span></div>\n</div>\n</div>\n</div>\n",
             "typenode": false,
             "inputs": {
                 "input_1":{"connections":[{"node":"2","input":"output_1"}]}

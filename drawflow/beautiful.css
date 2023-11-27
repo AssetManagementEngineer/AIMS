@@ -215,7 +215,7 @@
     -webkit-box-shadow: 0 2px 15px 2px var(--border-color);
     box-shadow: 0 2px 15px 2px var(--border-color);
     padding: 0px;
-    width: 250px;  /* Node Width */
+    width: 280px;  /* Node Width */
   }
   
   .drawflow .drawflow-node.selected  {

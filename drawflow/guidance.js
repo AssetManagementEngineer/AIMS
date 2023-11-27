@@ -18,8 +18,8 @@ var guidance= {
                 "connections":[]
               }
             },
-            "pos_x": 200,
-            "pos_y": 335
+            "pos_x": 180,
+            "pos_y": 540
           },
           "2": {
             "id": 2,
@@ -63,8 +63,8 @@ var guidance= {
                 "connections": []
               }
             },
-            "pos_x": 581,
-            "pos_y": 555
+            "pos_x": 520,
+            "pos_y": 610
           },
           "3": {
             "id": 3,
@@ -94,8 +94,8 @@ var guidance= {
                 "connections":[]
               }
             },
-            "pos_x": 891,
-            "pos_y": 421
+            "pos_x": 890,
+            "pos_y": 520
           },
           "4": {
             "id": 4,
@@ -128,8 +128,8 @@ var guidance= {
                 "connections":[]
               }
             },
-            "pos_x": 891,
-            "pos_y": 580
+            "pos_x": 890,
+            "pos_y": 710
           },
           "5": {
             "id": 5,
@@ -171,7 +171,7 @@ var guidance= {
                 }
             },
             "pos_x": -200,
-            "pos_y": 670
+            "pos_y": 640
           },
           "7": {
             "id": 7,

@@ -113,7 +113,7 @@ var monitoring = {
               }
             },
             "pos_x": 1000,
-            "pos_y": 180
+            "pos_y": 120
           },
           "6": {
             "id": 6,
@@ -134,7 +134,7 @@ var monitoring = {
               }
             },
             "pos_x": 1000,
-            "pos_y": 300
+            "pos_y": 290
           },
           "7": {
             "id": 7,
@@ -155,7 +155,7 @@ var monitoring = {
               }
             },
             "pos_x": 1000,
-            "pos_y": 450
+            "pos_y": 480
           },
           "8": {
             "id": 8,

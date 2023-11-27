@@ -244,7 +244,8 @@
   var transform = '';
   function showpopup(e) {
     e.target.closest(".drawflow-node").style.zIndex = "9999";
-    e.target.children[0].style.display = "block";
+    //e.target.children[0].style.display = "block"; //- changed index to 1 from 0 to accomodate the additional <p> tag for ifc
+    e.target.children[1].style.display = "block";
     //document.getElementById("modalfix").style.display = "block";
 
     //e.target.children[0].style.transform = 'translate('+translate.x+'px, '+translate.y+'px)';

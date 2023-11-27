@@ -1,6 +1,6 @@
 var environ = {
     "data": {
-      "1": {
+      "1": { //Environment System
         "id": 1,
         "name": "IN-ENV",
         "data": {},
@@ -21,7 +21,7 @@ var environ = {
         "pos_x": 200,
         "pos_y": 214
       },
-      "2": {
+      "2": { //Landscape System
         "id": 2,
         "name": "IN-ENV-LAN",
         "data": {},
@@ -61,7 +61,7 @@ var environ = {
         "pos_x": 1025,
         "pos_y": 140
       },
-      "3": {
+      "3": { // Public Open space / Recreation System
         "id": 3,
         "name": "IN-ENV-LAN-OS",
         "data": {},
@@ -92,7 +92,7 @@ var environ = {
         "pos_x": 1460,
         "pos_y": 10
       },
-      "4": {
+      "4": { // Planting System
         "id": 4,
         "name": "IN-ENV-LAN-PS",
         "data": {},
@@ -133,7 +133,7 @@ var environ = {
         "pos_x": 1450,
         "pos_y": 260
       },
-      "5": {
+      "5": { // Green Infrastructure
         "id": 5,
         "name": "IN-ENV-LAN-GI",
         "data": {},
@@ -164,7 +164,7 @@ var environ = {
         "pos_x": 1450,
         "pos_y": 150
       },
-      "6": {
+      "6": { // Ecology System
         "id": 6,
         "name": "IN-ENV-ECO",
         "data": {},

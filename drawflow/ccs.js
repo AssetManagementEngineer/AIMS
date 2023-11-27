@@ -28,15 +28,15 @@ var ccs = {
           },
           "output_2":{"connections":[]}
         },
-        "pos_x": 200,
-        "pos_y": 594
+        "pos_x": 250,
+        "pos_y": 700
       },
       "2": {
         "id": 2,
         "name": "IN-CCS-SIG",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG (2)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Conventional Signalling System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG (2)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Conventional Signalling System  \n  <p class=uniclass><a nohref title=\"Rail Signal systems\">Ss_75_30_70_70</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -139,15 +139,15 @@ var ccs = {
           },
           "output_2":{"connections":[]}
         },
-        "pos_x": 760,
-        "pos_y": 600
+        "pos_x": 750,
+        "pos_y": 630
       },
       "4": {
         "id": 4,
         "name": "IN-CCS-TMS",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-CCS-TMS (4)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Traffic Management System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-CCS-TMS (4)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Traffic Management System  \n <p class=uniclass><a nohref title=\"Traffic management control systems\">Ss_75_70_90_91</a></p>\n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -182,8 +182,8 @@ var ccs = {
           },
           "output_2":{"connections":[]}
         },
-        "pos_x": 760,
-        "pos_y": 450
+        "pos_x": 750,
+        "pos_y": 340
       },
       "5": {
         "id": 5,
@@ -210,7 +210,7 @@ var ccs = {
         "outputs": {"output_1":{"connections":[]},
                     "output_2":{"connections":[]}},
         "pos_x": 1090,
-        "pos_y": 370
+        "pos_y": 430
       },
       "6": {
         "id": 6,
@@ -236,8 +236,8 @@ var ccs = {
         },          
         "outputs": {"output_1":{"connections":[]},
                     "output_2":{"connections":[]}},
-        "pos_x": 1100,
-        "pos_y": 525
+        "pos_x": 1090,
+        "pos_y": 560
       },
       "7": {
         "id": 7,
@@ -258,8 +258,8 @@ var ccs = {
         },          
         "outputs": {"output_1":{"connections":[]},
                     "output_2":{"connections":[]}},
-        "pos_x": 1100,
-        "pos_y": 670
+        "pos_x": 1090,
+        "pos_y": 690
       },
       "8": {
         "id": 8,
@@ -280,7 +280,7 @@ var ccs = {
         },          
         "outputs": {"output_1":{"connections":[]},
                     "output_2":{"connections":[]}},
-        "pos_x": 1100,
+        "pos_x": 1090,
         "pos_y": 850
       },
       "10": {
@@ -288,7 +288,7 @@ var ccs = {
         "name": "IN-CCS-SIG-POS",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG-POS (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Point Operating System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG-POS (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Point Operating System  \n  <p class=uniclass><a nohref title=\"Points operating equipment\">Pr_70_75_70_63</a></p>\n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -303,7 +303,7 @@ var ccs = {
         "outputs": {"output_1":{"connections":[]},
                     "output_2":{"connections":[]}},
         "pos_x": 1100,
-        "pos_y": 1250
+        "pos_y": 1370
       },
       "11": {
         "id": 11,
@@ -332,7 +332,7 @@ var ccs = {
         "name": "IN-CCS-SIG-SS",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG-SS (13)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Signals &amp; Signs System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG-SS (13)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Signals &amp; Signs System  \n <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcDistributionElement&nbsp;\\&nbsp;IfcDistributionFlowElement&nbsp;\\&nbsp;IfcFlowTerminal&nbsp;\\&nbsp;IfcSignal\">IfcSignal</a></p><p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcElementComponent&nbsp;\\&nbsp;IfcSign\">IfcSign</a></p> <p class=uniclass><a nohref title=\"Railway signal and control systems\">Ss_75_30_70</a></p> <p class=uniclass><a nohref title=\"Railway signs\">Pr_40_10_77_70</a></p>\n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -410,7 +410,7 @@ var ccs = {
         "name": "IN-CCS-SIG-WS",
         "data": {},
         "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG-WS (16)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n TPWS/AWS System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG-WS (16)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n TPWS/AWS System  \n  <p class=uniclass><a nohref title=\"Train protection warning systems (TPWS)\">Ss_75_30_70_90</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
         "typenode": false,
         "inputs": {
           "input_1": {
@@ -449,8 +449,8 @@ var ccs = {
             ]
           }
         },
-        "pos_x": 268,
-        "pos_y": 364
+        "pos_x": -200,
+        "pos_y": 260
       },
       "18": {
         "id": 18,
@@ -472,7 +472,7 @@ var ccs = {
         "outputs": {"output_1":{"connections":[]},
                     "output_2":{"connections":[]}},
         "pos_x": 1090,
-        "pos_y": 230
+        "pos_y": 290
       },
       "19": {
         "id": 19,
@@ -495,8 +495,8 @@ var ccs = {
             ]
           }
         },
-        "pos_x": 415,
-        "pos_y": 1040
+        "pos_x": -200,
+        "pos_y": 830
       },
       "20": {
         "id": 20,
@@ -523,8 +523,8 @@ var ccs = {
             ]
           }
         },
-        "pos_x": 730,
-        "pos_y": 1190
+        "pos_x": -200,
+        "pos_y": 1110
       },
       "21": {
         "id": 21,
@@ -552,8 +552,8 @@ var ccs = {
             }]
           }
         },
-        "pos_x": 735,
-        "pos_y": 1400
+        "pos_x": -200,
+        "pos_y": 1230
       },
       "22": {
         "id": 22,
@@ -581,8 +581,32 @@ var ccs = {
             }
           ]}
         },
-        "pos_x": 270,
-        "pos_y": 200
+        "pos_x": -200,
+        "pos_y": 130
+      },
+      "113": {
+        "id": 113,
+        "name": "IN-STR-SUP-CMS",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-STR-SUP-CMS (113)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Cable Management System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {
+            "connections": [{}]
+          },
+          "output_2": {
+            "connections": [
+              {
+                "node":"1",
+                "output":"input_2"
+              }
+            ]
+          }
+        },
+        "pos_x": -200,
+        "pos_y": 710
       },
       "123": {
         "id": 123,
@@ -609,8 +633,8 @@ var ccs = {
             ]
           }
         },
-        "pos_x": 246,
-        "pos_y": 1200
+        "pos_x": -200,
+        "pos_y": 530
       },
       "124": {
         "id": 124,
@@ -635,8 +659,8 @@ var ccs = {
           "connections":[{"node":"3","output":"input_2"}]
         }
       },
-        "pos_x": 0,
-        "pos_y": 800
+        "pos_x": -200,
+        "pos_y": 400
       },
       "129": {
         "id": 129,
@@ -655,31 +679,7 @@ var ccs = {
           }
         },
         "pos_x": -200,
-        "pos_y": 260
-      },
-      "113": {
-        "id": 113,
-        "name": "IN-STR-SUP-CMS",
-        "data": {},
-        "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-STR-SUP-CMS (113)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Cable Management System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-        "typenode": false,
-        "inputs": {},          
-        "outputs": {
-          "output_1": {
-            "connections": [{}]
-          },
-          "output_2": {
-            "connections": [
-              {
-                "node":"1",
-                "output":"input_2"
-              }
-            ]
-          }
-        },
-        "pos_x": -200,
-        "pos_y": 400
+        "pos_y": 950
       }
     }
   }

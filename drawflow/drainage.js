@@ -5,7 +5,7 @@ var drainage= {
             "name": "IN-DR",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> IN-DR (1)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Drainage System  <p class=uniclass><a nohref title=\"Drainage storage, treatment and disposal systems\">Ss_50_70</a></p>\n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> IN-DR (1)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Drainage System  <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcGroup&nbsp;\\&nbsp;IfcSystem&nbsp;\\&nbsp;IfcDistributionSystem\">IfcDistributionSystem</a></p> <p class=uniclass><a nohref title=\"Drainage storage, treatment and disposal systems\">Ss_50_70</a></p>\n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1":{
@@ -50,7 +50,7 @@ var drainage= {
               }
             },
             "pos_x": 100,
-            "pos_y": 225
+            "pos_y": 200
           },
           "2": {
             "id": 2,
@@ -91,14 +91,14 @@ var drainage= {
               }
             },
             "pos_x": 520,
-            "pos_y": -78
+            "pos_y": -80
           },
           "3": {
             "id": 3,
             "name": "IN-DR-HW",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-DR-HW (3)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Highway Drainage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-DR-HW (3)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Highway Drainage System  \n <p class=uniclass><a title=\"Above-ground wastewater drainage systems\">Ss_50_30_04</a></p>  <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1": {
@@ -120,7 +120,7 @@ var drainage= {
               }
             },
             "pos_x": 520,
-            "pos_y": 102
+            "pos_y": 70
           },
           "4": {
             "id": 4,
@@ -151,7 +151,7 @@ var drainage= {
               }
             },
             "pos_x": 520,
-            "pos_y": 262
+            "pos_y": 260
           },
           "5": {
             "id": 5,
@@ -200,7 +200,7 @@ var drainage= {
               }
             },
             "pos_x": 520,
-            "pos_y": 556
+            "pos_y": 620
           },
           "6": {
             "id": 6,
@@ -271,8 +271,8 @@ var drainage= {
                 "connections":[]
               }
             },
-            "pos_x": 900,
-            "pos_y": 850
+            "pos_x": 920,
+            "pos_y": 790
           },
           "11": {
             "id": 11,
@@ -307,8 +307,8 @@ var drainage= {
                 "connections":[]
               }
             },
-            "pos_x": 900,
-            "pos_y": 700
+            "pos_x": 920,
+            "pos_y": 460
           },
           "12": {
             "id": 12,
@@ -335,8 +335,8 @@ var drainage= {
                 "connections": []
               }
             },
-            "pos_x": 900,
-            "pos_y": 550
+            "pos_x": 920,
+            "pos_y": 610
           },
           "13": {
             "id": 13,
@@ -359,7 +359,7 @@ var drainage= {
                 ]
               }
             },
-            "pos_x": 100,
+            "pos_x": -320,
             "pos_y": -180
           },
           "15": {
@@ -383,8 +383,8 @@ var drainage= {
                 ]
               }
             },
-            "pos_x": 140,
-            "pos_y": 1100
+            "pos_x": -320,
+            "pos_y": 730
           },
           "16": {
             "id": 16,
@@ -407,8 +407,8 @@ var drainage= {
                 ]
               }
             },
-            "pos_x": 140,
-            "pos_y": 970
+            "pos_x": -320,
+            "pos_y": 470
           },
           "17": {
             "id": 17,
@@ -431,8 +431,8 @@ var drainage= {
                 ]
               }
             },
-            "pos_x": 140,
-            "pos_y": 850
+            "pos_x": -330,
+            "pos_y": 600
           },
           "18": {
             "id": 18,
@@ -503,8 +503,8 @@ var drainage= {
                 ]
               }
             },
-            "pos_x": 100,
-            "pos_y": -320
+            "pos_x": -320,
+            "pos_y": -290
           }
     }
 }

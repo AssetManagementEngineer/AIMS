@@ -5,7 +5,7 @@ var energy = {
       "name": "IN-EN",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> IN-EN (1)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Power / Energy System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> IN-EN (1)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Power / Energy System  <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcGroup&nbsp;\\&nbsp;IfcSystem&nbsp;\\&nbsp;IfcDistributionSystem\">IfcDistributionSystem</a></p>  <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1":{"connections":[]},
@@ -35,7 +35,7 @@ var energy = {
       "pos_x": 207,
       "pos_y": 257
     },
-    "2": {
+    "2": {//Non-Traction Power System
       "id": 2,
       "name": "IN-EN-NT",
       "data": {},
@@ -68,15 +68,15 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 530,
-      "pos_y": -250
+      "pos_x": 740,
+      "pos_y": -80
     },
-    "3": {
+    "3": {//AC/DC Conversion System
       "id": 3,
       "name": "IN-EN-ACDC",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-ACDC (3)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  AC/DC Conversion System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-ACDC (3)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  AC/DC Conversion System  <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcDistributionElement&nbsp;\\&nbsp;IfcDistributionFlowElement&nbsp;\\&nbsp;IfcEnergyConversionDevice&nbsp;\\&nbsp;IfcTransformer\">IfcTransformer</a></p>   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {
@@ -99,10 +99,10 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 720,
-      "pos_y": 0
+      "pos_x": 750,
+      "pos_y": 30
     },
-    "4": {
+    "4": {//Earthing & Bonding System
       "id": 4,
       "name": "IN-EN-BND",
       "data": {},
@@ -130,10 +130,10 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 850,
-      "pos_y": 130
+      "pos_x": 750,
+      "pos_y": 200
     },
-    "5": {
+    "5": {//HV/LV Cable System 
       "id": 5,
       "name": "IN-EN-CBL",
       "data": {},
@@ -166,15 +166,15 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 560,
-      "pos_y": 780
+      "pos_x": 740,
+      "pos_y": 480
     },
-    "6": {
+    "6": { //Protection/Isolation System
       "id": 6,
       "name": "IN-EN-ISO",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-ISO (6)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Protection/Isolation System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-ISO (6)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Protection/Isolation System  <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcDistributionElement&nbsp;\\&nbsp;IfcDistributionFlowElement&nbsp;\\&nbsp;IfcFlowController&nbsp;\\&nbsp;IfcProtectiveDevice\">IfcProtectiveDevice</a></p>   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {
@@ -197,15 +197,15 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 1130,
-      "pos_y": 220
+      "pos_x": 740,
+      "pos_y": 300
     },
-    "7": {
+    "7": { //Power Storage System
       "id": 7,
       "name": "IN-EN-STO",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-STO (7)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Power Storage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> <div class=container><div class=attrHeader>Attribute</div><div class=attrHeader>Value</div><div class=attrData>Model</div><div class=attrData>Smart-UPS</div><div class=attrData>Power Rating</div><div class=attrData>600W</div><div class=attrData>VA Rating</div><div class=attrData>1000VA</div><div class=attrData>Output Voltage</div><div class=attrData>230V</div><div class=attrData>Input Voltage</div><div class=attrData>230V</div><div class=attrData>Mounting Type</div><div class=attrData>Stand Alone</div><div class=attrData>No Of Outlets</div><div class=attrData>8</div><div class=attrData>Type</div><div class=attrData>Line Interactive</div><div class=attrData>Current Rating</div><div class=attrData>4.3A</div><div class=attrData>Length</div><div class=attrData>171mm</div><div class=attrData>Width</div><div class=attrData>439mm</div><div class=attrData>Depth</div><div class=attrData>219mm</div></div><img width=100% src=\"R2010843-01.jpg\" />\n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-darkblue\" ><i class=\"fas fa-code-branch\"></i> IN-EN-STO (7)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Power Storage System  <p class=\"ifc\"><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcDistributionElement&nbsp;\\&nbsp;IfcDistributionFlowElement&nbsp;\\&nbsp;IfcFlowStorageDevice&nbsp;\\&nbsp;IfcElectricFlowStorageDevice&nbsp;\\&nbsp;IfcElectricFlowStorageDevice\" >IfcElectricFlowStorageDevice</a>   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> <div class=container><div class=attrHeader>Attribute</div><div class=attrHeader>Value</div><div class=attrData>Model</div><div class=attrData>Smart-UPS</div><div class=attrData>Power Rating</div><div class=attrData>600W</div><div class=attrData>VA Rating</div><div class=attrData>1000VA</div><div class=attrData>Output Voltage</div><div class=attrData>230V</div><div class=attrData>Input Voltage</div><div class=attrData>230V</div><div class=attrData>Mounting Type</div><div class=attrData>Stand Alone</div><div class=attrData>No Of Outlets</div><div class=attrData>8</div><div class=attrData>Type</div><div class=attrData>Line Interactive</div><div class=attrData>Current Rating</div><div class=attrData>4.3A</div><div class=attrData>Length</div><div class=attrData>171mm</div><div class=attrData>Width</div><div class=attrData>439mm</div><div class=attrData>Depth</div><div class=attrData>219mm</div></div><img width=100% src=\"R2010843-01.jpg\" />\n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {
@@ -228,8 +228,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 630,
-      "pos_y": -120
+      "pos_x": 1080,
+      "pos_y": -70
     },
     "8": {
       "id": 8,
@@ -259,8 +259,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 840,
-      "pos_y": 330
+      "pos_x": 1090,
+      "pos_y": 90
     },
     "9": {
       "id": 9,
@@ -290,8 +290,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 870,
-      "pos_y": 480
+      "pos_x": 1080,
+      "pos_y": 220
     },
     "10": {
       "id": 10,
@@ -326,15 +326,15 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 690,
-      "pos_y": 640
+      "pos_x": 1080,
+      "pos_y": 360
     },
     "11": {
       "id": 11,
       "name": "IN-EN-TRP-OLE",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-TRP-OLE (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  OLE System <p class=ifc><a nohref title=ifcRoot&nbsp;\\&nbsp;ifcObjectDefinition&nbsp;\\&nbsp;ifcObject&nbsp;\\&nbsp;ifcGroup&nbsp;\\&nbsp;ifcSystem&nbsp;\\&nbsp;IfcDistributionSystem&nbsp;\\&nbsp;IfcDistributionSystem.OVERHEADCONTACTLINESYSTEM>IfcDistributionSystem...</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EN-TRP-OLE (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  OLE System <p class=ifc><a nohref title=ifcRoot&nbsp;\\&nbsp;ifcObjectDefinition&nbsp;\\&nbsp;ifcObject&nbsp;\\&nbsp;ifcGroup&nbsp;\\&nbsp;ifcSystem&nbsp;\\&nbsp;IfcDistributionSystem&nbsp;\\&nbsp;IfcDistributionSystem.OVERHEADCONTACTLINESYSTEM>OVERHEADCONTACTLINE...</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {
@@ -362,8 +362,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 1050,
-      "pos_y": 820
+      "pos_x": 1540,
+      "pos_y": 500
     },
     "12": {
       "id": 12,
@@ -387,7 +387,7 @@ var energy = {
         }
       },
       "pos_x": -200,
-      "pos_y": 830
+      "pos_y": 680
     },
     "13": {
       "id": 13,
@@ -435,7 +435,7 @@ var energy = {
         }
       },
       "pos_x": -200,
-      "pos_y": -270
+      "pos_y": -120
     },
     "18": {
       "id": 18,
@@ -465,8 +465,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 1200,
-      "pos_y": 400
+      "pos_x": 1550,
+      "pos_y": 220
     },
     "19": {
       "id": 19,
@@ -496,8 +496,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 1200,
-      "pos_y": 570
+      "pos_x": 1540,
+      "pos_y": 360
     },
     "20": {
       "id": 20,

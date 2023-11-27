@@ -1,6 +1,6 @@
 var geo= {
     "data": {
-        "100": {
+        "100": { // Geotechnical System
             "id": 100,
             "name": "IN-GT",
             "data": {},
@@ -25,12 +25,12 @@ var geo= {
             "pos_x": 100,
             "pos_y": 242
           },
-          "101": {
+          "101": { // Earthwork System
             "id": 101,
             "name": "IN-GT-EW",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-GT-EW (101)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Earthwork System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-GT-EW (101)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Earthwork System  <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcBuiltElement&nbsp;\\&nbsp;IfcEarthworksElement\">IfcEarthworksElement</a></p>   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1": {
@@ -79,7 +79,7 @@ var geo= {
             "pos_x": 500,
             "pos_y": 285
           },
-          "102": {
+          "102": { // Ground Improvement / Remediation System
             "id": 102,
             "name": "IN-GT-GI",
             "data": {},
@@ -104,12 +104,12 @@ var geo= {
             "pos_x": 500,
             "pos_y": 145
           },
-          "103": {
+          "103": { // Cutting System
             "id": 103,
             "name": "IN-GT-EW-CUT",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-GT-EW-CUT (103)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Cutting System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-GT-EW-CUT (103)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Cutting System  <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcFeatureElement&nbsp;\\&nbsp;IfcFeatureElementSubtraction&nbsp;\\&nbsp;IfcEarthworksCut\">IfcEarthworksCut</a></p>   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1": {
@@ -134,7 +134,7 @@ var geo= {
             "name": "IN-GT-EW-EMB",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-GT-EW-EMB (104)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Embankment System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-GT-EW-EMB (104)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Embankment System  <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcBuiltElement&nbsp;\\&nbsp;IfcEarthworksElement&nbsp;\\&nbsp;IfcEarthworksFill&nbsp;\\&nbsp;IfcEarthworksFill.EMBANKMENT\">EMBANKMENT</a></p>   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1": {
@@ -160,14 +160,14 @@ var geo= {
               }
             },
             "pos_x": 950,
-            "pos_y": 400
+            "pos_y": 460
           },
           "105": {
             "id": 105,
             "name": "IN-GT-EW-APP",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-GT-EW-APP (105)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Approach Earthworks System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-GT-EW-APP (105)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Approach Earthworks System  <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1": {
@@ -185,7 +185,7 @@ var geo= {
               }
             },
             "pos_x": 950,
-            "pos_y": 275
+            "pos_y": 340
           },
           "115": {
             "id": 115,
@@ -209,7 +209,7 @@ var geo= {
               }
             },
             "pos_x": 100,
-            "pos_y": 430
+            "pos_y": 370
           },
           "33": {
             "id": 33,
@@ -238,7 +238,7 @@ var geo= {
               }
             },
             "pos_x": 100,
-            "pos_y": 920
+            "pos_y": 840
           },
           "28": {
             "id": 28,
@@ -266,7 +266,7 @@ var geo= {
               }
             },
             "pos_x": 100,
-            "pos_y": 550
+            "pos_y": 500
           },
           "117": {
             "id": 117,
@@ -290,7 +290,7 @@ var geo= {
               }
             },
             "pos_x": 100,
-            "pos_y": 680
+            "pos_y": 610
           },
           "11": {
             "id": 11,
@@ -314,7 +314,7 @@ var geo= {
               }
             },
             "pos_x": 100,
-            "pos_y": 780
+            "pos_y": 720
           }
     }
 }

@@ -33,7 +33,7 @@ var structures = {
           "name": "IN-STR-SUP",
           "data": {},
           "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-SUP (106)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Support Structures System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+          "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-SUP (106)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Support Structures System  <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcSpatialElement&nbsp;\\&nbsp;IfcSpatialStructureElement\">IfcSpatialStructureElement</a></p>   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
           "typenode": false,
           "inputs": {
             "input_1": {
@@ -90,7 +90,7 @@ var structures = {
           "name": "IN-STR-IN",
           "data": {},
           "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-IN (107)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Intersection System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+          "html": "\n <div>\n <div class=\"title-box-darkblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-IN (107)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Intersection System  <p class=uniclass><a nohref title=\"Road spaces\">SL_80_35_42</a></p>  <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
           "typenode": false,
           "inputs": {
             "input_1": {
@@ -146,7 +146,7 @@ var structures = {
           "name": "IN-STR-SUP-CANT",
           "data": {},
           "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-SUP-CANT (108)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Cantilever Structure System  <br><p class=uniclass><a nohref title=\"Cantilever Gantry systems\">Ss_37_17_35_11</a></p>\n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+          "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-SUP-CANT (108)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Cantilever Structure System  <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcSpatialElement&nbsp;\\&nbsp;IfcSpatialStructureElement&nbsp;\\&nbsp;IfcFacility&nbsp;\\&nbsp;IfcBridge&nbsp;\\&nbsp;IfcBridge.CANTILEVER\">CANTILEVER</a></p><p class=uniclass><a nohref title=\"Cantilever Gantry systems\">Ss_37_17_35_11</a></p>\n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
           "typenode": false,
           "inputs": {
             "input_1": {
@@ -259,7 +259,7 @@ var structures = {
           "name": "IN-STR-SUP-MAST",
           "data": {},
           "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-SUP-MAST (111)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Tower / Mast Structure System <br><p class=uniclass><a nohref title=\"Masts\">EF_37_17_50</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+          "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-SUP-MAST (111)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Tower / Mast Structure System <p class=ifc><a nohref=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcElementAssembly&nbsp;\\&nbsp;IfcElementAssembly.MAST\">MAST</a></p><p class=uniclass><a nohref title=\"Masts\">EF_37_17_50</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
           "typenode": false,
           "inputs": {
             "input_1": {
@@ -521,7 +521,7 @@ var structures = {
           "name": "IN-STR-IN-TUN",
           "data": {},
           "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-IN-TUN (118)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Tunnel System  <br><p class=uniclass><a nohref title=\"Tunnels and Shafts\">EF_37_50</a></p>\n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+          "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-IN-TUN (118)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Tunnel System  <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcOject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcSpatialElement&nbsp;\\&nbsp;IfcSpatialStructureElement&nbsp;\\&nbsp;IfcFacility\">IfcFacility</a></p><p class=uniclass><a nohref title=\"Tunnels and Shafts\">EF_37_50</a></p>\n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
           "typenode": false,
           "inputs": {
             "input_1": {
@@ -557,7 +557,7 @@ var structures = {
           "name": "IN-STR-IN-PLF",
           "data": {},
           "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-IN-PLF (119)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Platform System <br><p class=uniclass><a nohref title=\"Platforms\">En_80_50_58</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+          "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-STR-IN-PLF (119)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Platform System <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcElementAssembly&nbsp;\\&nbsp;IfcElementAssembly.DECK\">DECK</a></p><p class=uniclass><a nohref title=\"Platforms\">En_80_50_58</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
           "typenode": false,
           "inputs": {
             "input_1": {

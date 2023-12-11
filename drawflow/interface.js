@@ -57,85 +57,7 @@ var interface = {
               }
             },
             "pos_x": 600,
-            "pos_y": 0
-          },
-          "8": {
-            "id": 8,
-            "name": "IN-EXT-HS-RD",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-RD (8)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   Road Systems <p class=uniclass><a nohref title=\"Road spaces\">SL_80_35</a></p> <p class=uniclass><a nohref title=\"Roads\">En_80_35_74</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"2","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1000,
-            "pos_y": -60
-          },
-          "9": {
-            "id": 9,
-            "name": "IN-EXT-HS-PRW",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-PRW (9)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  PRoW Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"2","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1000,
-            "pos_y": 65
-          },
-          "10": {
-            "id": 10,
-            "name": "IN-EXT-HS-AW",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-AW (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Accessway Systems <p class=uniclass><a nohref title=\"Access roads\">En_80_35_01</a></p>  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"2","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1000,
-            "pos_y": -180
+            "pos_y": -150
           },
           "3": {
             "id": 3,
@@ -169,188 +91,6 @@ var interface = {
             "pos_x": 600,
             "pos_y": 430
           },
-          "11": {
-            "id": 11,
-            "name": "IN-EXT-US-GSP",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-GSP (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   National Grid - Grid Supply Point (GSP) Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"3","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[{"node":"33","input":"output_2"}]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1400,
-            "pos_y": 0
-          },
-          "12": {
-            "id": 12,
-            "name": "IN-EXT-US-DNO",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-DNO (12)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   Distribution Network Operator (DNO) \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"3","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[{"node":"33","input":"output_2"}]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1400,
-            "pos_y": 140
-          },
-          "13": {
-            "id": 13,
-            "name": "IN-EXT-US-H2O",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-H2O (13)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Water Mains Infrastructure Network \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"3","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[{"node":"34","input":"output_2"}]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1400,
-            "pos_y": 280
-          },
-          "14": {
-            "id": 14,
-            "name": "IN-EXT-US-SWR",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-SWR (14)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Sewer Mains Infrastructure Network \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"3","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1400,
-            "pos_y": 420
-          },
-          "15": {
-            "id": 15,
-            "name": "IN-EXT-US-GAS",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-GAS (15)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Gas Infrastructure Network \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"3","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[{"node":"34","input":"output_2"}]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1400,
-            "pos_y": 560
-          },
-          "16": {
-            "id": 16,
-            "name": "IN-EXT-US-PC",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-PC (16)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Petrochemical Infrastructure Network \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"3","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[{"node":"35","input":"output_2"}]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1400,
-            "pos_y": 700
-          },
-          "17": {
-            "id": 17,
-            "name": "IN-EXT-US-PWR",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-PWR (17)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Power Infrastructure Network \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"3","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[{"node":"33","input":"output_2"}]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1400,
-            "pos_y": 840
-          },
           "4": {
             "id": 4,
             "name": "IN-EXT-RU",
@@ -375,59 +115,7 @@ var interface = {
               }
             },
             "pos_x": 600,
-            "pos_y": 920
-          },
-          "18": {
-            "id": 18,
-            "name": "IN-EXT-RU-FN",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-RU-FR (18)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Freight Network System \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"4","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1000,
-            "pos_y": 860
-          },
-          "19": {
-            "id": 19,
-            "name": "IN-EXT-RU-OC",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-RU-OC (19)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  TOC/FOC Operational &amp; Business Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1":{
-                "connections":[{"node":"4","input":"output_1"}]
-              },
-              "input_2":{
-                "connections":[]
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                  "connections":[]
-              }
-            },
-            "pos_x": 1000,
-            "pos_y": 970
+            "pos_y": 980
           },
           "5": {
             "id": 5,
@@ -510,6 +198,318 @@ var interface = {
             },
             "pos_x": 600,
             "pos_y": 1300
+          },
+          "8": {
+            "id": 8,
+            "name": "IN-EXT-HS-RD",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-RD (8)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   Road Systems <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcSpatialElement&nbsp;\\&nbsp;IfcSpatialStructureElement&nbsp;\\&nbsp;IfcFacility&nbsp;\\&nbsp;IfcRoad\">IfcRoad</a></p> <p class=uniclass><a nohref title=\"Road spaces\">SL_80_35</a></p> <p class=uniclass><a nohref title=\"Roads\">En_80_35_74</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"2","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 1000,
+            "pos_y": -220
+          },
+          "9": {
+            "id": 9,
+            "name": "IN-EXT-HS-PRW",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-PRW (9)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  PRoW Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"2","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 1000,
+            "pos_y": 30
+          },
+          "10": {
+            "id": 10,
+            "name": "IN-EXT-HS-AW",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-AW (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Accessway Systems <p class=uniclass><a nohref title=\"Access roads\">En_80_35_01</a></p>  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"2","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 1000,
+            "pos_y": -380
+          },
+          "11": {
+            "id": 11,
+            "name": "IN-EXT-US-GSP",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-GSP (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   National Grid - Grid Supply Point (GSP) Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"3","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[{"node":"33","input":"output_2"}]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 1400,
+            "pos_y": 0
+          },
+          "12": {
+            "id": 12,
+            "name": "IN-EXT-US-DNO",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-DNO (12)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   Distribution Network Operator (DNO) \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"3","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[{"node":"33","input":"output_2"}]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 1400,
+            "pos_y": 130
+          },
+          "13": {
+            "id": 13,
+            "name": "IN-EXT-US-H2O",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-H2O (13)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Water Mains Infrastructure Network <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcGroup&nbsp;\\&nbsp;IfcSystem&nbsp;\\&nbsp;IfcDistributionSystem\">IfcDistributionSystem</a></p> <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"3","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[{"node":"34","input":"output_2"}]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 1400,
+            "pos_y": 370
+          },
+          "14": {
+            "id": 14,
+            "name": "IN-EXT-US-SWR",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-SWR (14)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Sewer Mains Infrastructure Network <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcGroup&nbsp;\\&nbsp;IfcSystem&nbsp;\\&nbsp;IfcDistributionSystem\">IfcDistributionSystem</a></p> <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"3","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 1400,
+            "pos_y": 560
+          },
+          "15": {
+            "id": 15,
+            "name": "IN-EXT-US-GAS",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-GAS (15)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Gas Infrastructure Network <p class=ifc><a nohref title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcGroup&nbsp;\\&nbsp;IfcSystem&nbsp;\\&nbsp;IfcDistributionSystem\">IfcDistributionSystem</a></p> <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"3","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[{"node":"34","input":"output_2"}]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 1400,
+            "pos_y": 740
+          },
+          "16": {
+            "id": 16,
+            "name": "IN-EXT-US-PC",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-PC (16)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Petrochemical Infrastructure Network \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"3","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[{"node":"35","input":"output_2"}]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 1400,
+            "pos_y": 900
+          },
+          "17": {
+            "id": 17,
+            "name": "IN-EXT-US-PWR",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-US-PWR (17)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Power Infrastructure Network \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"3","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[{"node":"33","input":"output_2"}]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 1400,
+            "pos_y": 260
+          },
+          "18": {
+            "id": 18,
+            "name": "IN-EXT-RU-FN",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-RU-FR (18)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Freight Network System \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"4","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 980,
+            "pos_y": 930
+          },
+          "19": {
+            "id": 19,
+            "name": "IN-EXT-RU-OC",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-RU-OC (19)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  TOC/FOC Operational &amp; Business Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1":{
+                "connections":[{"node":"4","input":"output_1"}]
+              },
+              "input_2":{
+                "connections":[]
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                  "connections":[]
+              }
+            },
+            "pos_x": 980,
+            "pos_y": 1050
           },
           "20": {
             "id": 20,
@@ -620,7 +620,7 @@ var interface = {
             "name": "IN-EXT-3RD-FH",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-3RD-FH (24)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Fire Hydrant Mains Systems \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-3RD-FH (24)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Fire Hydrant Mains Systems <p class=uniclass><a nohref title=\"Water firefighting systems\">Ss_55_30_96_30</a></p>  <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1":{
@@ -673,7 +673,7 @@ var interface = {
               }
             },
             "pos_x": -200,
-            "pos_y": 100
+            "pos_y": -30
           },
           "33": {
             "id": 33,
@@ -691,7 +691,7 @@ var interface = {
               }
             },
             "pos_x": -200,
-            "pos_y": -100
+            "pos_y": 80
           },
           "34": {
             "id": 34,

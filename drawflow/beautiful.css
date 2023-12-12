@@ -437,6 +437,14 @@
     padding:5px 0;
     font-weight: bold;
   }
+
+  .parentasset{
+    background:white;
+    color:Red;
+    font-size:14pt;
+  }
+
+  
   /* Modal */
   .modal {
     display: none;

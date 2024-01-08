@@ -483,3 +483,10 @@
     }
   }
   
+  p a {
+    text-decoration: none;
+  }
+
+  p a .ifc{
+    color:red;
+  }

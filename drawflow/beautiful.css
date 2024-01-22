@@ -490,3 +490,7 @@
   p a .ifc{
     color:red;
   }
+
+  p a .uniclass{
+    color:blue;
+  }

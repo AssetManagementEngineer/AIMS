@@ -5,7 +5,7 @@ var buildings = {
           "name": "IN-BLD",
           "data": {},
           "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> IN-BLD (2)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   Bulidings &amp; Stations System <p class=ifc><a class=ifc target=\"_blank\" href=\"https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuilding\" title=ifcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcSpatialElement&nbsp;\\&nbsp;IfcSpatialStructureElement&nbsp;\\&nbsp;ifcFacility&nbsp;\\&nbsp;ifcBuilding>ifcBuilding</a></p><p class=uniclass><a target=\"_blank\" href=\"https://uniclass.thenbs.com/taxon/en_80_50_74\" title=\"Railway stations\">En_80_50_74</a></p> \n  <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+          "html": "\n <div>\n <div class=\"title-box-orange\"><i class=\"fas fa-code-branch\"></i> IN-BLD (2)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n   Bulidings &amp; Stations System <p class=ifc><a class=ifc target=\"_blank\" href=\"https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuilding\" title=ifcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcSpatialElement&nbsp;\\&nbsp;IfcSpatialStructureElement&nbsp;\\&nbsp;ifcFacility&nbsp;\\&nbsp;ifcBuilding>ifcBuilding</a></p><p class=uniclass><a class=uniclass target=\"_blank\" href=\"https://uniclass.thenbs.com/taxon/en_80_50_74\" title=\"Railway stations\">En_80_50_74</a></p> \n  <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
           "typenode": false,
           "inputs": {
             "input_1":{
@@ -423,7 +423,7 @@ var buildings = {
         "output_2": {"connections": [] }
       },
       "pos_x": 2100,
-      "pos_y": 1300
+      "pos_y": 1360
     },
     "17": {
       "id": 17,
@@ -440,7 +440,7 @@ var buildings = {
         "output_2": {"connections": [] }
       },
       "pos_x": 2100,
-      "pos_y": 1400
+      "pos_y": 1540
     },
     "18": {
       "id": 18,
@@ -539,7 +539,7 @@ var buildings = {
       "name": "IN-BLD-URS-AI",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-BLD-URS-AI (23)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Accesibility &amp; Inclusivity System <br><p class=uniclass><a nohref title=\"Accessibility lifts and platform systems\">Ss_80_50_02</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-BLD-URS-AI (23)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Accesibility &amp; Inclusivity System <p class=uniclass><a class=uniclass target=\"_blank\" href=\"https://uniclass.thenbs.com/taxon/ss_80_50_02\" title=\"Accessibility lifts and platform systems\">Ss_80_50_02</a></p> \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {"connections": [{"node":"41", "input":"output_1"}] }
@@ -549,7 +549,7 @@ var buildings = {
         "output_2": {"connections": [] }
       },
       "pos_x": 1300,
-      "pos_y": 1200
+      "pos_y": 1370
     },
     "24": {
       "id": 24,
@@ -566,14 +566,14 @@ var buildings = {
         "output_2": {"connections": [] }
       },
       "pos_x": 1300,
-      "pos_y": 1390
+      "pos_y": 1550
     },
     "25": {
       "id": 25,
       "name": "IN-BLD-URS-SF",
       "data": {},
       "class": "SCH",
-      "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-BLD-URS-SF (25)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Street Furniture System  <br><p class=uniclass><a nohref title=\"Furnishings\">Pr_40_50</a></p>\n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+      "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-BLD-URS-SF (25)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Street Furniture System  <p class=uniclass><a class=uniclass target=\"_blank\" href=\"https://uniclass.thenbs.com/taxon/pr_40_50\" title=\"Furnishings\">Pr_40_50</a></p>\n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
       "typenode": false,
       "inputs": {
         "input_1": {"connections": [{"node":"41", "input":"output_1"}] }
@@ -582,8 +582,8 @@ var buildings = {
         "output_1": {"connections": [] },
         "output_2": {"connections": [] }
       },
-      "pos_x": 1300,
-      "pos_y": 1490
+      "pos_x": 1630,
+      "pos_y": 1730
     },
     "26": {
       "id": 26,
@@ -600,7 +600,7 @@ var buildings = {
         "output_2": {"connections": [] }
       },
       "pos_x": 1300,
-      "pos_y": 1650
+      "pos_y": 1710
     },
     "27": {
       "id": 27,
@@ -617,7 +617,7 @@ var buildings = {
         "output_2": {"connections": [] }
       },
       "pos_x": 1300,
-      "pos_y": 1840
+      "pos_y": 1900
     },
     "28": {
       "id": 28,
@@ -633,8 +633,8 @@ var buildings = {
         "output_1": {"connections": [] },
         "output_2": {"connections": [] }
       },
-      "pos_x": 1300,
-      "pos_y": 2000
+      "pos_x": 1630,
+      "pos_y": 1900
     },
     "29": {
       "id": 29,
@@ -650,8 +650,8 @@ var buildings = {
         "output_1": {"connections": [] },
         "output_2": {"connections": [] }
       },
-      "pos_x": 1300,
-      "pos_y": 2100
+      "pos_x": 1630,
+      "pos_y": 2000
     },
     "30": {
       "id": 30,
@@ -668,7 +668,7 @@ var buildings = {
         "output_2": {"connections": [] }
       },
       "pos_x": 1300,
-      "pos_y": 2280
+      "pos_y": 2060
     },
     "31": {
       "id": 31,
@@ -686,7 +686,7 @@ var buildings = {
         "output_2": {"connections": [] }
       },
       "pos_x": 1300,
-      "pos_y": 2450
+      "pos_y": 2230
     },
     "32": {
       "id": 32,

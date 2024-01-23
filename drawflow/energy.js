@@ -68,7 +68,7 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 740,
+      "pos_x": 750,
       "pos_y": -80
     },
     "3": {//AC/DC Conversion System
@@ -131,7 +131,7 @@ var energy = {
         }
       },
       "pos_x": 750,
-      "pos_y": 200
+      "pos_y": 230
     },
     "5": {//HV/LV Cable System 
       "id": 5,
@@ -166,8 +166,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 740,
-      "pos_y": 480
+      "pos_x": 750,
+      "pos_y": 600
     },
     "6": { //Protection/Isolation System
       "id": 6,
@@ -197,8 +197,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 740,
-      "pos_y": 300
+      "pos_x": 750,
+      "pos_y": 400
     },
     "7": { //Power Storage System
       "id": 7,
@@ -259,8 +259,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 1090,
-      "pos_y": 90
+      "pos_x": 1080,
+      "pos_y": 130
     },
     "9": {
       "id": 9,
@@ -291,7 +291,7 @@ var energy = {
         }
       },
       "pos_x": 1080,
-      "pos_y": 220
+      "pos_y": 330
     },
     "10": {
       "id": 10,
@@ -327,7 +327,7 @@ var energy = {
         }
       },
       "pos_x": 1080,
-      "pos_y": 360
+      "pos_y": 460
     },
     "11": {
       "id": 11,
@@ -362,8 +362,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 1540,
-      "pos_y": 500
+      "pos_x": 1560,
+      "pos_y": 550
     },
     "12": {
       "id": 12,
@@ -496,8 +496,8 @@ var energy = {
           "connections":[]
         }
       },
-      "pos_x": 1540,
-      "pos_y": 360
+      "pos_x": 1550,
+      "pos_y": 380
     },
     "20": {
       "id": 20,

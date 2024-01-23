@@ -140,7 +140,7 @@ var ccs = {
           "output_2":{"connections":[]}
         },
         "pos_x": 750,
-        "pos_y": 630
+        "pos_y": 670
       },
       "4": {
         "id": 4,
@@ -237,7 +237,7 @@ var ccs = {
         "outputs": {"output_1":{"connections":[]},
                     "output_2":{"connections":[]}},
         "pos_x": 1090,
-        "pos_y": 560
+        "pos_y": 630
       },
       "7": {
         "id": 7,
@@ -259,7 +259,7 @@ var ccs = {
         "outputs": {"output_1":{"connections":[]},
                     "output_2":{"connections":[]}},
         "pos_x": 1090,
-        "pos_y": 690
+        "pos_y": 730
       },
       "8": {
         "id": 8,

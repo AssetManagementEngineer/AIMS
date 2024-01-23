@@ -130,8 +130,8 @@ var environ = {
             "connections": []
           }
         },
-        "pos_x": 1450,
-        "pos_y": 260
+        "pos_x": 1460,
+        "pos_y": 310
       },
       "5": { // Green Infrastructure
         "id": 5,
@@ -161,8 +161,8 @@ var environ = {
             "connections": []
           }
         },
-        "pos_x": 1450,
-        "pos_y": 150
+        "pos_x": 1460,
+        "pos_y": 190
       },
       "6": { // Ecology System
         "id": 6,
@@ -261,7 +261,7 @@ var environ = {
           }
         },
         "pos_x": 915,
-        "pos_y": 420
+        "pos_y": 450
       },
       "9": {
         "id": 9,
@@ -294,7 +294,7 @@ var environ = {
           }
         },
         "pos_x": 920,
-        "pos_y": 550
+        "pos_y": 620
       },
       "10": {
         "id": 10,
@@ -328,7 +328,7 @@ var environ = {
           }
         },
         "pos_x": 580,
-        "pos_y": 780
+        "pos_y": 900
       },
       "11": {
         "id": 11,
@@ -399,33 +399,7 @@ var environ = {
           }
         },
         "pos_x": 580,
-        "pos_y": 640
-      },
-      "114": {
-        "id": 114,
-        "name": "IN-STR-IN-BND",
-        "data": {},
-        "class": "SCH",
-        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-STR-IN-BND (114)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Boundary Protection System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-        "typenode": false,
-        "inputs": {},          
-        "outputs": {
-          "output_1": {
-            "connections": [{}]
-          },
-          "output_2": {
-            "connections": [{
-              "node":"10",
-              "output":"input_2"
-            },
-            {
-              "node":"4",
-              "output":"input_2"
-            }]
-          }
-        },
-        "pos_x": 200,
-        "pos_y": 890
+        "pos_y": 760
       },
       "13": {
         "id": 13,
@@ -452,8 +426,8 @@ var environ = {
             ]
           }
         },
-        "pos_x": 200,
-        "pos_y": 1030
+        "pos_x": -230,
+        "pos_y": 810
       },
       "101": {
         "id": 101,
@@ -472,8 +446,34 @@ var environ = {
             }
           ]}
         },
-        "pos_x": 200,
-        "pos_y": 1130
+        "pos_x": -230,
+        "pos_y": 930
+      },
+      "114": {
+        "id": 114,
+        "name": "IN-STR-IN-BND",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-STR-IN-BND (114)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Boundary Protection System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {
+            "connections": [{}]
+          },
+          "output_2": {
+            "connections": [{
+              "node":"10",
+              "output":"input_2"
+            },
+            {
+              "node":"4",
+              "output":"input_2"
+            }]
+          }
+        },
+        "pos_x": -230,
+        "pos_y": 700
       }
     }
   }

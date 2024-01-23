@@ -1,5 +1,86 @@
 var geo= {
     "data": {
+          "11": {
+            "id": 11,
+            "name": "IN-DR-RL-EW",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-RL-EW (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Earthworks Drainage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {},          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2":{
+                "connections":[
+                  {
+                    "node":"101",
+                    "output":"input_2"
+                  }
+                ]
+              }
+            },
+            "pos_x": -280,
+            "pos_y": 750
+          },
+          "28": {
+            "id": 28,
+            "name": "IN-ENV-LAN-PS",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-ENV-LAN-PS (28)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Planting System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {
+              "input_1": {
+                "connections": []
+              }
+            },          
+            "outputs": {
+              "output_1": {
+                "connections": []
+              },
+              "output_2": {
+                "connections": [
+                    {
+                        "node":"101",
+                        "output":"input_2"
+                    }
+                ]
+              }
+            },
+            "pos_x": -280,
+            "pos_y": 530
+          },
+          "33": {
+            "id": 33,
+            "name": "IN-GD-PW",
+            "data": {},
+            "class": "SCH",
+            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-GD-PW (33)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Permanent Way System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "typenode": false,
+            "inputs": {},          
+            "outputs": {
+              "output_1": {
+                "connections": [
+                    {
+                        "node":"104",
+                        "output":"input_2"
+                    }
+                ]
+              },
+              "output_2": {
+                "connections": [
+                  {
+                    "node":"34",
+                    "output":"input_2"
+                  }
+                ]
+              }
+            },
+            "pos_x": -280,
+            "pos_y": 860
+          },
         "100": { // Geotechnical System
             "id": 100,
             "name": "IN-GT",
@@ -160,7 +241,7 @@ var geo= {
               }
             },
             "pos_x": 950,
-            "pos_y": 460
+            "pos_y": 490
           },
           "105": {
             "id": 105,
@@ -185,7 +266,7 @@ var geo= {
               }
             },
             "pos_x": 950,
-            "pos_y": 340
+            "pos_y": 380
           },
           "115": {
             "id": 115,
@@ -208,65 +289,8 @@ var geo= {
                 ]
               }
             },
-            "pos_x": 100,
-            "pos_y": 370
-          },
-          "33": {
-            "id": 33,
-            "name": "IN-GD-PW",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-GD-PW (33)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Permanent Way System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {},          
-            "outputs": {
-              "output_1": {
-                "connections": [
-                    {
-                        "node":"104",
-                        "output":"input_2"
-                    }
-                ]
-              },
-              "output_2": {
-                "connections": [
-                  {
-                    "node":"34",
-                    "output":"input_2"
-                  }
-                ]
-              }
-            },
-            "pos_x": 100,
-            "pos_y": 840
-          },
-          "28": {
-            "id": 28,
-            "name": "IN-ENV-LAN-PS",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-ENV-LAN-PS (28)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Planting System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {
-              "input_1": {
-                "connections": []
-              }
-            },          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2": {
-                "connections": [
-                    {
-                        "node":"101",
-                        "output":"input_2"
-                    }
-                ]
-              }
-            },
-            "pos_x": 100,
-            "pos_y": 500
+            "pos_x": -280,
+            "pos_y": 410
           },
           "117": {
             "id": 117,
@@ -289,32 +313,8 @@ var geo= {
                 ]
               }
             },
-            "pos_x": 100,
-            "pos_y": 610
-          },
-          "11": {
-            "id": 11,
-            "name": "IN-DR-RL-EW",
-            "data": {},
-            "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-RL-EW (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Earthworks Drainage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-            "typenode": false,
-            "inputs": {},          
-            "outputs": {
-              "output_1": {
-                "connections": []
-              },
-              "output_2":{
-                "connections":[
-                  {
-                    "node":"101",
-                    "output":"input_2"
-                  }
-                ]
-              }
-            },
-            "pos_x": 100,
-            "pos_y": 720
+            "pos_x": -280,
+            "pos_y": 640
           }
     }
 }

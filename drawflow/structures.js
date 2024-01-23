@@ -1,5 +1,252 @@
 var structures = {
     "data": {
+      "2": {
+        "id": 2,
+        "name": "IN-CCS-SIG",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG (2)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Conventional Signalling System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {
+            "connections": [{}]
+          },
+          "output_2":{
+            "connections":[
+              {
+              "node":"116",
+              "output":"input_2"
+              }
+            ]
+          }
+        },
+        "pos_x": 200,
+        "pos_y": 930
+      },
+      "3": {
+        "id": 3,
+        "name": "IN-DR-RL-STR",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-RL-STR (3)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Civils &amp; Structures Drainage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {
+            "connections": []
+          },
+          "output_2":{
+            "connections":[
+              {
+                "node":"115",
+                "output":"input_2"
+              }
+            ]
+          }
+        },
+        "pos_x": 200,
+        "pos_y": 1060
+      },
+      "4": {
+        "id": 4,
+        "name": "IN-ENV-LAN-PS",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-ENV-LAN-PS (4)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Planting System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {
+            "connections": []
+          },
+          "output_2":{
+            "connections":[
+              {
+                "node":"114",
+                "output":"input_2"
+              }
+            ]
+          }
+        },
+        "pos_x": 200,
+        "pos_y": 710
+      },
+      "5": {
+        "id": 5,
+        "name": "IN-DR-RL",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-RL (5)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Railway Drainage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": { "connections": [] },
+          "output_2":{
+            "connections":[
+              {
+                "node":"118",
+                "output":"input_2"
+              }
+            ]
+          }
+        },
+        "pos_x": 200,
+        "pos_y": 820
+      },
+      "7": {
+        "id": 7,
+        "name": "IN-EN-CBL",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-EN-CBL (7)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  HV/LV Cable System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {
+            "connections": []
+          },
+          "output_2":{
+            "connections":[
+              {
+                "node":"113",
+                "output":"input_2"
+              }
+            ]
+          }
+        },
+        "pos_x": 200,
+        "pos_y": 75
+      },
+      "10": {
+        "id": 10,
+        "name": "IN-ENV-NM",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-ENV-NM (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Noise Mitigation System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {
+            "connections": []
+          },
+          "output_2": {
+            "connections": [
+              {
+                "node":"114",
+                "output":"input_2"
+              }
+            ]
+          }
+        },
+        "pos_x": 200,
+        "pos_y": 590
+      },
+      "11": {
+        "id": 11,
+        "name": "IN-EN-TRP-OLE",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-EN-TRP-OLE (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  OLE System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {
+            "connections": []
+          },
+          "output_2":{
+            "connections":[
+              {
+                "node":"108",
+                "output":"input_2"
+              }
+            ]
+          }
+        },
+        "pos_x": 200,
+        "pos_y": -30
+      },
+      "13": {
+        "id": 13,
+        "name": "IN-CCS-SIG-SS",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG-SS (13)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Signals &amp; Signs System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {"output_1":{"connections":[]},
+                    "output_2":{
+                      "connections":[
+                        {
+                          "node":"110",
+                          "output":"input_2"
+                        }
+                      ]}},
+        "pos_x": 200,
+        "pos_y": -150
+      },
+      "101": {
+        "id": 101,
+        "name": "IN-GT-EW",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-GT-EW (101)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Earthwork System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {"connections": [] },
+          "output_2" :{
+            "connections":[
+              {
+                "node":"115",
+                "output":"input_2"
+              },
+              {
+                "node":"117",
+                "output":"input_2"
+              }
+            ]
+          }
+        },
+        "pos_x": 200,
+        "pos_y": 1200
+      },
+      "102": {
+        "id": 102,
+        "name": "IN-BLD-ANC-REB",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-BLD-ANC-REB (102)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Relocatable Equipment Building (REB) System \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {
+            "connections": []
+          },
+          "output_2":{
+              "connections":[{"node":"111","output":"input_2"}]
+          }
+        },
+        "pos_x": -200,
+        "pos_y": 260
+      },
+      "103": {
+        "id": 103,
+        "name": "IN-CCS",
+        "data": {},
+        "class": "SCH",
+        "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CCS (103)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Command, Control &amp; Signalling System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+        "typenode": false,
+        "inputs": {},          
+        "outputs": {
+          "output_1": {
+            "connections": []
+          },
+          "output_2":{"connections":[{"node":"113","output":"input_2"}]}
+        },
+        "pos_x": 200,
+        "pos_y": 180
+      },
         "105": {
           "id": 105,
           "name": "IN-STR",
@@ -83,7 +330,7 @@ var structures = {
             }
           },
           "pos_x": 570,
-          "pos_y": 370
+          "pos_y": 280
         },
         "107": {
           "id": 107,
@@ -138,8 +385,8 @@ var structures = {
               "connections":[]
             }
           },
-          "pos_x": 580,
-          "pos_y": 530
+          "pos_x": 570,
+          "pos_y": 780
         },
         "108": {
           "id": 108,
@@ -179,8 +426,8 @@ var structures = {
               ]
             }
           },
-          "pos_x": 960,
-          "pos_y": 20
+          "pos_x": 950,
+          "pos_y": -55
         },
         "109": {
           "id": 109,
@@ -252,7 +499,7 @@ var structures = {
             }
           },
           "pos_x": 960,
-          "pos_y": -150
+          "pos_y": -260
         },
         "111": {
           "id": 111,
@@ -319,7 +566,7 @@ var structures = {
             }
           },
           "pos_x": 1320,
-          "pos_y": 340
+          "pos_y": 380
         },
         "113": {
           "id": 113,
@@ -359,7 +606,7 @@ var structures = {
             }
           },
           "pos_x": 960,
-          "pos_y": 200
+          "pos_y": 150
         },
         "114": {
           "id": 114,
@@ -399,7 +646,7 @@ var structures = {
             }
           },
           "pos_x": 960,
-          "pos_y": 550
+          "pos_y": 530
         },
         "115": {
           "id": 115,
@@ -420,7 +667,7 @@ var structures = {
             "input_2":{
               "connections":[
                 {
-                  "node":"10",
+                  "node":"3",
                   "input":"output_2"
                 },
                 {
@@ -514,7 +761,7 @@ var structures = {
             }
           },
           "pos_x": 960,
-          "pos_y": 1180
+          "pos_y": 1210
         },
         "118": {
           "id": 118,
@@ -550,7 +797,7 @@ var structures = {
             }
           },
           "pos_x": 960,
-          "pos_y": 680
+          "pos_y": 645
         },
         "119": {
           "id": 119,
@@ -581,254 +828,7 @@ var structures = {
             }
           },
           "pos_x": 960,
-          "pos_y": 390
-        },
-        "2": {
-          "id": 2,
-          "name": "IN-CCS-SIG",
-          "data": {},
-          "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG (2)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Conventional Signalling System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-          "typenode": false,
-          "inputs": {},          
-          "outputs": {
-            "output_1": {
-              "connections": [{}]
-            },
-            "output_2":{
-              "connections":[
-                {
-                "node":"116",
-                "output":"input_2"
-                }
-              ]
-            }
-          },
-          "pos_x": 200,
-          "pos_y": 1000
-        },
-        "13": {
-          "id": 13,
-          "name": "IN-CCS-SIG-SS",
-          "data": {},
-          "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CCS-SIG-SS (13)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n Signals &amp; Signs System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-          "typenode": false,
-          "inputs": {},          
-          "outputs": {"output_1":{"connections":[]},
-                      "output_2":{
-                        "connections":[
-                          {
-                            "node":"110",
-                            "output":"input_2"
-                          }
-                        ]}},
-          "pos_x": 200,
-          "pos_y": -150
-        },
-        "5": {
-          "id": 5,
-          "name": "IN-DR-RL",
-          "data": {},
-          "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-RL (5)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Railway Drainage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-          "typenode": false,
-          "inputs": {},          
-          "outputs": {
-            "output_1": { "connections": [] },
-            "output_2":{
-              "connections":[
-                {
-                  "node":"118",
-                  "output":"input_2"
-                }
-              ]
-            }
-          },
-          "pos_x": 200,
-          "pos_y": 1130
-        },
-        "10": {
-          "id": 10,
-          "name": "IN-DR-RL-STR",
-          "data": {},
-          "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-DR-RL-STR (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Civils &amp; Structures Drainage System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-          "typenode": false,
-          "inputs": {},          
-          "outputs": {
-            "output_1": {
-              "connections": []
-            },
-            "output_2":{
-              "connections":[
-                {
-                  "node":"115",
-                  "output":"input_2"
-                }
-              ]
-            }
-          },
-          "pos_x": 200,
-          "pos_y": 760
-        },
-        "7": {
-          "id": 7,
-          "name": "IN-EN-CBL",
-          "data": {},
-          "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-EN-CBL (7)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  HV/LV Cable System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-          "typenode": false,
-          "inputs": {},          
-          "outputs": {
-            "output_1": {
-              "connections": []
-            },
-            "output_2":{
-              "connections":[
-                {
-                  "node":"113",
-                  "output":"input_2"
-                }
-              ]
-            }
-          },
-          "pos_x": 200,
-          "pos_y": 75
-        },
-        "11": {
-          "id": 11,
-          "name": "IN-EN-TRP-OLE",
-          "data": {},
-          "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-EN-TRP-OLE (11)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  OLE System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-          "typenode": false,
-          "inputs": {},          
-          "outputs": {
-            "output_1": {
-              "connections": []
-            },
-            "output_2":{
-              "connections":[
-                {
-                  "node":"108",
-                  "output":"input_2"
-                }
-              ]
-            }
-          },
-          "pos_x": 200,
-          "pos_y": -30
-        },
-        "4": {
-          "id": 4,
-          "name": "IN-ENV-LAN-PS",
-          "data": {},
-          "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-ENV-LAN-PS (4)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Planting System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-          "typenode": false,
-          "inputs": {},          
-          "outputs": {
-            "output_1": {
-              "connections": []
-            },
-            "output_2":{
-              "connections":[
-                {
-                  "node":"114",
-                  "output":"input_2"
-                }
-              ]
-            }
-          },
-          "pos_x": 200,
-          "pos_y": 875
-        },
-        "10": {
-          "id": 10,
-          "name": "IN-ENV-NM",
-          "data": {},
-          "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-ENV-NM (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Noise Mitigation System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-          "typenode": false,
-          "inputs": {},          
-          "outputs": {
-            "output_1": {
-              "connections": []
-            },
-            "output_2": {
-              "connections": [
-                {
-                  "node":"114",
-                  "output":"input_2"
-                }
-              ]
-            }
-          },
-          "pos_x": 200,
-          "pos_y": 760
-        },
-        "101": {
-          "id": 101,
-          "name": "IN-GT-EW",
-          "data": {},
-          "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-GT-EW (101)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Earthwork System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-          "typenode": false,
-          "inputs": {},          
-          "outputs": {
-            "output_1": {"connections": [] },
-            "output_2" :{
-              "connections":[
-                {
-                  "node":"115",
-                  "output":"input_2"
-                },
-                {
-                  "node":"117",
-                  "output":"input_2"
-                }
-              ]
-            }
-          },
-          "pos_x": 200,
-          "pos_y": 1250
-        },
-        "102": {
-          "id": 102,
-          "name": "IN-BLD-ANC-REB",
-          "data": {},
-          "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-BLD-ANC-REB (102)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Relocatable Equipment Building (REB) System \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-          "typenode": false,
-          "inputs": {},          
-          "outputs": {
-            "output_1": {
-              "connections": []
-            },
-            "output_2":{
-                "connections":[{"node":"111","output":"input_2"}]
-            }
-          },
-          "pos_x": -200,
-          "pos_y": 260
-        },
-        "103": {
-          "id": 103,
-          "name": "IN-CCS",
-          "data": {},
-          "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fas fa-code-branch\"></i> IN-CCS (103)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Command, Control &amp; Signalling System  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
-          "typenode": false,
-          "inputs": {},          
-          "outputs": {
-            "output_1": {
-              "connections": []
-            },
-            "output_2":{"connections":[{"node":"113","output":"input_2"}]}
-          },
-          "pos_x": 200,
-          "pos_y": 180
+          "pos_y": 315
         }
     }
 }

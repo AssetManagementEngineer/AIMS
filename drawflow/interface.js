@@ -256,7 +256,7 @@ var interface = {
             "name": "IN-EXT-HS-AW",
             "data": {},
             "class": "SCH",
-            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-AW (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Accessway Systems <p class=uniclass><a nohref title=\"Access roads\">En_80_35_01</a></p>  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+            "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-EXT-HS-AW (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Accessway Systems <p class=uniclass><a class=uniclass target=\"_blank\" href=\"https://uniclass.thenbs.com/taxon/en_80_35_01\" title=\"Access roads\">En_80_35_01</a></p>  \n   <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
             "typenode": false,
             "inputs": {
               "input_1":{
@@ -561,7 +561,7 @@ var interface = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 1170
+            "pos_y": 1220
           },
           "22": {
             "id": 22,
@@ -587,7 +587,7 @@ var interface = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 1300
+            "pos_y": 1350
           },
           "23": {
             "id": 23,
@@ -613,7 +613,7 @@ var interface = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 1440
+            "pos_y": 1510
           },
           "24": {
             "id": 24,
@@ -639,7 +639,7 @@ var interface = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 1550
+            "pos_y": 1620
           },
           "31": {
             "id": 31,

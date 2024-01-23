@@ -290,14 +290,14 @@ var telecoms = {
           }
         },
           "pos_x": 1550,
-          "pos_y": -10
+          "pos_y": 20
         },
         "10": {
           "id": 10,
           "name": "IN-TEL-NET-F-BLD",
           "data": {},
           "class": "SCH",
-          "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-TEL-NET-F-BLD (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Building Telephone System  <p class=ifc><a class=uniclass target=\"_black\" href=\"https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcAudioVisualApplianceTELEPHONE\" title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcDistributionElement&nbsp;\\&nbsp;IfcDistributionFlowElement&nbsp;\\&nbsp;IfcFlowTerminal&nbsp;\\&nbsp;IfcAudioVisualAppliance&nbsp;\\&nbsp;IfcAudioVisualAppliance.TELEPHONE\">TELEPHONE</a></p>  <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
+          "html": "\n <div>\n <div class=\"title-box-lightblue\"><i class=\"fas fa-code-branch\"></i> IN-TEL-NET-F-BLD (10)</div>\n <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\"> \n  Building Telephone System  <p class=ifc><a class=ifc target=\"_black\" href=\"https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcAudioVisualApplianceTELEPHONE\" title=\"IfcRoot&nbsp;\\&nbsp;IfcObjectDefinition&nbsp;\\&nbsp;IfcObject&nbsp;\\&nbsp;IfcProduct&nbsp;\\&nbsp;IfcElement&nbsp;\\&nbsp;IfcDistributionElement&nbsp;\\&nbsp;IfcDistributionFlowElement&nbsp;\\&nbsp;IfcFlowTerminal&nbsp;\\&nbsp;IfcAudioVisualAppliance&nbsp;\\&nbsp;IfcAudioVisualAppliance.TELEPHONE\">TELEPHONE</a></p>  <div class=\"modal\" style=\"display:none\">\n <div class=\"modal-content\"> \n  <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>  </div>\n </div>\n  </div>\n </div>\n            ",
           "typenode": false,
           "inputs": {
             "input_1": {
@@ -347,8 +347,8 @@ var telecoms = {
               }
             ]}
           },
-          "pos_x": 560,
-          "pos_y": 550
+          "pos_x": -320,
+          "pos_y": 670
         },
         "12": {
           "id": 12,
@@ -366,8 +366,8 @@ var telecoms = {
                 "connections":[{"node":"2","output":"input_2"}]
             }
           },
-          "pos_x": -200,
-          "pos_y": 530
+          "pos_x": -320,
+          "pos_y": 500
         },
         "13": {
           "id": 13,
@@ -385,7 +385,7 @@ var telecoms = {
                 "connections":[{"node":"1","output":"input_2"}]
             }
           },
-          "pos_x": -200,
+          "pos_x": -320,
           "pos_y": 150
         }
     }

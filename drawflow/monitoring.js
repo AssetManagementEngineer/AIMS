@@ -176,7 +176,7 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 260
+            "pos_y": 320
           },
           "9": {
             "id": 9,
@@ -197,7 +197,7 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 120
+            "pos_y": 200
           },
           "10": {
             "id": 10,
@@ -218,7 +218,7 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": -20
+            "pos_y": 10
           },
           "11": {
             "id": 11,
@@ -240,7 +240,7 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": -160
+            "pos_y": -170
           },
           "12": {
             "id": 12,
@@ -261,7 +261,7 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": -290
+            "pos_y": -350
           },
           "13": {
             "id": 13,
@@ -283,7 +283,7 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 470
+            "pos_y": 490
           },
           "14": {
             "id": 14,
@@ -305,7 +305,7 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 610
+            "pos_y": 680
           },
           "15": {
             "id": 15,
@@ -327,7 +327,7 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 760
+            "pos_y": 850
           },
           "16": {
             "id": 16,
@@ -349,7 +349,7 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 990
+            "pos_y": 1200
           },
           "17": {
             "id": 17,
@@ -371,7 +371,7 @@ var monitoring = {
               }
             },
             "pos_x": 1400,
-            "pos_y": 890
+            "pos_y": 1040
           },
           "18": {
             "id": 18,

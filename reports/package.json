@@ -1,6 +1,8 @@
 {
   "name": "reports",
   "version": "0.1.0",
+  "predeploy": "npm run build",
+  "deploy":"main -d build",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

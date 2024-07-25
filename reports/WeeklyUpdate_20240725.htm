@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+<style>
+
+*
+{
+  margin:0;
+  padding:0;
+}
+
+li {
+margin-left:20px;
+font-size: 12pt;
+}
+
+th, td {
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	text-align:left;
+	height:30px;
+	font-size: 12pt;
+	font-weight:Bold;
+	padding-left:3px;
+}
+a{text-decoration:none;color:#9b2222;}
+a:link:   {color:#9b2222;}
+a:visited {color:#9b2222;}
+a:hover   {color:#EE0000;}
+a:active  {color:#EE0000;}
+
+table{
+	margin:4px;
+}
+
+table.noborder{
+  border-top: 0px solid white;
+}
+
+td.noborder{
+	border-top: 0px solid white;
+	border-left: 0px solid white;
+	border-bottom: 0px solid white;
+}
+
+.darkBlue {
+  background:#5b9db5;
+  color:Black;
+  font-size: 10pt;
+  color:white;
+}
+.Red {
+  background:#FF0000;
+  color:Black;
+  font-size: 10pt;
+  color:white;
+}
+
+.darkGreen {
+  background:#0f763d;
+  font-size: 10pt;
+  color:white;
+}
+
+.darkOrange {
+  background:#e9bd09;
+  color:Black;
+  font-size: 10pt;
+}
+
+.darkRed {
+  background:#9b2222;
+  font-size: 10pt;
+  color:white;
+}
+
+.lightRed {
+  background:#3b2222;
+  color:Black;
+  font-size: 12pt;
+  font-weight:Normal;
+}
+
+.lightHeader {
+  background:#bdd5ee;
+  color:Black;
+  height:20px;
+  font-size: 10pt;
+  font-weight:Bold;
+  text-align:center;
+  border-top:0px;
+}
+
+.lightGrHeader {
+  background:#8fdbb0;
+  color:Black;
+  height:20px;
+  font-size: 10pt;
+  font-weight:Bold;
+  text-align:center;
+  border-top:0px;
+}
+
+.lightOrHeader {
+  background:#fde99b;
+  color:Black;
+  height:20px;
+  font-size: 10pt;
+  font-weight:Bold;
+  text-align:center;
+  border-top:0px;
+}
+
+
+
+.lightHeaderRed {
+  background:#eebdd5;
+  color:Black;
+  height:20px;
+  font-size: 10pt;
+  font-weight:Bold;
+  text-align:center;
+  border-top:0px;
+}
+
+.data {
+  font-weight:normal;
+  font-size: 12pt;
+  height:20px;
+  border-top:0px;
+}
+
+.spacer {
+	height:20px;
+}
+
+font {
+  font-family:Century Gothic;
+}
+
+p {
+	font-weight:normal;
+}
+
+</style>
+
+<body>
+
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <th class="darkBlue">Project Name</th>
+	<th class="lightBlue">Digital Design / DCoE</th>
+	<th class="darkBlue">Line Manager</th>
+	<th class="lightBlue">Loukas Mitsou / Ivan Mactaggart</th>
+	<th class="darkBlue">Report Date</th>
+	<th class="lightBlue" style="border-right:1px solid black;">25 July 2024</th>
+	<!--<th class="Red">MK</th>
+	<th class="lightBlue" style="border-right:1px solid black;">26.6%</th>//-->
+  </tr>
+</table>
+
+<br>
+<!--<table width="99%" class="noborder" cellpadding=0 cellspacing=0>
+  <tr><td class="noborder">
+Hi Ivan<br><br>
+<p>Many thanks for our 1-2-1. I hope you find this weekly review helpful. Please note that anything in <font style="color:#9b2222">dark red</font> is a clickable link. <br>
+This report is broken down into sections and includes a summary of the current weeks activities followed by work I expect to contribute to in the following week.<br><br>
+My main objectives are:<br>
+<ul>
+  <li>Developing the Systems Classification Hierarchy
+    <ul>
+	  <li><p>Aligning <a target="_blank" title="link to uniclass" href="https://uniclass.thenbs.com/">uniclass</a> and <a target="_blank" title="Building Smarts online Data Dictionary" href="https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3">IFC</a> to our systems</p>
+	  <li><p>Developing the <a target="_blank" title="Link to visualisation tool on git hub" href="https://assetmanagementengineer.github.io/AIMS/drawflow/master.html">visualisation tool</a></p>
+	  <li><p>Identifying the interfaces and preparing required metadata</p>
+	  <li><p>Logging the Asset Breakdown Structure in each system
+    </ul>
+  <li>Managing AIMS
+    <ul>
+	  <li><p><a target="_blank" title="How to guides" href="https://assetmanagementengineer.github.io/AIMS/AIMS.html">Documenting functionality</a></p>
+	  <li><p>Carrying out testing, getting familiar with how it works and what could be improved</p>
+	  <li><p>Carrying out CRUD operations for the content such as systems, attributes and assets</p>
+	</ul>
+  <li>Providing a solution for auto asset registration
+    <ul>
+	  <li><p>Developing the <a target="_blank" title="Visio model" href="https://eastwestrailwaycouk.sharepoint.com/:u:/r/sites/DigitalEngineeringTeam/_layouts/15/Doc.aspx?sourcedoc=%7B2AED7A2F-48BB-4210-9602-F2101A0982B7%7D&file=Asset%20Registration.vsdx&action=default&mobileredirect=true">model</a> for automatic asset registration</p>
+	  <li><p>Creating a prototype process for asset registration via the <a target="_blank" title="Using the WebAPI documentation" href="https://assetmanagementengineer.github.io/AIMS/WebAPI.html">AIMS WebAPI</a> and updating CAD files with the returned UAID</p>
+	</ul>
+</ul>
+</p>
+</td></tr>
+<tr height=20><td class="noborder"></td></tr>
+<tr><td class="noborder"><p>I don't really have any outstanding issues that aren't being dealt with, but when the next obstacles come up or I think of any I'll be sure to mention them.</p></td></tr>
+<tr height=20><td class="noborder"></td></tr>
+</table>
+
+//-->
+
+<!--
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <td width="3%" style="text-align:center;background:grey;">1<br>A/L</td>
+	<td width="3%" style="text-align:center;background:grey;">2<br>A/L</td>
+	<td width="3%" style="text-align:center;background:grey;">F<br>3</td>
+	<td width="3%" style="text-align:center;background:grey;">Sa<br>4</td>
+	<td width="3%" style="text-align:center;background:grey;">Su<br>5</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">6</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">7</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">8</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">9</td>
+	<td width="3%" style="text-align:center;background:grey;">F<br>10</td>
+	<td width="3%" style="text-align:center;background:grey;">Sa<br>11</td>
+	<td width="3%" style="text-align:center;background:grey;">Su<br>12</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">13</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">14</td>
+    <td width="3%" style="text-align:center;background:lightblue;">15</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">16</td>
+	<td width="3%" style="text-align:center;background:grey;">F<br>17</td>
+	<td width="3%" style="text-align:center;background:grey;">Sa<br>18</td>
+	<td width="3%" style="text-align:center;background:grey;">Su<br>19</td>
+	<td width="3%" style="text-align:center;background:lime;">20<br>MK</td>
+	<td width="3%" style="text-align:center;background:lime;">21<br>MK</td>
+	<td width="3%" style="text-align:center;background:lime;">22<br>MK</td>
+	<td width="3%" style="text-align:center;background:lime;">23<br>MK</td>
+	<td width="3%" style="text-align:center;background:grey;">F<br>24</td>
+	<td width="3%" style="text-align:center;background:grey;">Sa<br>25</td>
+	<td width="3%" style="text-align:center;background:grey;">Su<br>26</td>
+	<td width="3%" style="text-align:center;background:grey;">BH<br>27</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">28</td>
+	<td width="3%" style="text-align:center;background:lightblue;">29</td>
+	<td width="3%" style="text-align:center;background:lightblue;">30</td>
+	<td width="3%" style="text-align:center;background:grey;">F<br>31</td>
+  </tr>
+</table>
+//-->
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <td class="darkBlue" colspan=3 style="text-align:center; border-right:1px solid black;" >Mikes Activities: W/C 22 July 24</td>
+  </tr>
+  <tr>
+    <td class="lightHeader">No.</td>
+	<td class="lightHeader">Task</td>
+	<td class="lightHeader" style="border-right:1px solid black;">Comments</td>
+  </tr>
+  <tr>
+    <td class="data">1</td>
+	<td class="data">DCoE</td>
+	<td class="data" style="border-right:1px solid black;"><ul> 
+	<li>LARMS access granted for full exposure to site. Creating site map documenting fields, functionality, processes etc.
+	<li>Identified 3 interfaces that require technical solutions:
+		<ol>
+			<br><br><li><b>Salesforce</b> - Rob has requested a meeting with <a target='_blank' href='mailto:tattewell@salesforce.com'>Tom Attewell</a> to discuss how datb interact with the data.<br>
+			I discovered the product we use is called SalesCloud which led me to a number of possible API's that could be utilised to interface with the data<br>
+			<a target='_blank' href='https://developer.salesforce.com/docs/einstein/genai/guide/access-models-api-with-rest.html'>https://developer.salesforce.com/docs/einstein/genai/guide/access-models-api-with-rest.html</a><br>
+			Need to find out what our salesforce domain name is and then we could potentially use <a target='_blank' href='https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_sobject_create.htm'>https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_sobject_create.htm</a>
+			<br><br><li><b>ArcGIS</b> - A possible javascript solution to view GIS maps and likely the one utilised by DATB - <a target='_blank' href='https://developers.arcgis.com/javascript/latest/tutorials/display-a-map/'>https://developers.arcgis.com/javascript/latest/tutorials/display-a-map/</a>
+			<br><br><li><b>SAP</b> - Rob arranged a discussion with <a target='_blank' href='mailto:Stewart.Armstrong@nttdata.com'>Stewart Armstrong</a> from NTT Data to discuss how we interact with SAP to make payments. Apparently we:
+			<ul>
+				<li>Submit an email with an XML attachment with details to create a suppplier master record
+				<li>Submit a second email with an attached XML document that specifies the details of the purchase order
+				<li>Await the response by email expecting an XML attachment with details corresponding to the success of the payment.
+			</ul>
+			<br>I'm currently awaiting an example of each document from Rob, 2 of which Stewart said he would send to us.
+		</ol>
+	<li>Began cataloging each menu item in LARMS and documenting expected fields in the database. Began creating the SQL server schema with temporal capabilities to replicate what we have with DATB.
+	</ul>
+	</td>
+  </tr> 
+ 
+
+
+<!--
+ <tr>
+    <td class="data">2</td>
+	<td class="data">Training</td>
+	<td class="data" style="border-right:1px solid black;"><ul> 
+	<li>Continued online udemy training to freshen up on existing skills aswell as upskilling in the hope this may benefit both EWR and my personal career development.</ul>
+	</td>
+  </tr>
+ <tr>
+    <td class="data">1</td>
+	<td class="data">AIMS updates</td>
+	<td class="data" style="border-right:1px solid black;">Continued C# development of ETL process to input IFC attributes into AIMS via XML</td>
+  </tr>
+  <tr>
+    <td class="data">2</td>
+	<td class="data"><a target="_blank" title="Udemy Training Course" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=LETSLEARNNOWPP">Udemy Training</a></td>
+	<td class="data" style="border-right:1px solid black;">Continued udemy training course on react.js / github / postgres that is utilised by Bentley i-twin development and DCoE</td>
+  </tr>
+  <tr>
+    <td class="data">3</td>
+	<td class="data"><a target="_blank" title="Need To Sell app link" href="https://needtosell.eastwestrail.co.uk/">Needtosell</a> app development</td>
+	<td class="data" style="border-right:1px solid black;">Investigating the security risk when entering the pin. Identified flaw. Awaiting admin permissions to test solution.</td>
+  </tr>
+  <tr>
+    <td class="data">4</td>
+	<td class="data">Preparation of Flexible Working Appeal</td>
+	<td class="data" style="border-right:1px solid black;">An unexpected rejection of my proposal has resulted in my frantically hunting around for affordable accomodation whilst preparing my appeal in a final effort to secure my place in EWR. My appeal was submitted on Thursday.</td>
+  </tr>
+  <tr>
+    <td class="data">5</td>
+	<td class="data">Bim4Rail Meeting</td>
+	<td class="data" style="border-right:1px solid black;">Productive discussion showcasing the new IFC gaps discussion. Highlighted the problem with the Attributes property set that indicates generic use yet presents different attributes subject to the class it sits in. This will be raised with IFC.<br>
+	Key Topics:<br>
+	<ul>
+	<li><b>IFC gap analysis of systems classification hierarchy:</b> Mike shared a GitHub link to a new discussion page where he has mapped the IFC assignments for each system and identified the gaps where IFC is required. He invited the group to review and comment on the page with their suggestions and feedback
+	<li><b>IFC property sets and attributes:</b> The group discussed the challenges and issues with the IFC property sets and attributes, such as the lack of consistency and commonality across different classes, the need for custom property sets and overrides, and the difficulty of reading the schema. They agreed to seek more guidance and examples from buildingSMART and other disciplines that use IFC.
+	<li><b>IFC implementation on projects:</b> Ian expressed his interest in having a 10-step guide or checklist for implementing IFC on projects, and what steps and requirements are needed to achieve interoperability and data exchange. Craig mentioned that he is working on a highways project with Skanska that is piloting IFC 4.3 and feeding it into Bentley iTwin, and offered to collaborate and share his experience with the group.
+	<li><b>IFC and asset information model:</b> Mathew asked about how IFC fits into the asset information model and the data lifecycle, and how it can be maintained and integrated with other systems such as Maximo and ProjectWise. He said he is looking at the digital management programme and the technical strategy for enabling a digital data model that covers all aspects of the information need. Craig said he is also exploring these questions with his client and will share what he can with the group.
+	</ul></td>
+  </tr>
+  <tr>
+    <td class="data">2</td>
+    <td class="data">HS2 lessons learnt</td>
+    <td class="data" style="border-right:1px solid black;">
+      <ul>
+        <li>HS2 started out with an unmanageable number of different types of the same asset, valves in their classification hierarchy
+        <li>Multiple classifications are being adopted. Uniclass has been intermingled with HS2's own classifications and stakeholders have been registering assets in both classification types resulting in data structure failure.<br>
+        In the image below you can see Co (Complexes) which is a uniclass code stored with HS2's own classification entries aswell as them using Uniclass as a secondary classification in an HS2 class.
+        <img src="https://assetmanagementengineer.github.io/AIMS/images/HS2Class.bmp">
+		<li>They're redesigning the classification based on the ABS results following interaction with the SME's to remove unneccessary classes and attributes
+		<li>Too many attributes have been setup that could cost millions to collect and maintain much of which is only required from maintenance stage
+        <li>Generic attributes have been setup like '101 other things?' allowing any old junk data to be populated
+		<li>1000's of free text fields have been set up allowing all sorts of unprocessible data to be captured
+	  </ul>
+    </td>
+  </tr>
+ 
+  <tr>
+    <td class="data">5</td>
+	<td class="data">Asset registration</a></td>
+	<td class="data" style="border-right:1px solid black;">
+	<ul>
+	<li>Data extracted from approved CAD (.dgn) files containing multiple assets via FME. These should include as a minimum the following mandatory data required by AIMS:
+		<ul>
+		  <li>EWR system classification
+		  <li>Parent asset UAID unless it is a top level parent asset
+		  <li>Asset name according to approved naming convention
+		  <li>Stage the asset is required for
+		  <li>Location route
+		</ul>
+	<li>May include IFC assignments, uniclass and additional associated attribute data
+	<li>Data must be validated including the naming convention and other parameters (<a target="_blank" href="https://github.com/buildingSMART/IDS/blob/master/Documentation/README.md">IDS</a> could be used?)
+	<li>Approved data is then appended to AIMS via XML, CSV or API
+	<li>UAID is generated and assigned by AIMS to the new asset
+	<li>Original CAD file is updated with the UAID by FME / Python / <a target="_blank" href="https://communities.bentley.com/products/programming/microstation_programming/f/microstation-programming---forum/171491/connect-c-how-to-change-a-dgn-file-properties-title-comments">VBA / C#</a> etc
+	</ul><br>
+	<b>Sequence of events</b>
+	<ol>
+	  <li> SCH must be in place
+	  <li> Data dictionaries must be available to provide optional and mandatory attributes within attribute groups including list of values or enumerators
+	  <li> Available routes must be established with chainage range predetermined
+	  <li> DGN files require details of models within such as UAID if already assigned; EWR Classification; Asset Name; Stage; Route; Microstation UID;
+	  <li> Run FME tests to extract required data from DGN file
+	  <li> Output to WebAPI (see DATB for guidance on possible use of Web API's)
+	  <li> Web API should return UAID for FME to load back into DGN file
+	  <li> DGN file gets copied back to projectwise
+	  <li> Discuss with Abel, Charlie, Harshed, Joao, Dino
+	</ol>
+	<a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/images/AstRegWorkflow.png"><img width="100%" src="https://assetmanagementengineer.github.io/AIMS/images/AstRegWorkflow.png" /></a>
+	</td>
+  </tr>
+  
+    <tr>
+    <td class="data">1</td>
+	<td class="data"><a target="_blank" href="https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3">IFC</a> / <a target="_blank" href="https://uniclass.thenbs.com/">Uniclass</a></td>
+	<td class="data" style="border-right:1px solid black;">Continued assigning <a target="_blank" href="https://uniclass.thenbs.com/">uniclass</a> and <a target="_blank" href="https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3">IFC</a> codes to the <a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/drawflow/master.html">SCH</a></td>
+  </tr>
+
+    <tr>
+    <td class="data">7</td>
+	<td class="data">IFC Attributes</td>
+	<td class="data" style="border-right:1px solid black;">Continued developing the python script to extract the attributes and enumerations from the XSD doc</td>
+  </tr>
+ 
+  <tr>
+    <td class="data">2</td>
+	<td class="data"><a target="_blank" href="https://eastwestrailwaycouk-my.sharepoint.com/:p:/g/personal/mike_harley_eastwestrail_co_uk/EaIx0DcWdUxEmimO1kfZcCIB-N2Vpgc-RDznlGBLYOibaw?email=Dino.Nola%40eastwestrail.co.uk&e=mp54JS">AIMS / IFC Presentation</a></td>
+	<td class="data" style="border-right:1px solid black;">Made further progress on the presentation, <a target="_blank" href="https://eastwestrailwaycouk-my.sharepoint.com/:p:/g/personal/mike_harley_eastwestrail_co_uk/EaIx0DcWdUxEmimO1kfZcCIB-N2Vpgc-RDznlGBLYOibaw?email=Dino.Nola%40eastwestrail.co.uk&e=mp54JS">see link</a>. Transferring ideas below to the powerpoint.Notes in progress (developing thought structure):<br>
+	  <ul>
+		<li>Creating the systems classification hierarchy
+		  <ul>
+		    <li>Copy made from systems in EA
+			<li>Visio diagram produced
+			<li>Discussions with SMEs
+			<li><a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/drawflow/master.html">Javascript visual</a> developed
+			<li>AIMS updated in UAT manually
+			<li>XML transfer to PROD
+			<li>IFC applied to visualisation
+			<li>Uniclass applied to visualisation
+			<li>SCH is not the OTL - they will run in parallel
+		  </ul>
+		<li>IFC developments
+		  <ul>
+			<li><a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/IFCStarterPack/RWR-IFC_Rail-Data_Requirements_Report.pdf#zoom=160&page=13">Data Dictionary</a> (BS Deliverable)
+			<li>Hierarchy - systems vs objects/assets
+			<li><a target="_blank" href="https://github.com/buildingSMART/IDS/blob/master/Documentation/README.md">IDS</a> / <a target="_blank" href="https://technical.buildingsmart.org/standards/information-delivery-manual/">IDM</a>
+			<li>Future aspirations
+		  </ul>
+		<li>iTwin developments
+		  <ul>
+		    <li>Customising the model
+			<li>Isolating an asset for viewing
+		  </ul>
+	  </ul>
+	</td>
+  </tr>
+   
+  <tr>
+    <td class="data">3</td>
+	<td class="data">AIMS Requirements</td>
+	<td class="data" style="border-right:1px solid black;">This section will log requirements to consider in AIMS:
+	<ol>
+		<li><b>Classifications structure</b>
+		    <ul>
+		        <li>	The EWR Systems Classification Hierarchy will be the main classification that will host the registration of our assets. 
+			    <li>	The full IFC and Uniclass classification hierarchies will be available in AIMS to enable a relationship where possible to the EWR SCH. 
+			    <li>	Preferably if it's possible I'd like these secondary classifications to be read only so they cannot be assigned with a registered asset but this may incur a development cost. 
+			    <li>	Some features of the IFC classification are not currently available in AIMS like the properties and enumeration options. Once these are in place we can see what such a relationship looks like. At the moment I can't see how to link an EWR class to an enumeration if required as it will likely be stored as an attribute of it's parent class. 
+			    <li>	There is a provision to store secondary classifications in the data dictionary as an attribute but this would result in a fragmented assignment of a classification outside the context of its hierarchy.
+		    </ul>
+		<li><b>One to Many relationship</b>
+		    <ul>
+				<li>A registered asset may reside in more than one system. Classifications can be set up to have a relationship so that functionality can be shared. DATB are currently working on a visualisation to report on all relationships of a class.
+			</ul>
+	</ol>
+	
+	</td>
+  </tr>
+  
+  <tr>
+    <td class="data">4</td>
+	<td class="data">AIMS Amendments</td>
+	<td class="data" style="border-right:1px solid black;">Had meeting with DATB to discuss the following:
+	<ol>
+	  <li>AD4 amendments
+		 <ol>
+			<li>EWR logo - already assigned.
+			<li>Attributes can be grouped using Attribute Groups and ordered according to preference. There are some hard coded attributes that can be removed or renamed according to our desire. Dino and Mike to discuss
+		</ol>
+	  <li>Namespace changes. Minor devolpment. Can change to a generic DATB for data imports but if the data may be sent outside of EWR we may require branding
+	  <li>Route chainage bug - Dan proactively fixed this bug in advance of our meeting
+	  <li>Assets having shared classification functionality - DATB are currently working on a report to show visually the relationships between classes that is due for completion by the end of the year. No charge.
+	  <a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/images/DATBPrototpye.png"><img width="60%" src="https://assetmanagementengineer.github.io/AIMS/images/DATBPrototpye.png" /></a>
+	  <li>Deferred rights email bug - Support issue S123362 [HS2AR] has been completed and services are back to normal
+	</ol>
+	</td>
+  </tr>
+ <tr>
+    <td class="data">9</td>
+	<td class="data">Outstanding issues</td>
+	<td class="data" style="border-right:1px solid black;">
+	  <table width="99%" cellpadding=0 cellspacing=0 style="border-top:1px solid black;">
+	    <tr>
+		  <td class="lightHeader" width="20%">Issue</td>
+		  <td class="lightHeader" width="40%">Description</td>
+		  <td class="lightHeader" width="40%" style="border-right:1px solid black;">Updates / Actions</td>
+		</tr>
+	    <tr>
+		  <td class="data"></td>
+		  <td class="data">A glitch has been identified when assigning a location to a class that has a restriction in chainage. It doesn't seem to accept anything within the expected range.</td>
+		  <td class="data" style="border-right:1px solid black;">DATB aware but have not been asked to look into it yet. Need to find out if there are any development costs associated with the repair.<br>
+		  <b>23 Nov</b> - Requested this be looked into along with AD4 branding and redesign and XML personalisation</td>
+		</tr>
+	    <tr>
+		  <td class="data"><b>AIMS</b></td>
+		  <td class="data">EWR UAT outbound emails not being sent when requesting deferred rights<br>The OAuth authentication is failing on outbound emails via the no-reply@eastwestrail.co.uk account</td>
+		  <td class="data" style="border-right:1px solid black;">A new Support issue S123362 [HS2AR] has been recorded in dito by Neil Hinson on behalf of Mike  Harley of East West Rail Company (EWR).</td>
+		</tr>
+	  </table>
+	
+	</td>
+  </tr>
+  
+  <tr>
+    <td class="data">#</td>
+	<td class="data">Template</td>
+	<td class="data" style="border-right:1px solid black;">Comments</td>
+  </tr>
+  //-->
+  
+  
+</table>
+
+<br>
+
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <td class="darkRed" colspan=3 style="text-align:center; border-right:1px solid black;" >Mikes Priorities: W/C 29 July 2024</td>
+  </tr>
+  <tr>
+    <td class="lightHeaderRed">No.</td>
+	<td class="lightHeaderRed">Task</td>
+	<td class="lightHeaderRed" style="border-right:1px solid black;">Comments</td>
+  </tr>
+ <tr>
+    <td class="data">1</td>
+	<td class="data">Monitor <a target="_blank" href="https://github.com/AssetManagementEngineer/AIMS/discussions/1"> IFC discussion</a></td>
+	<td class="data" style="border-right:1px solid black;">Action the comments and suggestions raised in the discussion. This may include liaising with the SMS's and/or updating the SCH.</td>
+  </tr>
+ <tr>
+    <td class="data">2</td>
+	<td class="data">DCoE</td>
+	<td class="data" style="border-right:1px solid black;">
+	<ul><li>DCoE - Continue exploring LARMS environment and document site map. Break down into modules to reverse engineer
+	<li>Chase Rob for the expected SAP files<br>
+	<li>Obtain a GIS api key access token to test the GIS viewer<br>
+	<li>Set up the Azure Active Directory login page
+	</ul>
+	</td>
+  </tr>
+
+</table>
+
+<br>
+<!--
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <td class="darkBlue" colspan=6 style="text-align:center; border-right:1px solid black;" >Project Schedule</td>
+  </tr>
+  <tr >
+    <td class="lightHeader">No.</td>
+	<td class="lightHeader">Task</td>
+	<td class="lightHeader" width="70px">Start</td>
+	<td class="lightHeader" width="70px">End</td>
+	<td class="lightHeader">Progress</td>
+	<td class="lightHeader" style="border-right:1px solid black;">Comments</td>
+  </tr>
+  <tr>
+    <td class="data">1</td>
+	<td class="data">Identify High Level System Domains</td>
+	<td class="data">01 JAN 23</td>
+	<td class="data">30 APR 23</td>
+	<td class="data">100%</td>
+	<td class="data" style="border-right:1px solid black;color:green;">Complete</td>
+  </tr>
+  <tr>
+    <td class="data">2</td>
+	<td class="data">Identify SMEs for High Level System Domains</td>
+	<td class="data">01 JAN 23</td>
+	<td class="data">30 APR 23</td>
+	<td class="data">100%</td>
+	<td class="data" style="border-right:1px solid black;color:green;">Complete</td>
+  </tr>
+  <tr>
+    <td class="data">3</td>
+	<td class="data">Conduct 1st phase of consultation sessions to develope SCH</td>
+	<td class="data">01 MAY 23</td>
+	<td class="data">30 MAY 23</td>
+	<td class="data">100%</td>
+	<td class="data" style="border-right:1px solid black;color:green;">Complete</td>
+  </tr>
+  <tr>
+    <td class="data">4</td>
+	<td class="data">Apply SCH to AIMS</td>
+	<td class="data">01 JUN 23</td>
+	<td class="data">30 JUN 23</td>
+	<td class="data">100%</td>
+	<td class="data" style="border-right:1px solid black;color:green;">Complete</td>
+  </tr>
+  <tr>
+    <td class="data">5</td>
+	<td class="data">Setup hierarchical visualisation in AIMS</td>
+	<td class="data">01 JUN 23</td>
+	<td class="data">30 JUN 23</td>
+	<td class="data">100%</td>
+	<td class="data" style="border-right:1px solid black;color:green;">Complete</td>
+  </tr>
+  <tr>
+    <td class="data">6</td>
+	<td class="data">Conduct 2nd phase of consultation sessions to align the EA model to the SCH</td>
+	<td class="data">01 JUN 23</td>
+	<td class="data">30 JUN 23</td>
+	<td class="data">100%</td>
+	<td class="data" style="border-right:1px solid black;color:green;">Complete</td>
+  </tr>
+  <tr>
+    <td class="data">7</td>
+	<td class="data">Conduct further consultation sessions with SMEs in 2nd phase to identify interfaces in each domain</td>
+	<td class="data">01 JUL 23</td>
+	<td class="data">31 JUL 23</td>
+	<td class="data">100%</td>
+	<td class="data" style="border-right:1px solid black;color:green;">Complete</td>
+  </tr>
+  <tr>
+    <td class="data">8</td>
+	<td class="data">Ensure the EA infrastructure (physical) interfaces align</td>
+	<td class="data"></td>
+	<td class="data">TBA</td>
+	<td class="data">50%</td>
+	<td class="data" style="border-right:1px solid black;color:orange;">
+	<ul><li>In progress - interfaces extracted from EA for comparison. James Cullen in process of aligning the systems in EA with the SCH in AIMS. 
+	<li>*** SHOW STOPPER *** Asset Management suggests this is too early to spend any time on. This work would very likely be carried out by the TP.</ul></td>
+  </tr>
+  <tr>
+    <td class="data">9</td>
+	<td class="data">Create interfaces in AIMS (UAT &amp; PROD)</td>
+	<td class="data"></td>
+	<td class="data">TBA</td>
+	<td class="data">0%</td>
+	<td class="data" style="border-right:1px solid black;color:orange;">See above. Some interfaces have been created but there is no alignment with the EA</td>
+  </tr>
+  <tr>
+    <td class="data">10</td>
+	<td class="data">Establish high level attributes for SCH and Interfaces - Asset Registration minimum requirements (UAID, Parent etc)</td>
+	<td class="data"></td>
+	<td class="data">TBA</td>
+	<td class="data">50%</td>
+	<td class="data" style="border-right:1px solid black;color:orange;">In progress - Asset registration mandatory attributes established, awaiting confirmation of interfaces before mandatory attributes can be assigned to them</td>
+  </tr>
+  <tr>
+    <td class="data">11</td>
+	<td class="data">Conduct phase 3 of consultation sessions to establish sub systems (PFUs/FUs)</td>
+	<td class="data"></td>
+	<td class="data">TBA</td>
+	<td class="data">0%</td>
+	<td class="data" style="border-right:1px solid black;color:red;">Awaiting TP involvement</td>
+  </tr>
+  <tr>
+    <td class="data">12</td>
+	<td class="data">Reflect sub-systems (PFU's/FU's) in AIMS (UAT &amp; PROD) - auto registration</td>
+	<td class="data"></td>
+	<td class="data">TBA</td>
+	<td class="data">0%</td>
+	<td class="data" style="border-right:1px solid black;color:red;">Awaiting TP involvement</td>
+  </tr>
+  <tr>
+    <td class="data">13</td>
+	<td class="data"><a target="_blank" title="Visio diagram representing auto asset registration" href="https://eastwestrailwaycouk.sharepoint.com/:u:/r/sites/DigitalEngineeringTeam/_layouts/15/Doc.aspx?sourcedoc=%7B2AED7A2F-48BB-4210-9602-F2101A0982B7%7D&file=Asset%20Registration.vsdx&action=default&mobileredirect=true">Document BIM to AIMS concept</a> for automated data transfer</td>
+	<td class="data">01 JUL 23</td>
+	<td class="data">TBA</td>
+	<td class="data">100%</td>
+	<td class="data" style="border-right:1px solid black;color:green;">Complete - Subject to change</td>
+  </tr>
+</table>
+
+<br>
+//-->
+
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <td class="darkGreen" colspan=6 style="text-align:center; border-right:1px solid black;" >Mikes Performance Objectives</td>
+  </tr>
+  <tr >
+    <td class="lightGrHeader">No.</td>
+	<td class="lightGrHeader">Task</td>
+	<td class="lightGrHeader" width="70px">Start</td>
+	<td class="lightGrHeader" width="70px">End</td>
+	<td class="lightGrHeader">Progress</td>
+	<td class="lightGrHeader" style="border-right:1px solid black;">Comments</td>
+  </tr>
+  <tr>
+    <td class="data">1</td>
+	<td class="data">Develop and implement interfaces of systems</td>
+	<td class="data"></td>
+	<td class="data">30 JUL 25</td>
+	<td class="data">70%</td>
+	<td class="data" style="border-right:1px solid black"><ul><li><a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/interfaces.html">Interface review conducted</a>
+	<li>All interfaces will align with the EA
+	<li style="color:red;">EA Alignment work put on hold. Awaiting TP input</ul></td>
+  </tr>
+  <tr>
+    <td class="data">2</td>
+	<td class="data">Assign IFC standard to the systems</td>
+	<td class="data"></td>
+	<td class="data">28 MAR 25</td>
+	<td class="data">80%</td>
+	<td class="data" style="border-right:1px solid black"><ul><li>Each system will have an IFC class assigned. <a target="_blank" href="https://github.com/AssetManagementEngineer/AIMS/discussions/1"> Bim4Rail committee involved</a>, HS2 using BuildingSmart to assist</ul></td>
+  </tr>
+  <tr>
+    <td class="data">3</td>
+	<td class="data">Determine ongoing feasibility of AIMS</td>
+	<td class="data"></td>
+	<td class="data">28 SEP 24</td>
+	<td class="data">In Progress</td>
+	<td class="data" style="border-right:1px solid black"><ul> 
+	<li>AIMS has a licence cost of £32,000 per annum, and a nominal 50:50 split of the Support and Maintenance costs at £45,804 (half of £91,608)
+	</ul>
+	<img src="https://assetmanagementengineer.github.io/AIMS/images/AIMSSummary.png" width="100%"/></td>
+  </tr>
+  <tr>
+    <td class="data">4</td>
+	<td class="data">Confirm asset naming schema with TP</td>
+	<td class="data"></td>
+	<td class="data">28 DEC 24</td>
+	<td class="data">0%</td>
+	<td class="data" style="border-right:1px solid black"><ul><li>Awaiting TP contact</ul></td>
+  </tr>
+</table>
+
+<br>
+<!--
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <td class="darkOrange" colspan=6 style="text-align:center; border-right:1px solid black;" ><a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/">AIMS Pipeline</a></td>
+  </tr>
+  <tr >
+    <td class="lightOrHeader">No.</td>
+	<td class="lightOrHeader">Task</td>
+	<td class="lightOrHeader" width="70px">Start</td>
+	<td class="lightOrHeader" width="70px">End</td>
+	<td class="lightOrHeader">Progress</td>
+	<td class="lightOrHeader" style="border-right:1px solid black;">Comments</td>
+  </tr>
+    <tr>
+    <td class="data">1</td>
+	<td class="data">Populate AIMS in PROD with SCH and visualisation</td>
+	<td class="data">01 SEP 23</td>
+	<td class="data">28 SEP 23</td>
+	<td class="data" style="color:green;">100%</td>
+	<td class="data" style="border-right:1px solid black;">Complete</td>
+  </tr>
+  <tr>
+    <td class="data">2</td>
+	<td class="data">Isolate <a target=_blank href="https://assetmanagementengineer.github.io/AIMS/interfaces.html">differences in interfaces</a> with EA</td>
+	<td class="data">01 SEP 23</td>
+	<td class="data">28 SEP 23</td>
+	<td class="data" style="color:green;">100%</td>
+	<td class="data" style="border-right:1px solid black">Review the EA export and check for anything we may have missed that might require checking with the SME's
+	<ul><li>Full review has been carried out. Now awaiting discussions with James Cullen</ul></td>
+  </tr>
+  <tr>
+    <td class="data">3</td>
+	<td class="data">Establish with SMEs interface details</td>
+	<td class="data">01 OCT 23</td>
+	<td class="data">30 NOV 24</td>
+	<td class="data">0%</td>
+	<td class="data" style="border-right:1px solid black">Populate mandatory attributes of interfaces following discussions with SMEs</td>
+  </tr>
+  <tr>
+    <td class="data">4</td>
+	<td class="data">Apply interface details to <a target="_blank" title="Systems Classification Hierarchy Javascript Visualisation" href="https://assetmanagementengineer.github.io/AIMS/drawflow/master.html">visualisation</a></td>
+	<td class="data">TBA</td>
+	<td class="data">TBA</td>
+	<td class="data">0%</td>
+	<td class="data" style="border-right:1px solid black">Add details of the interfaces to the visualisation</td>
+  </tr>
+  <tr>
+    <td class="data">5</td>
+	<td class="data">Apply interface details to AIMS</td>
+	<td class="data">TBA</td>
+	<td class="data">TBA</td>
+	<td class="data">0%</td>
+	<td class="data" style="border-right:1px solid black">Create the data dictionary for the interfaces and append the data</td>
+  </tr>
+  <tr>
+    <td class="data">6</td>
+	<td class="data">Assign IFC &amp; Uniclass references to SCH</td>
+	<td class="data">01 OCT 23</td>
+	<td class="data">28 MAR 24</td>
+	<td class="data" style="color:green;">100%</td>
+	<td class="data" style="border-right:1px solid black">Research the latest IFC hierarchy and Uniclass model available for assignment to systems
+	<ul><li>Jan24 uniclass ontology has been added to AIMS UAT and all possible assignments added to the SCH</ul></td>
+  </tr>
+  <tr>
+    <td class="data">7</td>
+	<td class="data">Confirm IFC alignment</td>
+	<td class="data">01 OCT 23</td>
+	<td class="data">28 MAR 24</td>
+	<td class="data" style="color:green;">100%</td>
+	<td class="data" style="border-right:1px solid black">Discuss with Craig Hardingham and Lawrence Chapman how we've assigned IFC and how we plan to use it.
+	<ul><li>Had discussion with BIM4Rail group who agreed to set up a BuildingSmart Railway Domain Committee
+	<li>Demonstrated our work on assigning ifc to the SCH
+	<li>Agreed what we were doing was good but suggested to identify the gaps and post on github for comments and suggestions</ul></td>
+  </tr>
+   <tr>
+    <td class="data">8</td>
+	<td class="data">Approve bespoke system naming convention</td>
+	<td class="data">01 OCT 23</td>
+	<td class="data">28 MAR 24</td>
+	<td class="data">0%</td>
+	<td class="data" style="border-right:1px solid black">Seek approval from Asset Management to utilise the naming code for the systems as seen in the visualisation. Ref EWR Location Referencing Workbook\Document Numbering Schema</td>
+  </tr>
+   <tr>
+    <td class="data">9</td>
+	<td class="data">Test property inheritance</td>
+	<td class="data">01 OCT 23</td>
+	<td class="data">28 MAR 24</td>
+	<td class="data">0%</td>
+	<td class="data" style="border-right:1px solid black">Test property inheritence by registering an asset in a class that is related to the IFC class containing the properties</td>
+  </tr>
+  <tr>
+    <td class="data">10</td>
+	<td class="data">Asset Registration</td>
+	<td class="data">01 Oct 2023</td>
+	<td class="data">28 Dec 2023</td>
+	<td class="data" style="color:green;">100%</td>
+	<td class="data" style="border-right:1px solid black">Confirm minimum AIMS asset registration requirements. Involve BIM coordinators, Asset Management, Digital Eng and Peter Geake.</td>
+  </tr>
+  <tr>
+    <td class="data">11</td>
+	<td class="data">Establish the PFUs</td>
+	<td class="data">TBA</td>
+	<td class="data">TBA</td>
+	<td class="data">60%</td>
+	<td class="data" style="border-right:1px solid black">Identify with the SMEs the Primary Functioning Units.</td>
+  </tr>
+  <tr>
+    <td class="data">12</td>
+	<td class="data">Establish the OTL</td>
+	<td class="data">TBA</td>
+	<td class="data">TBA</td>
+	<td class="data">0%</td>
+	<td class="data" style="border-right:1px solid black">Identify with the SMEs the Asset types that will sit in AIMS.</td>
+  </tr>
+</table>
+
+<br>
+//-->
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <th class="darkBlue">Quick Links</th>
+	<th class="lightBlue"><!--<a target="_blank" href="https://eastwestrailwaycouk.sharepoint.com/:w:/r/sites/DigitalEngineeringTeam/Shared%20Documents/General/1-2-1%27s/Mike%20-%20Dino%201-2-1%27s.docx?d=w7288a746b4574a93a9d05e553ce1b2f0&csf=1&web=1&e=FQX6ml">Mikes 1-2-1 Doc</a>//--><br>
+	<a target="_blank" href="https://eastwestrailwaycouk.sharepoint.com/Integrated%20Management%20System/IMS%20Workflow%20Draft%20Documents/Forms/Objectives%20and%20Development%20Plans.aspx?FolderCTID=0x012000B1D0E30D84854D4DBAE9CBECA20938F5&id=%2FIntegrated%20Management%20System%2FIMS%20Workflow%20Draft%20Documents%2FExecutive%20Team%2FCommunities%2FEngineering%2C%20Technology%20and%20Solutions%2FSystems%20and%20Digital%20Engineering%2FMike%20Harley">Mikes Objectives</a><br>
+	<a target="_blank" href="https://eastwestrailwaycouk.sharepoint.com/Integrated%20Management%20System/IMS%20Workflow%20Draft%20Documents/Forms/Objectives%20and%20Development%20Plans.aspx?FolderCTID=0x012000B1D0E30D84854D4DBAE9CBECA20938F5&id=%2FIntegrated%20Management%20System%2FIMS%20Workflow%20Draft%20Documents%2FExecutive%20Team%2FCommunities%2FEngineering%2C%20Technology%20and%20Solutions%2FSystems%20and%20Digital%20Engineering%2FMike%20Harley">Mikes PDP</a></th>
+	<th class="lightBlue"><a target="_blank" href="https://sg.app.lucidchart.com/uni/ls/click?upn=u001.9CEiYqsCeDB7JcEaXQIz-2F8hA2T748OZjyY91l9S-2BOHpWIQbEGJbaVHr9V-2BjSyorrIbdqRMl3IIgSmznwNqdwYpAXRKU8PoFdwMIiIxoYT-2B1bRqZ9Uaj-2BDLfe46kP-2FSU2MYg07nlzucvoqhwHS7GZSo4MzMqGoWt-2FA8gN7BWq0GcOM6hbDIfj8I98Hoenotumw7Tq_dr0dA1b2tM0KUcUKnq9divr4qQzumkj614XuZvwq0d4kzZ3bsMOjZxW-2B4pl1yPIpHuASRmqEjcmBheA-2BGM63nINvLu2Rx22aXsMdLMgmglI4hlrM6lwqTWpk6PtouQndGJdYcvoeR-2Bwz1OOZp7g0J7x7BhhijYcciVzZNe3ixIcqhJ4ESmIkmkcwTsrq9O4NWJB-2FOALLmoYrz3cPVxmxGc8oBCQGcP7SzgFy9hC9QgT-2FP7vhfReIR2FdDdS3FYbcu58roS4M3RWQHxBvF5WVP7LiYXE26Mhg9daYKJgKL0JtjkjRsWv9fIqPYxLYAoIK113OvSJRCsuidpNZefzyIlNQficQqNpTp-2BqiG5P-2Bct9UhcV8L049OYS13U5WxlWntOf2J0MtIvBjPzFo-2Bigxc8OmQC4tq-2FqdDHaEMOxR8uR-2FOC6GEVCYGWHbtZVGS8dSPY1kBlLo1b7MMRQXZ44irjk2Rf0nPMcT93uBkbdv3u6nDdxZejDmPIETfg4ZMPMWyWBBxyTz58L-2BLWenqEYd-2BvRLux7Nhj3pPoE6qaJA0fSFQgbEER4Nbh21OQCLv2E0oHQs2f1Ho3XE4WW0cjWju31HCfw9iRBsTJ4Roxu1KVIc8MTZ6Tx0ZCxNFACGCG0VSSW9z5dS96uHebSrOQ5JwGykDdqd2nRxtQRTKPEWLwXBU7RLADNlE-2F1hHjbVOreeoAErMRSunYspckRus8qi6bemLoXvYetQjUdDMeplJim712o1X-2B-2FPWF1DSCNCT-2FqOwSACLPUqa3AVYWvcfQJXsg-3D-3D">LARMS_ERD</a></th>
+	<th class="lightBlue"><a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/drawflow/master.html">SCH with Interfaces</a><br>
+	<a target="_blank" href="https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3">IFC</a> / <a target="_blank" href="https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/">XSD</a> / <a target=_blank href="https://search.bsdd.buildingsmart.org/">Search</a><br>
+	<a target="_blank" href="https://uniclass.thenbs.com/">Uniclass</a></th>
+	<th class="lightBlue"><a target="_blank" href="https://cde.eastwestrail.co.uk/k?useSavedLoginParams">CDE PROD</a><BR>
+	<a target="_blank" href="https://ewrtest.datb.net/ewruat2330180/">CDE UAT</a><br>
+	<a target="_blank" href="https://eastwestrailwaycouk.sharepoint.com/:w:/r/sites/DigitalEngineeringTeam/Shared Documents/General/2023 Digital Engineering Strategy/IMS Templates/Digital Engineering Strategy V0.1.docx?d=w5a1c7b989fc244c087e11e73c1f4cd6b&csf=1&web=1&e=StpMiZ">DE Strategy</a></th>
+	<th class="lightBlue" style="border-right:1px solid black;"><a target="_blank" href="https://eastwestrailwaycouk.sharepoint.com/:b:/r/sites/BIMManagement/Shared%20Documents/General/1%20-%20BIM%20Documents/6%20-%20BEP%20-%20BIM%20Execution%20Plan/133735-MWJ-Z0-XXX-PLN-PDC-000001.pdf?csf=1&web=1&e=EgoJUp">BEP</a><br>
+	<a target="_blank" href="https://eastwestrailwaycouk.sharepoint.com/:w:/r/sites/DefineSolution2/_layouts/15/guestaccess.aspx?e=NW4V6D&CID=B3AA3829-E22B-44A1-AD3A-C9FBFA7F106F&wdLOR=c0FDA2EA6-0170-407A-B793-0E32BE05A16E&share=EcAV4WGKXE1PuhSvMZ4NiuQBXcBDgSFVAmHekun-2G_hwg">FIR</a></th>
+	<!-- location standard https://cde.eastwestrail.co.uk/download/Location%20Referencing%20Standard.pdf?&k=520882&targetwindow=DEFAULT //-->
+  </tr>
+</table>
+
+<br>
+
+<br><br>kind regards<br><br>
+<b><font>Mike Harley</font></b><br>
+<b><font>Asset Management Engineer</font></b><br><font>Engineering, Technology &amp; Solutions<br>
+Systems and Digital Engineering</font>&nbsp;/<br>
+<font>Data Centre of Excellence</font><br><br>
+<b><font>Working days:</b> Mon-Thu</font><br><br>
+E: <a href="mailto:mike.harley@eastwestrail.co.uk">mike.harley@eastwestrail.co.uk</a><br>
+W: <a href="www.eastwestrail.co.uk">www.eastwestrail.co.uk</a><br><br>&nbsp;
+<img width=200 src="https://www.eastwestrail.co.uk/resources/themes/ewr/img/ewr-logo.png" />
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

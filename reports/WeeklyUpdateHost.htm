@@ -52,7 +52,55 @@ a:hover {color:white;}
 <script src="./functions.js" type="text/javascript"></script>
 </head>
 <body onload="javascript:onload();">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="navbar-collapse collapse" id="navbarsExample04" style="">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">AIMS Pipeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./AIMS.html">AIMS Tutorials</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="./IFCStarterPack/IFC.html">IFC Starter Pack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./drawflow/master.html">SCH</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="./drawflow_GIS/master.html">GIS Apps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://uniclass.thenbs.com/">Uniclass</a>
+          </li>      
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3">IFC 4.3</a>
+          </li>       
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Bentley</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" target="_blank" href="https://imodelschemaeditor.bentley.com/">imodel schema</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://imodelconsole.bentley.com/">imodel console</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://www.itwinjs.org/learning/ecsql/">itwin learning</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://developer.bentley.com/tutorials/">API Tutorials</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://connect.bentley.com">Connect</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://developer.bentley.com/my-apps">MyApps</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form role="search" action="https://search.bsdd.buildingsmart.org/" method="get" target="_blank">
+          <input id="SearchText" name="SearchText" class="form-control" type="Search" placeholder="IFC Search" value="" aria-label="Search">
+          <input type="hidden" name="Command" value="Search"/>
+        </form>
+      </div>
+    </div>
+  </nav>
 <div id="daysinemployment" style="position:fixed;bottom:3;right:140;color:black;font-family:Comic Sans MS;font-size:14pt;"></div>
 <div id="header"></div>
 <div id="progressBar"></div>

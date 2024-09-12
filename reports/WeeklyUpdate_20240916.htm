@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+<style>
+
+*
+{
+  margin:0;
+  padding:0;
+}
+
+li {
+margin-left:20px;
+font-size: 12pt;
+}
+
+th, td {
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	text-align:left;
+	height:30px;
+	font-size: 12pt;
+	font-weight:Bold;
+	padding-left:3px;
+}
+a{text-decoration:none;color:#9b2222;}
+a:link:   {color:#9b2222;}
+a:visited {color:#9b2222;}
+a:hover   {color:#EE0000;}
+a:active  {color:#EE0000;}
+
+table{
+	margin:4px;
+}
+
+table.noborder{
+  border-top: 0px solid white;
+}
+
+td.noborder{
+	border-top: 0px solid white;
+	border-left: 0px solid white;
+	border-bottom: 0px solid white;
+}
+
+.darkBlue {
+  background:#5b9db5;
+  color:Black;
+  font-size: 10pt;
+  color:white;
+}
+.Red {
+  background:#FF0000;
+  color:Black;
+  font-size: 10pt;
+  color:white;
+}
+
+.darkGreen {
+  background:#0f763d;
+  font-size: 10pt;
+  color:white;
+}
+
+.darkOrange {
+  background:#e9bd09;
+  color:Black;
+  font-size: 10pt;
+}
+
+.darkRed {
+  background:#9b2222;
+  font-size: 10pt;
+  color:white;
+}
+
+.lightRed {
+  background:#3b2222;
+  color:Black;
+  font-size: 12pt;
+  font-weight:Normal;
+}
+
+.lightHeader {
+  background:#bdd5ee;
+  color:Black;
+  height:20px;
+  font-size: 10pt;
+  font-weight:Bold;
+  text-align:center;
+  border-top:0px;
+}
+
+.lightGrHeader {
+  background:#8fdbb0;
+  color:Black;
+  height:20px;
+  font-size: 10pt;
+  font-weight:Bold;
+  text-align:center;
+  border-top:0px;
+}
+
+.lightOrHeader {
+  background:#fde99b;
+  color:Black;
+  height:20px;
+  font-size: 10pt;
+  font-weight:Bold;
+  text-align:center;
+  border-top:0px;
+}
+
+
+
+.lightHeaderRed {
+  background:#eebdd5;
+  color:Black;
+  height:20px;
+  font-size: 10pt;
+  font-weight:Bold;
+  text-align:center;
+  border-top:0px;
+}
+
+.data {
+  font-weight:normal;
+  font-size: 12pt;
+  height:20px;
+  border-top:0px;
+}
+
+.spacer {
+	height:20px;
+}
+
+font {
+  font-family:Century Gothic;
+}
+
+p {
+	font-weight:normal;
+}
+
+</style>
+
+<body>
+
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <th class="darkBlue">Project Name</th>
+	<th class="lightBlue">Digital Design / DCoE</th>
+	<th class="darkBlue">Line Manager</th>
+	<th class="lightBlue">Loukas Mitsou / Ivan Mactaggart</th>
+	<th class="darkBlue">Report Date</th>
+	<th class="lightBlue" style="border-right:1px solid black;">12 Aug 2024</th>
+	<!--<th class="Red">MK</th>
+	<th class="lightBlue" style="border-right:1px solid black;">26.6%</th>//-->
+  </tr>
+</table>
+
+<br>
+
+<!--
+<table width="99%" class="noborder" cellpadding=0 cellspacing=0>
+  <tr><td class="noborder">
+Hi Loukas, Ivan<br><br>
+<p>There is a new link at the footer of this email called <b><a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/reports/WeeklyUpdate.htm">Weekly Archives</a></b> 
+that is a link to these emails for historical reference beginning with the start up of the LARMS project 3 weeks ago to help keep track of progress and changes.<br>
+I'll be in the office next week. Look forward to catching up with you both in person.
+</p><br>
+</td></tr>
+
+</table>
+//-->
+
+
+<!--
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <td width="3%" style="text-align:center;background:grey;">1<br>A/L</td>
+	<td width="3%" style="text-align:center;background:grey;">2<br>A/L</td>
+	<td width="3%" style="text-align:center;background:grey;">F<br>3</td>
+	<td width="3%" style="text-align:center;background:grey;">Sa<br>4</td>
+	<td width="3%" style="text-align:center;background:grey;">Su<br>5</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">6</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">7</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">8</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">9</td>
+	<td width="3%" style="text-align:center;background:grey;">F<br>10</td>
+	<td width="3%" style="text-align:center;background:grey;">Sa<br>11</td>
+	<td width="3%" style="text-align:center;background:grey;">Su<br>12</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">13</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">14</td>
+    <td width="3%" style="text-align:center;background:lightblue;">15</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">16</td>
+	<td width="3%" style="text-align:center;background:grey;">F<br>17</td>
+	<td width="3%" style="text-align:center;background:grey;">Sa<br>18</td>
+	<td width="3%" style="text-align:center;background:grey;">Su<br>19</td>
+	<td width="3%" style="text-align:center;background:lime;">20<br>MK</td>
+	<td width="3%" style="text-align:center;background:lime;">21<br>MK</td>
+	<td width="3%" style="text-align:center;background:lime;">22<br>MK</td>
+	<td width="3%" style="text-align:center;background:lime;">23<br>MK</td>
+	<td width="3%" style="text-align:center;background:grey;">F<br>24</td>
+	<td width="3%" style="text-align:center;background:grey;">Sa<br>25</td>
+	<td width="3%" style="text-align:center;background:grey;">Su<br>26</td>
+	<td width="3%" style="text-align:center;background:grey;">BH<br>27</td>
+	<td width="3%" style="text-align:center;background:lightBlue;">28</td>
+	<td width="3%" style="text-align:center;background:lightblue;">29</td>
+	<td width="3%" style="text-align:center;background:lightblue;">30</td>
+	<td width="3%" style="text-align:center;background:grey;">F<br>31</td>
+  </tr>
+</table>
+//-->
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <td class="darkBlue" colspan=3 style="text-align:center; border-right:1px solid black;" >Mikes Activities: W/C 09 Sep 24</td>
+  </tr>
+  <tr>
+    <td class="lightHeader">No.</td>
+	<td class="lightHeader">Task</td>
+	<td class="lightHeader" style="border-right:1px solid black;">Comments</td>
+  </tr>
+  <tr>
+    <td class="data">1</td>
+	<td class="data">DCoE</td>
+	<td class="data" style="border-right:1px solid black;">
+        <ul> 
+	          <li>Edit page for Party actioned</li>
+            <li>Had trouble making the blazor specific inputcheckbox working. Problem found in the style</li>
+            <li>Add page for Licence actioned</li>
+            <li>Set up Data Annotations for form validation on Licence Add page</li>
+            <li>Default values set up for new licence record</li>
+            <li>Redesign for pagination offering mire flexibility and functionality</li>
+            <li>Got hold of a template for the Book of Reference that we will be developing in house along with a populated example for inspiration. ETA 2026</li>
+	    </ul>
+	</td>
+  </tr> 
+ 
+
+
+<!--
+ <tr>
+    <td class="data">2</td>
+	<td class="data">Training</td>
+	<td class="data" style="border-right:1px solid black;"><ul> 
+	<li>Continued online udemy training to freshen up on existing skills aswell as upskilling in the hope this may benefit both EWR and my personal career development.</ul>
+	</td>
+  </tr>
+ 
+  //-->
+  
+  
+</table>
+
+<br>
+
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <td class="darkRed" colspan=3 style="text-align:center; border-right:1px solid black;" >LARMS Pipeline</td>
+  </tr>
+  <tr>
+    <td class="lightHeaderRed">No.</td>
+	<td class="lightHeaderRed">Task</td>
+	<td class="lightHeaderRed" style="border-right:1px solid black;">Comments</td>
+  </tr>
+ <tr>
+    <td class="data">1</td>
+	<td class="data">DCoE</td>
+	<td class="data" style="border-right:1px solid black;">
+	<ul>
+    <li>Enable cross linking of data to expose many to many relationships</li>
+    <li>Sort data out in parties to licence that seems to have too many records</li>
+		<li>Set up a create feature to add new records to Parties, Titles, LAPS</li>
+    <li>Carry out extensive testing to see the response for datatype breaches, use of apostrophe's and double dashes -- etc</li>
+		<li>Enable Salesforce connectivity</li>
+		<li>Enable SAP connectivity</li>
+		<li>Establish need for GIS and action where required</li>
+		<li>Run through each page and sense check with comparison to DATB LARMS and establish remaining work</li>
+	</ul>
+	</td>
+  </tr>
+
+</table>
+
+<br>
+
+<!--
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <td class="darkGreen" colspan=6 style="text-align:center; border-right:1px solid black;" >Mikes Performance Objectives</td>
+  </tr>
+  <tr >
+    <td class="lightGrHeader">No.</td>
+	<td class="lightGrHeader">Task</td>
+	<td class="lightGrHeader" width="70px">Start</td>
+	<td class="lightGrHeader" width="70px">End</td>
+	<td class="lightGrHeader">Progress</td>
+	<td class="lightGrHeader" style="border-right:1px solid black;">Comments</td>
+  </tr>
+  <tr>
+    <td class="data">1</td>
+	<td class="data">Develop and implement interfaces of systems</td>
+	<td class="data"></td>
+	<td class="data">30 JUL 25</td>
+	<td class="data">70%</td>
+	<td class="data" style="border-right:1px solid black"><ul><li><a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/interfaces.html">Interface review conducted</a>
+	<li>All interfaces will align with the EA
+	<li style="color:red;">EA Alignment work put on hold. Awaiting TP input</ul></td>
+  </tr>
+  <tr>
+    <td class="data">2</td>
+	<td class="data">Assign IFC standard to the systems</td>
+	<td class="data"></td>
+	<td class="data">28 MAR 25</td>
+	<td class="data">80%</td>
+	<td class="data" style="border-right:1px solid black"><ul><li>Each system will have an IFC class assigned. <a target="_blank" href="https://github.com/AssetManagementEngineer/AIMS/discussions/1"> Bim4Rail committee involved</a>, HS2 using BuildingSmart to assist</ul></td>
+  </tr>
+  <tr>
+    <td class="data">3</td>
+	<td class="data">Determine ongoing feasibility of AIMS</td>
+	<td class="data"></td>
+	<td class="data">28 SEP 24</td>
+	<td class="data">In Progress</td>
+	<td class="data" style="border-right:1px solid black"><ul> 
+	<li>AIMS has a licence cost of £32,000 per annum, and a nominal 50:50 split of the Support and Maintenance costs at £45,804 (half of £91,608)
+	</ul>
+	<img src="https://assetmanagementengineer.github.io/AIMS/images/AIMSSummary.png" width="100%"/></td>
+  </tr>
+  <tr>
+    <td class="data">4</td>
+	<td class="data">Confirm asset naming schema with TP</td>
+	<td class="data"></td>
+	<td class="data">28 DEC 24</td>
+	<td class="data">0%</td>
+	<td class="data" style="border-right:1px solid black"><ul><li>Awaiting TP contact</ul></td>
+  </tr>
+</table>
+
+<br>
+-->
+
+
+<table width="99%" cellpadding=0 cellspacing=0>
+  <tr>
+    <th class="darkBlue">Quick Links</th>
+	<th class="lightBlue"><a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/reports/WeeklyUpdate.htm">Weekly Archives</a><br>
+	<a target="_blank" href="https://eastwestrailwaycouk.sharepoint.com/Integrated%20Management%20System/IMS%20Workflow%20Draft%20Documents/Forms/Objectives%20and%20Development%20Plans.aspx?FolderCTID=0x012000B1D0E30D84854D4DBAE9CBECA20938F5&id=%2FIntegrated%20Management%20System%2FIMS%20Workflow%20Draft%20Documents%2FExecutive%20Team%2FCommunities%2FEngineering%2C%20Technology%20and%20Solutions%2FSystems%20and%20Digital%20Engineering%2FMike%20Harley">Mikes Objectives</a><br>
+	<a target="_blank" href="https://eastwestrailwaycouk.sharepoint.com/Integrated%20Management%20System/IMS%20Workflow%20Draft%20Documents/Forms/Objectives%20and%20Development%20Plans.aspx?FolderCTID=0x012000B1D0E30D84854D4DBAE9CBECA20938F5&id=%2FIntegrated%20Management%20System%2FIMS%20Workflow%20Draft%20Documents%2FExecutive%20Team%2FCommunities%2FEngineering%2C%20Technology%20and%20Solutions%2FSystems%20and%20Digital%20Engineering%2FMike%20Harley">Mikes PDP</a></th>
+	<th class="lightBlue"><a target="_blank" href="https://sg.app.lucidchart.com/uni/ls/click?upn=u001.9CEiYqsCeDB7JcEaXQIz-2F8hA2T748OZjyY91l9S-2BOHpWIQbEGJbaVHr9V-2BjSyorrIbdqRMl3IIgSmznwNqdwYpAXRKU8PoFdwMIiIxoYT-2B1bRqZ9Uaj-2BDLfe46kP-2FSU2MYg07nlzucvoqhwHS7GZSo4MzMqGoWt-2FA8gN7BWq0GcOM6hbDIfj8I98Hoenotumw7Tq_dr0dA1b2tM0KUcUKnq9divr4qQzumkj614XuZvwq0d4kzZ3bsMOjZxW-2B4pl1yPIpHuASRmqEjcmBheA-2BGM63nINvLu2Rx22aXsMdLMgmglI4hlrM6lwqTWpk6PtouQndGJdYcvoeR-2Bwz1OOZp7g0J7x7BhhijYcciVzZNe3ixIcqhJ4ESmIkmkcwTsrq9O4NWJB-2FOALLmoYrz3cPVxmxGc8oBCQGcP7SzgFy9hC9QgT-2FP7vhfReIR2FdDdS3FYbcu58roS4M3RWQHxBvF5WVP7LiYXE26Mhg9daYKJgKL0JtjkjRsWv9fIqPYxLYAoIK113OvSJRCsuidpNZefzyIlNQficQqNpTp-2BqiG5P-2Bct9UhcV8L049OYS13U5WxlWntOf2J0MtIvBjPzFo-2Bigxc8OmQC4tq-2FqdDHaEMOxR8uR-2FOC6GEVCYGWHbtZVGS8dSPY1kBlLo1b7MMRQXZ44irjk2Rf0nPMcT93uBkbdv3u6nDdxZejDmPIETfg4ZMPMWyWBBxyTz58L-2BLWenqEYd-2BvRLux7Nhj3pPoE6qaJA0fSFQgbEER4Nbh21OQCLv2E0oHQs2f1Ho3XE4WW0cjWju31HCfw9iRBsTJ4Roxu1KVIc8MTZ6Tx0ZCxNFACGCG0VSSW9z5dS96uHebSrOQ5JwGykDdqd2nRxtQRTKPEWLwXBU7RLADNlE-2F1hHjbVOreeoAErMRSunYspckRus8qi6bemLoXvYetQjUdDMeplJim712o1X-2B-2FPWF1DSCNCT-2FqOwSACLPUqa3AVYWvcfQJXsg-3D-3D">LARMS_ERD</a></th>
+	<th class="lightBlue"><a target="_blank" href="https://assetmanagementengineer.github.io/AIMS/drawflow/master.html">SCH with Interfaces</a><br>
+	<a target="_blank" href="https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3">IFC</a> / <a target="_blank" href="https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/">XSD</a> / <a target=_blank href="https://search.bsdd.buildingsmart.org/">Search</a><br>
+	<a target="_blank" href="https://uniclass.thenbs.com/">Uniclass</a></th>
+	<th class="lightBlue"><a target="_blank" href="https://cde.eastwestrail.co.uk/k?useSavedLoginParams">CDE PROD</a><BR>
+	<a target="_blank" href="https://ewrtest.datb.net/ewruat2330180/">CDE UAT</a><br>
+	<a target="_blank" href="https://eastwestrailwaycouk.sharepoint.com/:w:/r/sites/DigitalEngineeringTeam/Shared Documents/General/2023 Digital Engineering Strategy/IMS Templates/Digital Engineering Strategy V0.1.docx?d=w5a1c7b989fc244c087e11e73c1f4cd6b&csf=1&web=1&e=StpMiZ">DE Strategy</a></th>
+	<th class="lightBlue" style="border-right:1px solid black;"><a target="_blank" href="https://eastwestrailwaycouk.sharepoint.com/:b:/r/sites/BIMManagement/Shared%20Documents/General/1%20-%20BIM%20Documents/6%20-%20BEP%20-%20BIM%20Execution%20Plan/133735-MWJ-Z0-XXX-PLN-PDC-000001.pdf?csf=1&web=1&e=EgoJUp">BEP</a><br>
+	<a target="_blank" href="https://eastwestrailwaycouk.sharepoint.com/:w:/r/sites/DefineSolution2/_layouts/15/guestaccess.aspx?e=NW4V6D&CID=B3AA3829-E22B-44A1-AD3A-C9FBFA7F106F&wdLOR=c0FDA2EA6-0170-407A-B793-0E32BE05A16E&share=EcAV4WGKXE1PuhSvMZ4NiuQBXcBDgSFVAmHekun-2G_hwg">FIR</a></th>
+	<!-- location standard https://cde.eastwestrail.co.uk/download/Location%20Referencing%20Standard.pdf?&k=520882&targetwindow=DEFAULT //-->
+  </tr>
+</table>
+
+<br>
+
+<br><br>kind regards<br><br>
+<b><font>Mike Harley</font></b><br>
+<b><font>Asset Management Engineer</font></b><br><font>Engineering, Technology &amp; Solutions<br>
+Systems and Digital Engineering</font>&nbsp;/<br>
+<font>Data Centre of Excellence</font><br><br>
+<b><font>Working days:</b> Mon-Thu</font><br><br>
+<img width=200 src="https://www.eastwestrail.co.uk/resources/themes/ewr/img/ewr-logo.png" />
+
+   
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
